@@ -1,0 +1,7 @@
+D:\TestFolder\list_reverse\list_reverse\bin\Debug\list_reverse.exe.config
+D:\TestFolder\list_reverse\list_reverse\bin\Debug\list_reverse.exe
+D:\TestFolder\list_reverse\list_reverse\bin\Debug\list_reverse.pdb
+D:\TestFolder\list_reverse\list_reverse\obj\Debug\list_reverse.exe
+D:\TestFolder\list_reverse\list_reverse\obj\Debug\list_reverse.pdb
+D:\TestFolder\list_reverse\list_reverse\obj\Debug\list_reverse.csproj.AssemblyReference.cache
+D:\TestFolder\list_reverse\list_reverse\obj\Debug\list_reverse.csproj.CoreCompileInputs.cache

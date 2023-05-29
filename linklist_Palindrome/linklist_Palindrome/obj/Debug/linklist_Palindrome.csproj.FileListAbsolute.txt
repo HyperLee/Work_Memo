@@ -1,0 +1,6 @@
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\bin\Debug\linklist_Palindrome.exe.config
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\bin\Debug\linklist_Palindrome.exe
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\bin\Debug\linklist_Palindrome.pdb
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\obj\Debug\linklist_Palindrome.exe
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\obj\Debug\linklist_Palindrome.pdb
+D:\TestFolder\linklist_Palindrome\linklist_Palindrome\obj\Debug\linklist_Palindrome.csprojResolveAssemblyReference.cache
