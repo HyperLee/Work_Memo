@@ -1,0 +1,11 @@
+D:\TestFolder\GetHdd\GetHdd\bin\Debug\GetHdd.exe.config
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\Interop.DMVIEW2Lib.dll
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\Interop.MMC20.dll
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.csproj.ResolveComReference.cache
+D:\TestFolder\GetHdd\GetHdd\bin\Debug\GetHdd.exe
+D:\TestFolder\GetHdd\GetHdd\bin\Debug\GetHdd.pdb
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.exe
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.pdb
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.csproj.AssemblyReference.cache
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\GetHdd\GetHdd\obj\Debug\GetHdd.csproj.CoreCompileInputs.cache
