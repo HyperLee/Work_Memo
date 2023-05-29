@@ -1,0 +1,10 @@
+D:\TestFolder\Json_reader\Json_reader\bin\Debug\Json_reader.exe.config
+D:\TestFolder\Json_reader\Json_reader\bin\Debug\Json_reader.exe
+D:\TestFolder\Json_reader\Json_reader\bin\Debug\Json_reader.pdb
+D:\TestFolder\Json_reader\Json_reader\bin\Debug\Newtonsoft.Json.dll
+D:\TestFolder\Json_reader\Json_reader\bin\Debug\Newtonsoft.Json.xml
+D:\TestFolder\Json_reader\Json_reader\obj\Debug\Json_reader.exe
+D:\TestFolder\Json_reader\Json_reader\obj\Debug\Json_reader.pdb
+D:\TestFolder\Json_reader\Json_reader\obj\Debug\Json_reader.csproj.AssemblyReference.cache
+D:\TestFolder\Json_reader\Json_reader\obj\Debug\Json_reader.csproj.CoreCompileInputs.cache
+D:\TestFolder\Json_reader\Json_reader\obj\Debug\Json_reader.csproj.CopyComplete
