@@ -1,0 +1,17 @@
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\bin\Debug\net6.0-windows\FlowLayoutPanelDemo.exe
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\bin\Debug\net6.0-windows\FlowLayoutPanelDemo.deps.json
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\bin\Debug\net6.0-windows\FlowLayoutPanelDemo.runtimeconfig.json
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\bin\Debug\net6.0-windows\FlowLayoutPanelDemo.dll
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\bin\Debug\net6.0-windows\FlowLayoutPanelDemo.pdb
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.csproj.AssemblyReference.cache
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.Form1.resources
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.csproj.GenerateResource.cache
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.AssemblyInfoInputs.cache
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.AssemblyInfo.cs
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.csproj.CoreCompileInputs.cache
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.dll
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\refint\FlowLayoutPanelDemo.dll
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.pdb
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\FlowLayoutPanelDemo.genruntimeconfig.cache
+D:\TestFolder\FlowLayoutPanelDemo\FlowLayoutPanelDemo\obj\Debug\net6.0-windows\ref\FlowLayoutPanelDemo.dll
