@@ -1,0 +1,7 @@
+D:\TestFolder\create random\create random\bin\Debug\create random.exe.config
+D:\TestFolder\create random\create random\bin\Debug\create random.exe
+D:\TestFolder\create random\create random\bin\Debug\create random.pdb
+D:\TestFolder\create random\create random\obj\Debug\create random.exe
+D:\TestFolder\create random\create random\obj\Debug\create random.pdb
+D:\TestFolder\create random\create random\obj\Debug\create random.csproj.AssemblyReference.cache
+D:\TestFolder\create random\create random\obj\Debug\create random.csproj.CoreCompileInputs.cache
