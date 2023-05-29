@@ -1,0 +1,16 @@
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.exe.config
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.exe
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.pdb
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.AssemblyReference.cache
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.SuggestedBindingRedirects.cache
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.CoreCompileInputs.cache
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.exe
+C:\Users\A6005\source\repos\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.pdb
+D:\TestFolder\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.exe.config
+D:\TestFolder\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.exe
+D:\TestFolder\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.pdb
+D:\TestFolder\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.exe
+D:\TestFolder\cbbuttontest\cbbuttontest\bin\Debug\cbbuttontest.pdb
+D:\TestFolder\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.AssemblyReference.cache
+D:\TestFolder\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\cbbuttontest\cbbuttontest\obj\Debug\cbbuttontest.csproj.CoreCompileInputs.cache
