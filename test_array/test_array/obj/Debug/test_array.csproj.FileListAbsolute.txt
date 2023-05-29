@@ -1,0 +1,8 @@
+D:\TestFolder\test_array\test_array\bin\Debug\test_array.exe.config
+D:\TestFolder\test_array\test_array\bin\Debug\test_array.exe
+D:\TestFolder\test_array\test_array\bin\Debug\test_array.pdb
+D:\TestFolder\test_array\test_array\obj\Debug\test_array.csproj.AssemblyReference.cache
+D:\TestFolder\test_array\test_array\obj\Debug\test_array.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\test_array\test_array\obj\Debug\test_array.csproj.CoreCompileInputs.cache
+D:\TestFolder\test_array\test_array\obj\Debug\test_array.exe
+D:\TestFolder\test_array\test_array\obj\Debug\test_array.pdb
