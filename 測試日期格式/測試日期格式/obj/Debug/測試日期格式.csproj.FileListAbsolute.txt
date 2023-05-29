@@ -1,0 +1,8 @@
+D:\TestFolder\測試日期格式\測試日期格式\bin\Debug\測試日期格式.exe.config
+D:\TestFolder\測試日期格式\測試日期格式\bin\Debug\測試日期格式.exe
+D:\TestFolder\測試日期格式\測試日期格式\bin\Debug\測試日期格式.pdb
+D:\TestFolder\測試日期格式\測試日期格式\obj\Debug\測試日期格式.exe
+D:\TestFolder\測試日期格式\測試日期格式\obj\Debug\測試日期格式.pdb
+D:\TestFolder\測試日期格式\測試日期格式\obj\Debug\測試日期格式.csproj.AssemblyReference.cache
+D:\TestFolder\測試日期格式\測試日期格式\obj\Debug\測試日期格式.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\測試日期格式\測試日期格式\obj\Debug\測試日期格式.csproj.CoreCompileInputs.cache
