@@ -1,0 +1,8 @@
+D:\GitHub\List去除重複項目\List去除重複項目\bin\Debug\List去除重複項目.exe.config
+D:\GitHub\List去除重複項目\List去除重複項目\bin\Debug\List去除重複項目.exe
+D:\GitHub\List去除重複項目\List去除重複項目\bin\Debug\List去除重複項目.pdb
+D:\GitHub\List去除重複項目\List去除重複項目\obj\Debug\List去除重複項目.csproj.AssemblyReference.cache
+D:\GitHub\List去除重複項目\List去除重複項目\obj\Debug\List去除重複項目.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\List去除重複項目\List去除重複項目\obj\Debug\List去除重複項目.csproj.CoreCompileInputs.cache
+D:\GitHub\List去除重複項目\List去除重複項目\obj\Debug\List去除重複項目.exe
+D:\GitHub\List去除重複項目\List去除重複項目\obj\Debug\List去除重複項目.pdb

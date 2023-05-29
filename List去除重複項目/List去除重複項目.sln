@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List去除重複項目", "List去除重複項目\List去除重複項目.csproj", "{35C2503E-0E6F-4BE7-B1B5-D19D7A0AF72D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C2503E-0E6F-4BE7-B1B5-D19D7A0AF72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C2503E-0E6F-4BE7-B1B5-D19D7A0AF72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C2503E-0E6F-4BE7-B1B5-D19D7A0AF72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C2503E-0E6F-4BE7-B1B5-D19D7A0AF72D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10E704DD-DE8F-49A9-8332-0A464EF3FC12}
+	EndGlobalSection
+EndGlobal
