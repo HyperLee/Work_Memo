@@ -1,0 +1,8 @@
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\bin\Debug\20220920_test_datetime.exe.config
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\bin\Debug\20220920_test_datetime.exe
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\bin\Debug\20220920_test_datetime.pdb
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\obj\Debug\20220920_test_datetime.csproj.AssemblyReference.cache
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\obj\Debug\20220920_test_datetime.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\obj\Debug\20220920_test_datetime.csproj.CoreCompileInputs.cache
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\obj\Debug\20220920_test_datetime.exe
+D:\TestFolder\20220920_test_datetime\20220920_test_datetime\obj\Debug\20220920_test_datetime.pdb
