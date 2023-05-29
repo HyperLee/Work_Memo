@@ -1,0 +1,8 @@
+D:\TestFolder\Maximum even sum\Maximum even sum\bin\Debug\Maximum even sum.exe.config
+D:\TestFolder\Maximum even sum\Maximum even sum\bin\Debug\Maximum even sum.exe
+D:\TestFolder\Maximum even sum\Maximum even sum\bin\Debug\Maximum even sum.pdb
+D:\TestFolder\Maximum even sum\Maximum even sum\obj\Debug\Maximum even sum.exe
+D:\TestFolder\Maximum even sum\Maximum even sum\obj\Debug\Maximum even sum.pdb
+D:\TestFolder\Maximum even sum\Maximum even sum\obj\Debug\Maximum even sum.csproj.AssemblyReference.cache
+D:\TestFolder\Maximum even sum\Maximum even sum\obj\Debug\Maximum even sum.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\Maximum even sum\Maximum even sum\obj\Debug\Maximum even sum.csproj.CoreCompileInputs.cache
