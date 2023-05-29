@@ -1,0 +1,8 @@
+D:\TestFolder\post-increment\post-increment\bin\Debug\post-increment.exe.config
+D:\TestFolder\post-increment\post-increment\bin\Debug\post-increment.exe
+D:\TestFolder\post-increment\post-increment\bin\Debug\post-increment.pdb
+D:\TestFolder\post-increment\post-increment\obj\Debug\post-increment.csproj.AssemblyReference.cache
+D:\TestFolder\post-increment\post-increment\obj\Debug\post-increment.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\post-increment\post-increment\obj\Debug\post-increment.csproj.CoreCompileInputs.cache
+D:\TestFolder\post-increment\post-increment\obj\Debug\post-increment.exe
+D:\TestFolder\post-increment\post-increment\obj\Debug\post-increment.pdb
