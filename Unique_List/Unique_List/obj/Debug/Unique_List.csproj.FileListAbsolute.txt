@@ -1,0 +1,7 @@
+D:\TestFolder\Unique_List\Unique_List\bin\Debug\Unique_List.exe.config
+D:\TestFolder\Unique_List\Unique_List\bin\Debug\Unique_List.exe
+D:\TestFolder\Unique_List\Unique_List\bin\Debug\Unique_List.pdb
+D:\TestFolder\Unique_List\Unique_List\obj\Debug\Unique_List.exe
+D:\TestFolder\Unique_List\Unique_List\obj\Debug\Unique_List.pdb
+D:\TestFolder\Unique_List\Unique_List\obj\Debug\Unique_List.csproj.AssemblyReference.cache
+D:\TestFolder\Unique_List\Unique_List\obj\Debug\Unique_List.csproj.CoreCompileInputs.cache
