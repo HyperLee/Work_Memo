@@ -1,0 +1,16 @@
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\TestOdsReader_P1.exe.config
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\TestOdsReader_P1.exe
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\TestOdsReader_P1.pdb
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\DotNetZip.dll
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\DotNetZip.pdb
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\bin\Debug\DotNetZip.xml
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.Form1.resources
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.Form2.resources
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.Properties.Resources.resources
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.csproj.GenerateResource.Cache
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.exe
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.pdb
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.csproj.AssemblyReference.cache
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.csproj.SuggestedBindingRedirects.cache
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.csproj.CoreCompileInputs.cache
+D:\TestFolder\TestOdsReader_P1\TestOdsReader_P1\obj\Debug\TestOdsReader_P1.csproj.CopyComplete
