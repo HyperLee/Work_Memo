@@ -1,0 +1,12 @@
+D:\TestFolder\vbformat_function\vbformat_function\bin\Debug\vbformat_function.exe.config
+D:\TestFolder\vbformat_function\vbformat_function\bin\Debug\vbformat_function.exe
+D:\TestFolder\vbformat_function\vbformat_function\bin\Debug\vbformat_function.pdb
+D:\TestFolder\vbformat_function\vbformat_function\bin\Debug\vbformat_function.xml
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.Resources.resources
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.vbproj.GenerateResource.Cache
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.exe
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.xml
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.pdb
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.vbproj.AssemblyReference.cache
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.vbproj.SuggestedBindingRedirects.cache
+D:\TestFolder\vbformat_function\vbformat_function\obj\Debug\vbformat_function.vbproj.CoreCompileInputs.cache
