@@ -1,0 +1,8 @@
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\bin\Debug\輸出符號.exe.config
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\bin\Debug\輸出符號.exe
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\bin\Debug\輸出符號.pdb
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\obj\Debug\輸出符號.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\obj\Debug\輸出符號.csproj.SuggestedBindingRedirects.cache
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\obj\Debug\輸出符號.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\obj\Debug\輸出符號.exe
+D:\Work_Memo\Work_Memo\輸出符號\輸出符號\obj\Debug\輸出符號.pdb
