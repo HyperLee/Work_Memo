@@ -1,0 +1,8 @@
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\bin\Debug\常見數學除法題目用法.exe.config
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\bin\Debug\常見數學除法題目用法.exe
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\bin\Debug\常見數學除法題目用法.pdb
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\obj\Debug\常見數學除法題目用法.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\obj\Debug\常見數學除法題目用法.csproj.SuggestedBindingRedirects.cache
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\obj\Debug\常見數學除法題目用法.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\obj\Debug\常見數學除法題目用法.exe
+D:\Work_Memo\Work_Memo\常見數學除法題目用法\常見數學除法題目用法\obj\Debug\常見數學除法題目用法.pdb

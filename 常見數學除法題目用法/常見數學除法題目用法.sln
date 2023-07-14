@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "常見數學除法題目用法", "常見數學除法題目用法\常見數學除法題目用法.csproj", "{BBCCD089-3A41-4AF7-88A2-8692D3FC5DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBCCD089-3A41-4AF7-88A2-8692D3FC5DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCCD089-3A41-4AF7-88A2-8692D3FC5DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCCD089-3A41-4AF7-88A2-8692D3FC5DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCCD089-3A41-4AF7-88A2-8692D3FC5DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9714E3AC-24FA-4335-8F79-EB27D6A593A5}
+	EndGlobalSection
+EndGlobal
