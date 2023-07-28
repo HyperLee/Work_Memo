@@ -1,0 +1,8 @@
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\bin\Debug\輸入整數排序.exe.config
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\bin\Debug\輸入整數排序.exe
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\bin\Debug\輸入整數排序.pdb
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\obj\Debug\輸入整數排序.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\obj\Debug\輸入整數排序.csproj.SuggestedBindingRedirects.cache
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\obj\Debug\輸入整數排序.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\obj\Debug\輸入整數排序.exe
+D:\Work_Memo\Work_Memo\輸入整數排序\輸入整數排序\obj\Debug\輸入整數排序.pdb
