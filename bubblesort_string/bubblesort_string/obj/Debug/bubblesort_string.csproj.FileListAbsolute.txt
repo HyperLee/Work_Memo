@@ -1,0 +1,8 @@
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\bin\Debug\bubblesort_string.exe.config
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\bin\Debug\bubblesort_string.exe
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\bin\Debug\bubblesort_string.pdb
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\obj\Debug\bubblesort_string.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\obj\Debug\bubblesort_string.csproj.SuggestedBindingRedirects.cache
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\obj\Debug\bubblesort_string.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\obj\Debug\bubblesort_string.exe
+D:\Work_Memo\Work_Memo\bubblesort_string\bubblesort_string\obj\Debug\bubblesort_string.pdb
