@@ -1,0 +1,8 @@
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\bin\Debug\亂數產生陣列做加總.exe.config
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\bin\Debug\亂數產生陣列做加總.exe
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\bin\Debug\亂數產生陣列做加總.pdb
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\obj\Debug\亂數產生陣列做加總.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\obj\Debug\亂數產生陣列做加總.csproj.SuggestedBindingRedirects.cache
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\obj\Debug\亂數產生陣列做加總.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\obj\Debug\亂數產生陣列做加總.exe
+D:\Work_Memo\Work_Memo\亂數產生陣列做加總\亂數產生陣列做加總\obj\Debug\亂數產生陣列做加總.pdb
