@@ -2,7 +2,6 @@ D:\Work_Memo\Work_Memo\bebblesort\bebblesort\bin\Debug\bebblesort.exe.config
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\bin\Debug\bebblesort.exe
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\bin\Debug\bebblesort.pdb
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\obj\Debug\bebblesort.csproj.AssemblyReference.cache
-D:\Work_Memo\Work_Memo\bebblesort\bebblesort\obj\Debug\bebblesort.csproj.SuggestedBindingRedirects.cache
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\obj\Debug\bebblesort.csproj.CoreCompileInputs.cache
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\obj\Debug\bebblesort.exe
 D:\Work_Memo\Work_Memo\bebblesort\bebblesort\obj\Debug\bebblesort.pdb

@@ -14,7 +14,7 @@ namespace bebblesort
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] array = { 73, 57, 49, 99, 133, 20, 1 };
+            int[] array = { 73, 57, 49, 3, 99, 133, 20, 1 };
             Console.WriteLine("原始資料");
             foreach(var value in array)
             {
@@ -37,9 +37,11 @@ namespace bebblesort
         {
             int len = array.Length;
 
-            for(int i = 0; i < len - 1; i++)
+            // 執行的回數
+            for (int i = 0; i < len - 1; i++)
             {
-                for(int j = 0; j < len - i - 1; j++)
+                // 執行的次數
+                for (int j = 0; j < len - i - 1; j++)
                 {
                     if (array[j] > array[j + 1])
                     {
