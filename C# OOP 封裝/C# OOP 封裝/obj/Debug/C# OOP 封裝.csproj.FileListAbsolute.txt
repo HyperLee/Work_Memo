@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\bin\Debug\C# OOP 封裝.exe.config
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\bin\Debug\C# OOP 封裝.exe
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\bin\Debug\C# OOP 封裝.pdb
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\obj\Debug\C# OOP 封裝.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\obj\Debug\C# OOP 封裝.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\obj\Debug\C# OOP 封裝.exe
+D:\Work_Memo\Work_Memo\C# OOP 封裝\C# OOP 封裝\obj\Debug\C# OOP 封裝.pdb

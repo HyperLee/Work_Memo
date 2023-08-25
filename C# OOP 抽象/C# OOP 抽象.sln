@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# OOP 抽象", "C# OOP 抽象\C# OOP 抽象.csproj", "{3F6F863F-95E2-45E3-8293-0FE9BBCB8A62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F6F863F-95E2-45E3-8293-0FE9BBCB8A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6F863F-95E2-45E3-8293-0FE9BBCB8A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6F863F-95E2-45E3-8293-0FE9BBCB8A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6F863F-95E2-45E3-8293-0FE9BBCB8A62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9223E663-F343-474A-8430-AD230F48D481}
+	EndGlobalSection
+EndGlobal

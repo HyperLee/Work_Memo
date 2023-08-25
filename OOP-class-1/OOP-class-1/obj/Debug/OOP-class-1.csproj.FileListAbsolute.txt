@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\bin\Debug\OOP-class-1.exe.config
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\bin\Debug\OOP-class-1.exe
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\bin\Debug\OOP-class-1.pdb
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\obj\Debug\OOP-class-1.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\obj\Debug\OOP-class-1.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\obj\Debug\OOP-class-1.exe
+D:\Work_Memo\Work_Memo\OOP-class-1\OOP-class-1\obj\Debug\OOP-class-1.pdb
