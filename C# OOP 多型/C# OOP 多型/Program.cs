@@ -16,7 +16,7 @@ namespace C__OOP_多型
         static void Main(string[] args)
         {
             var speed = 0;
-
+            /*
             Honda honda = new Honda();
             honda.Color = "Red";
             honda.Speed = 60;
@@ -49,6 +49,24 @@ namespace C__OOP_多型
             speed = Convert.ToInt32(Console.ReadLine());
             nissan.Brake(speed);
             Console.WriteLine($"Nissan汽車減速至{nissan.Speed}");
+            */
+
+
+            // 利用 honda 去存取 car 類別
+            Car c = new Honda();
+            c.Color = "Blue";
+            c.Speed = 100;
+
+            Console.WriteLine($"建立一台汽車，廠牌：{c.GetType().Name}，顏色：{c.Color}，目前速度：{c.Speed}。");
+            Console.WriteLine();
+
+            Console.WriteLine($"Honda進行加速，輸入要加速的速度？");
+            speed = Convert.ToInt32(Console.ReadLine());
+            c.Accelerate(speed);
+            Console.WriteLine($"Honda汽車加速至{c.Speed}");
+            Console.WriteLine();
+            c.Turbo();
+            Console.WriteLine($"Honda汽車開啟 Turbo，目前速度：{c.Speed}");
 
 
             Console.ReadKey();
@@ -86,6 +104,11 @@ namespace C__OOP_多型
             {
                 Speed = 0;
             }
+        }
+
+        public void Turbo()
+        {
+            
         }
     }
 
