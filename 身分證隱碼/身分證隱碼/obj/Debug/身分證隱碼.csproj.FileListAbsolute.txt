@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\bin\Debug\身分證隱碼.exe.config
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\bin\Debug\身分證隱碼.exe
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\bin\Debug\身分證隱碼.pdb
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\obj\Debug\身分證隱碼.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\obj\Debug\身分證隱碼.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\obj\Debug\身分證隱碼.exe
+D:\Work_Memo\Work_Memo\身分證隱碼\身分證隱碼\obj\Debug\身分證隱碼.pdb
