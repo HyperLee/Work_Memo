@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\bin\Debug\資料隱碼中間三位.exe.config
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\bin\Debug\資料隱碼中間三位.exe
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\bin\Debug\資料隱碼中間三位.pdb
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\obj\Debug\資料隱碼中間三位.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\obj\Debug\資料隱碼中間三位.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\obj\Debug\資料隱碼中間三位.exe
+D:\Work_Memo\Work_Memo\資料隱碼中間三位\資料隱碼中間三位\obj\Debug\資料隱碼中間三位.pdb
