@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\bin\Debug\隱碼-保留前六個字.exe.config
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\bin\Debug\隱碼-保留前六個字.exe
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\bin\Debug\隱碼-保留前六個字.pdb
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\obj\Debug\隱碼-保留前六個字.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\obj\Debug\隱碼-保留前六個字.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\obj\Debug\隱碼-保留前六個字.exe
+D:\Work_Memo\Work_Memo\隱碼-保留前六個字\隱碼-保留前六個字\obj\Debug\隱碼-保留前六個字.pdb
