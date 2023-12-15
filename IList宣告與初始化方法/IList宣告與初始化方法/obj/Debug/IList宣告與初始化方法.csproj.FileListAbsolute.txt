@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\bin\Debug\IList宣告與初始化方法.exe.config
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\bin\Debug\IList宣告與初始化方法.exe
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\bin\Debug\IList宣告與初始化方法.pdb
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\obj\Debug\IList宣告與初始化方法.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\obj\Debug\IList宣告與初始化方法.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\obj\Debug\IList宣告與初始化方法.exe
+D:\Work_Memo\Work_Memo\IList宣告與初始化方法\IList宣告與初始化方法\obj\Debug\IList宣告與初始化方法.pdb
