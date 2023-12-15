@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\obj\Debug\西元年轉民國年.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\obj\Debug\西元年轉民國年.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\bin\Debug\西元年轉民國年.exe.config
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\bin\Debug\西元年轉民國年.exe
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\bin\Debug\西元年轉民國年.pdb
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\obj\Debug\西元年轉民國年.exe
+D:\Work_Memo\Work_Memo\西元年轉民國年\西元年轉民國年\obj\Debug\西元年轉民國年.pdb
