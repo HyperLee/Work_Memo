@@ -1,0 +1,8 @@
+Get-WmiObject Win32_logicaldisk | Format-table Name, volumeserialnumber
+
+
+https://richardspowershellblog.wordpress.com/2007/10/03/disk-volume-serial-numbers/
+
+https://learn.microsoft.com/zh-tw/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.4
+
+https://learn.microsoft.com/zh-tw/windows/win32/wmisdk/wmic
