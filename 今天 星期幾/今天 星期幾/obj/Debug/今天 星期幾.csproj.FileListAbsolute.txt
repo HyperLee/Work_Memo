@@ -1,0 +1,7 @@
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\bin\Debug\今天 星期幾.exe.config
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\bin\Debug\今天 星期幾.exe
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\bin\Debug\今天 星期幾.pdb
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\obj\Debug\今天 星期幾.csproj.AssemblyReference.cache
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\obj\Debug\今天 星期幾.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\obj\Debug\今天 星期幾.exe
+D:\Work_Memo\Work_Memo\今天 星期幾\今天 星期幾\obj\Debug\今天 星期幾.pdb
