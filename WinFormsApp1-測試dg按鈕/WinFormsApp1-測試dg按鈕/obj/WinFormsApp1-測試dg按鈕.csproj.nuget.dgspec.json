@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TestFolder\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj": {}
+    "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj": {}
   },
   "projects": {
-    "D:\\TestFolder\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj": {
+    "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TestFolder\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj",
+        "projectUniqueName": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj",
         "projectName": "WinFormsApp1-測試dg按鈕",
-        "projectPath": "D:\\TestFolder\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj",
+        "projectPath": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕.csproj",
         "packagesPath": "C:\\Users\\A6005\\.nuget\\packages\\",
-        "outputPath": "D:\\TestFolder\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\obj\\",
+        "outputPath": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-測試dg按鈕\\WinFormsApp1-測試dg按鈕\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

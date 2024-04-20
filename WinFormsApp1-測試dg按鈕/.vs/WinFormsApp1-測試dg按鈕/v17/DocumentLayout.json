@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\",
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\testfolder\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\work_memo\\work_memo\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|solutionrelative:winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\testfolder\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|solutionrelative:winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\work_memo\\work_memo\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|solutionrelative:winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\testfolder\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|solutionrelative:winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|d:\\work_memo\\work_memo\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32D40E4A-E15A-4C73-88D0-DE9D511DD0E5}|WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215.csproj|solutionrelative:winformsapp1-\u6E2C\u8A66dg\u6309\u9215\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,37 +36,37 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
-              "ToolTip": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
               "RelativeToolTip": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form1.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAcwC0AAAA7AAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAkwEIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T01:44:30.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
               "RelativeDocumentMoniker": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
-              "ToolTip": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
               "RelativeToolTip": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\Form2.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAkwEgAAABOAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T05:30:42.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserControl1.cs",
-              "DocumentMoniker": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
-              "ToolTip": "D:\\TestFolder\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
               "RelativeToolTip": "WinFormsApp1-\u6E2C\u8A66dg\u6309\u9215\\UserControl1.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAJAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-18T03:15:35.187Z",
               "EditorCaption": ""

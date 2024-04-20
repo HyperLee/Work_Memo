@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WinFormsApp1_測試dg按鈕
-build_property.ProjectDir = D:\TestFolder\WinFormsApp1-測試dg按鈕\WinFormsApp1-測試dg按鈕\
+build_property.ProjectDir = D:\Work_Memo\Work_Memo\WinFormsApp1-測試dg按鈕\WinFormsApp1-測試dg按鈕\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

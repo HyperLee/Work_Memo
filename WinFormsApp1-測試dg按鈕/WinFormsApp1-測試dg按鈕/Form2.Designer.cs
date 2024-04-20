@@ -55,7 +55,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(205, 229);
-            textBox1.MaxLength = 31;
+            textBox1.MaxLength = 30;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(535, 30);
             textBox1.TabIndex = 2;
