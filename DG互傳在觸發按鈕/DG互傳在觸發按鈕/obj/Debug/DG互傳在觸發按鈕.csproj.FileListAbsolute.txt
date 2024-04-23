@@ -1,0 +1,12 @@
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.Form1.resources
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.Form2.resources
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.Properties.Resources.resources
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.csproj.GenerateResource.Cache
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\bin\Debug\DG互傳在觸發按鈕.exe.config
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\bin\Debug\DG互傳在觸發按鈕.exe
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\bin\Debug\DG互傳在觸發按鈕.pdb
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.exe
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.pdb
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.Form3.resources
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.csproj.AssemblyReference.cache
+D:\TestFolder\DG互傳在觸發按鈕\DG互傳在觸發按鈕\obj\Debug\DG互傳在觸發按鈕.csproj.CoreCompileInputs.cache
