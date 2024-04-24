@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsApp1-測試dg按鈕")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0eb370ed3b2287cda24237e283475ba159c921cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59e02eb556b60437d95ce22307a486302f4f17a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsApp1-測試dg按鈕")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsApp1-測試dg按鈕")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
