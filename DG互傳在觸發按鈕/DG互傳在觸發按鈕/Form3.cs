@@ -79,6 +79,7 @@ namespace DG互傳在觸發按鈕
         /// <param name="e"></param>
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
+            /*
             if (e.ColumnIndex == dataGridView1.Columns["btnuse"].Index && e.RowIndex >= 0)
             {
                 //MessageBox.Show("btn click，RowIndex：" + e.RowIndex + ", ColumnIndex: " + e.ColumnIndex);
@@ -88,6 +89,7 @@ namespace DG互傳在觸發按鈕
                     dataGridView1.Font = new Font(e.CellStyle.Font, FontStyle.Underline);
                 }
             }
+            */
 
             /*
             if (e.ColumnIndex == dataGridView1.Columns["btnuse"].Index)
@@ -99,6 +101,40 @@ namespace DG互傳在觸發按鈕
                 }
             }
             */
+        }
+
+
+        /// <summary>
+        /// 文字加上底線
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            // 确保是第六列（假设你要添加底线的列）
+            if (e.ColumnIndex == 6 && e.RowIndex >= 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                // 獲取文字的範圍
+                Rectangle textRect = this.dataGridView1.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
+                textRect.Height = e.CellBounds.Height - 1; // 减去一些以避免重叠
+
+                // 獲取文字
+                string cellValue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+                // 獲取文字的大小
+                Size textSize = TextRenderer.MeasureText(e.Graphics, cellValue, e.CellStyle.Font);
+
+                // 計算底線的位置
+                int underlineY = textRect.Y + textSize.Height + 6; // + 6 = > 手動調整底線高度(位置), 需要視情況而定
+
+                // 畫線
+                e.Graphics.DrawLine(Pens.Black, textRect.X, underlineY, textRect.X + textSize.Width, underlineY);
+
+                e.Handled = true;
+            }
         }
     }
 }
