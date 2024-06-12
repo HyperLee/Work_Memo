@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\\u8A08\u6578\u6392\u5E8F\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8373A5-E694-43A5-9EC6-059E1A16DCD6}|\u8A08\u6578\u6392\u5E8F\\\u8A08\u6578\u6392\u5E8F.csproj|d:\\work_memo\\work_memo\\\u8A08\u6578\u6392\u5E8F\\\u8A08\u6578\u6392\u5E8F\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8373A5-E694-43A5-9EC6-059E1A16DCD6}|\u8A08\u6578\u6392\u5E8F\\\u8A08\u6578\u6392\u5E8F.csproj|solutionrelative:\u8A08\u6578\u6392\u5E8F\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\\u8A08\u6578\u6392\u5E8F\\\u8A08\u6578\u6392\u5E8F\\Program.cs",
+              "RelativeDocumentMoniker": "\u8A08\u6578\u6392\u5E8F\\Program.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\\u8A08\u6578\u6392\u5E8F\\\u8A08\u6578\u6392\u5E8F\\Program.cs",
+              "RelativeToolTip": "\u8A08\u6578\u6392\u5E8F\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:05:22.514Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
