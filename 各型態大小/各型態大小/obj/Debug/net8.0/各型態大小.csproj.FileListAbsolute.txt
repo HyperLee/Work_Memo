@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\bin\Debug\net8.0\各型態大小.exe
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\bin\Debug\net8.0\各型態大小.deps.json
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\bin\Debug\net8.0\各型態大小.runtimeconfig.json
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\bin\Debug\net8.0\各型態大小.dll
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\bin\Debug\net8.0\各型態大小.pdb
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.sourcelink.json
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.dll
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\refint\各型態大小.dll
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.pdb
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\各型態大小.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\各型態大小\各型態大小\obj\Debug\net8.0\ref\各型態大小.dll
