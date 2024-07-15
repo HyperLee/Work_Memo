@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\bin\Debug\net8.0\Stack練習.exe
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\bin\Debug\net8.0\Stack練習.deps.json
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\bin\Debug\net8.0\Stack練習.runtimeconfig.json
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\bin\Debug\net8.0\Stack練習.dll
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\bin\Debug\net8.0\Stack練習.pdb
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.sourcelink.json
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.dll
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\refint\Stack練習.dll
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.pdb
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\Stack練習.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\Stack練習\Stack練習\obj\Debug\net8.0\ref\Stack練習.dll

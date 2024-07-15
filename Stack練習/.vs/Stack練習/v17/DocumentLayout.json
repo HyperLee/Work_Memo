@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\Stack\u7DF4\u7FD2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12D164B2-24CC-4BE7-8145-C19EF7C08BB3}|Stack\u7DF4\u7FD2\\Stack\u7DF4\u7FD2.csproj|d:\\work_memo\\work_memo\\stack\u7DF4\u7FD2\\stack\u7DF4\u7FD2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12D164B2-24CC-4BE7-8145-C19EF7C08BB3}|Stack\u7DF4\u7FD2\\Stack\u7DF4\u7FD2.csproj|solutionrelative:stack\u7DF4\u7FD2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\Stack\u7DF4\u7FD2\\Stack\u7DF4\u7FD2\\Program.cs",
+              "RelativeDocumentMoniker": "Stack\u7DF4\u7FD2\\Program.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\Stack\u7DF4\u7FD2\\Stack\u7DF4\u7FD2\\Program.cs",
+              "RelativeToolTip": "Stack\u7DF4\u7FD2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T09:05:45.021Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
