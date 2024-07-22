@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\Fibonacci\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F36EF20A-CA11-4F2C-A965-5B64B0F2290F}|Fibonacci\\Fibonacci.csproj|d:\\work_memo\\work_memo\\fibonacci\\fibonacci\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36EF20A-CA11-4F2C-A965-5B64B0F2290F}|Fibonacci\\Fibonacci.csproj|solutionrelative:fibonacci\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\Fibonacci\\Fibonacci\\Program.cs",
+              "RelativeDocumentMoniker": "Fibonacci\\Program.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\Fibonacci\\Fibonacci\\Program.cs",
+              "RelativeToolTip": "Fibonacci\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-07-28T01:49:27.403Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
