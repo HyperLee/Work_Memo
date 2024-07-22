@@ -9,12 +9,14 @@ namespace _3乘5陣列取總和
     internal class Program
     {
         /// <summary>
-        /// 3乘5 array
+        /// 3 * 5 array
         /// 取總和
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            Console.WriteLine("運算陣列 3 * 5");
+
             // 寫死固定數值 
             int[,] array = new int[3, 5]
             {
@@ -29,20 +31,24 @@ namespace _3乘5陣列取總和
             Console.WriteLine();
             //
 
-
+            // 計算陣列總和
             int sum = 0;
             sum = cal(randomarray);
+            Console.WriteLine("array sum: " + sum);
 
-            Console.WriteLine(sum);
             Console.ReadKey();
         }
 
         /// <summary>
         /// 計算陣列總和
+        /// 
+        /// array.GetLength(0): 取行數
+        /// array.GetLength(1): 取列數
+        /// https://learn.microsoft.com/zh-tw/dotnet/api/system.array.getlength?view=net-8.0
+        /// 傳回參數維度的元素數，一維陣列就是0，維度2是1。
         /// </summary>
         /// <param name="array"></param>
         /// <returns></returns>
-
         public static int cal(int[,] array)
         {
             int sum = 0;
@@ -73,7 +79,7 @@ namespace _3乘5陣列取總和
             {
                 for(int j = 0; j < column; j++)
                 {
-                    // 亂數範圍大小
+                    // 亂數範圍 1 ~ 200
                     array[i, j] = random.Next(1, 200);
                 }
             }

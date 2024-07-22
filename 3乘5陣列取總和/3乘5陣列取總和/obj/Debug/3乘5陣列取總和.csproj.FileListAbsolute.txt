@@ -2,7 +2,6 @@ D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\bin\Debug\3乘5
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\bin\Debug\3乘5陣列取總和.exe
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\bin\Debug\3乘5陣列取總和.pdb
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\obj\Debug\3乘5陣列取總和.csproj.AssemblyReference.cache
-D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\obj\Debug\3乘5陣列取總和.csproj.SuggestedBindingRedirects.cache
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\obj\Debug\3乘5陣列取總和.csproj.CoreCompileInputs.cache
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\obj\Debug\3乘5陣列取總和.exe
 D:\Work_Memo\Work_Memo\3乘5陣列取總和\3乘5陣列取總和\obj\Debug\3乘5陣列取總和.pdb
