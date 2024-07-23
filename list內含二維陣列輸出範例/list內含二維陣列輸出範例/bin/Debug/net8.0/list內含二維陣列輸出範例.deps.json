@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "list內含二維陣列輸出範例/1.0.0": {
+        "runtime": {
+          "list內含二維陣列輸出範例.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "list內含二維陣列輸出範例/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -14,16 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +24,7 @@
               "RelativeDocumentMoniker": "list\u5167\u542B\u4E8C\u7DAD\u9663\u5217\u8F38\u51FA\u7BC4\u4F8B\\Program.cs",
               "ToolTip": "D:\\Work_Memo\\Work_Memo\\list\u5167\u542B\u4E8C\u7DAD\u9663\u5217\u8F38\u51FA\u7BC4\u4F8B\\list\u5167\u542B\u4E8C\u7DAD\u9663\u5217\u8F38\u51FA\u7BC4\u4F8B\\Program.cs",
               "RelativeToolTip": "list\u5167\u542B\u4E8C\u7DAD\u9663\u5217\u8F38\u51FA\u7BC4\u4F8B\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T05:27:39.022Z",
               "EditorCaption": ""

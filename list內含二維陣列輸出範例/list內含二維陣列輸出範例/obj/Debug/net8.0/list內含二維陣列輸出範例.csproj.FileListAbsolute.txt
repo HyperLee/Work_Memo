@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\bin\Debug\net8.0\list內含二維陣列輸出範例.exe
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\bin\Debug\net8.0\list內含二維陣列輸出範例.deps.json
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\bin\Debug\net8.0\list內含二維陣列輸出範例.runtimeconfig.json
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\bin\Debug\net8.0\list內含二維陣列輸出範例.dll
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\bin\Debug\net8.0\list內含二維陣列輸出範例.pdb
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.sourcelink.json
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.dll
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\refint\list內含二維陣列輸出範例.dll
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.pdb
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\list內含二維陣列輸出範例.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\list內含二維陣列輸出範例\list內含二維陣列輸出範例\obj\Debug\net8.0\ref\list內含二維陣列輸出範例.dll
