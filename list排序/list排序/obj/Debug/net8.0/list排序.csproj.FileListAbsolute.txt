@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\list排序\list排序\bin\Debug\net8.0\list排序.exe
+D:\Work_Memo\Work_Memo\list排序\list排序\bin\Debug\net8.0\list排序.deps.json
+D:\Work_Memo\Work_Memo\list排序\list排序\bin\Debug\net8.0\list排序.runtimeconfig.json
+D:\Work_Memo\Work_Memo\list排序\list排序\bin\Debug\net8.0\list排序.dll
+D:\Work_Memo\Work_Memo\list排序\list排序\bin\Debug\net8.0\list排序.pdb
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.sourcelink.json
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.dll
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\refint\list排序.dll
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.pdb
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\list排序.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\list排序\list排序\obj\Debug\net8.0\ref\list排序.dll
