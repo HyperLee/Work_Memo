@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\插入排序\插入排序\bin\Debug\net8.0\插入排序.exe
+D:\Work_Memo\Work_Memo\插入排序\插入排序\bin\Debug\net8.0\插入排序.deps.json
+D:\Work_Memo\Work_Memo\插入排序\插入排序\bin\Debug\net8.0\插入排序.runtimeconfig.json
+D:\Work_Memo\Work_Memo\插入排序\插入排序\bin\Debug\net8.0\插入排序.dll
+D:\Work_Memo\Work_Memo\插入排序\插入排序\bin\Debug\net8.0\插入排序.pdb
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.sourcelink.json
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.dll
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\refint\插入排序.dll
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.pdb
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\插入排序.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\插入排序\插入排序\obj\Debug\net8.0\ref\插入排序.dll
