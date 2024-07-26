@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Floyd-Warshall算法")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f27abc53d1be20ba12853aa7b4125c470f68f339")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+460f23ef593eb29e3eaf40000d2b71f146366137")]
 [assembly: System.Reflection.AssemblyProductAttribute("Floyd-Warshall算法")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Floyd-Warshall算法")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

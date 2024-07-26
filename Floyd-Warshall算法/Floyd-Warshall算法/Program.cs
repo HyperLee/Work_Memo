@@ -15,11 +15,12 @@
         static void Main(string[] args)
         {
             int INF = int.MaxValue / 2; // 使用一個足夠大的數來表示無限大
-            int[,] graph = {
-            { 0, 3, INF, 7 },
-            { 8, 0, 2, INF },
-            { 5, INF, 0, 1 },
-            { 2, INF, INF, 0 }
+            int[,] graph = 
+            {
+                { 0, 3, INF, 7 },
+                { 8, 0, 2, INF },
+                { 5, INF, 0, 1 },
+                { 2, INF, INF, 0 }
             };
 
             int[,] dist = FloydWarshall(graph);
@@ -79,13 +80,6 @@
                         int a1 = dist[i, k];
                         int a2 = dist[j, k];
                         int a3 = dist[i, j];
-                        */
-
-                        /*
-                        if (dist[i, k] < INF && dist[k, j] < INF)
-                        {
-                            dist[i, j] = Math.Min(dist[i, j], dist[i, k] + dist[k, j]);
-                        }
                         */
 
                         dist[i, j] = Math.Min(dist[i, j], dist[i, k] + dist[k, j]);
