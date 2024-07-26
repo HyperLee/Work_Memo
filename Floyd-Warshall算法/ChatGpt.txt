@@ -1,0 +1,149 @@
+------------------------ Google Gemini -----------------------------------------------------------
+-- https://docs.google.com/document/d/1l7dlXP1bw4TpNH8_4GXGtsnSkPJ_S9hJqvEQfwTZNeY/edit
+
+Floyd-Warshall 算法：找出圖中所有點對間的最短路徑
+Floyd-Warshall 算法是一種用於找出圖中所有點對間最短路徑的動態規劃算法。它可以處理帶有負邊權重的圖（但不能有負權重的回路），並且能有效地求出任意兩點之間的最短路徑。
+算法原理
+動態規劃思想：
+將圖中的所有點編號為 1 到 n。
+設 dist[i][j] 表示從點 i 到點 j 的最短路徑長度。
+對於每個點 k，考慮是否經過點 k 能夠縮短 i 和 j 之間的路徑。
+如果 dist[i][k] + dist[k][j] 小於 dist[i][j]，則更新 dist[i][j]。
+算法步驟：
+初始化：將 dist 陣列初始化為圖的鄰接矩陣，表示直接相連的點之間的距離，對於不可達的點對，初始化為無窮大。
+迭代更新：
+對於每個點 k = 1 到 n：
+對於每個點對 i 和 j：
+如果 dist[i][k] + dist[k][j] 小於 dist[i][j]，則更新 dist[i][j]。
+程式碼範例 (C#)
+
+C#
+
+
+public static int[,] FloydWarshall(int[,] graph)
+{
+    int n = graph.GetLength(0);
+    int[,] dist = new int[n, n];
+    Array.Copy(graph, dist, graph.Length);
+
+    for (int k = 0; k < n; k++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (dist[i, k] == int.MaxValue || dist[k, j] == int.MaxValue)
+                    continue;
+                dist[i, j] = Math.Min(dist[i, j], dist[i, k] + dist[k, j]);
+            }
+        }
+    }
+
+    return dist;
+}
+
+
+算法優點
+簡單易懂：算法思路清晰，實現相對簡單。
+通用性強：適用於各種圖結構，包括帶有負邊權重的圖（但不能有負權重的回路）。
+完整性：可以求出所有點對之間的最短路徑。
+算法缺點
+時間複雜度高：時間複雜度為 O(n^3)，對於大型圖形計算量較大。
+空間複雜度高：需要額外一個 n*n 的二維陣列來存儲中間結果。
+應用場景
+Floyd-Warshall 算法廣泛應用於各種需要計算圖中所有點對間最短路徑的場景，例如：
+路徑規劃：計算城市之間的最短路徑。
+資訊傳遞：計算訊息在網絡中傳遞的最短路徑。
+資源分配：計算不同資源之間的最小成本。
+總結
+Floyd-Warshall 算法是一個經典的圖算法，雖然時間複雜度較高，但其簡單性和通用性使其在很多場合都有應用。在選擇算法時，需要根據具體問題的規模和要求，權衡時間和空間複雜度。
+若您有其他問題，歡迎提出！
+可能想進一步了解的主題：
+Dijkstra 算法：單源最短路徑算法，適用於非負邊權重的圖。
+Bellman-Ford 算法：單源最短路徑算法，可以處理帶有負邊權重的圖，但不能有負權重的回路。
+Johnson 算法：將所有邊權重加上一個常數，使得所有邊權重都變為非負，然後使用 Dijkstra 算法求解。
+想了解哪個部分呢？
+
+
+----------------------- ChatGPT -----------------------------------
+
+以下是Floyd-Warshall算法的C#實現。這段代碼將計算圖中任意兩點之間的最短路徑距離，並輸出結果。
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int INF = int.MaxValue / 2; // 使用一個足夠大的數來表示無限大
+        int[,] graph = {
+            { 0, 3, INF, 7 },
+            { 8, 0, 2, INF },
+            { 5, INF, 0, 1 },
+            { 2, INF, INF, 0 }
+        };
+
+        int[,] dist = FloydWarshall(graph);
+
+        // 輸出結果
+        for (int i = 0; i < dist.GetLength(0); i++)
+        {
+            for (int j = 0; j < dist.GetLength(1); j++)
+            {
+                if (dist[i][j] == INF)
+                {
+                    Console.Write("INF ");
+                }
+                else
+                {
+                    Console.Write(dist[i][j] + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+
+    static int[,] FloydWarshall(int[,] graph)
+    {
+        int V = graph.GetLength(0);
+        int[,] dist = new int[V, V];
+
+        // 初始化距離矩陣
+        for (int i = 0; i < V; i++)
+        {
+            for (int j = 0; j < V; j++)
+            {
+                dist[i, j] = graph[i, j];
+            }
+        }
+
+        // 動態規劃
+        for (int k = 0; k < V; k++)
+        {
+            for (int i = 0; i < V; i++)
+            {
+                for (int j = 0; j < V; j++)
+                {
+                    if (dist[i, k] < INF && dist[k, j] < INF)
+                    {
+                        dist[i, j] = Math.Min(dist[i, j], dist[i, k] + dist[k, j]);
+                    }
+                }
+            }
+        }
+
+        return dist;
+    }
+}
+```
+
+這段代碼執行以下步驟：
+
+1. **初始化圖和距離矩陣：** 使用一個二維數組表示圖的鄰接矩陣，其中`INF`表示無法直接到達的邊。初始化距離矩陣，使其初始值等於圖的鄰接矩陣。
+
+2. **動態規劃：** 使用三重循環依次考慮每個中間頂點`k`，並更新距離矩陣。更新規則是對於每對頂點`i`和`j`，嘗試通過中間頂點`k`更新其最短路徑距離。
+
+3. **輸出結果：** 遍歷距離矩陣並輸出結果，其中`INF`表示兩點之間不可達。
+
+運行這段代碼後，將會看到圖中任意兩點之間的最短路徑距離。
