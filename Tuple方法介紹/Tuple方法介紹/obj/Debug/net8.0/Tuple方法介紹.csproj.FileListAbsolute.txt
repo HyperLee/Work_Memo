@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\bin\Debug\net8.0\Tuple方法介紹.exe
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\bin\Debug\net8.0\Tuple方法介紹.deps.json
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\bin\Debug\net8.0\Tuple方法介紹.runtimeconfig.json
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\bin\Debug\net8.0\Tuple方法介紹.dll
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\bin\Debug\net8.0\Tuple方法介紹.pdb
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.sourcelink.json
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.dll
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\refint\Tuple方法介紹.dll
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.pdb
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\Tuple方法介紹.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\Tuple方法介紹\Tuple方法介紹\obj\Debug\net8.0\ref\Tuple方法介紹.dll
