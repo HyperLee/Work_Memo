@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\bin\Debug\net8.0\日期範圍測試.exe
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\bin\Debug\net8.0\日期範圍測試.deps.json
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\bin\Debug\net8.0\日期範圍測試.runtimeconfig.json
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\bin\Debug\net8.0\日期範圍測試.dll
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\bin\Debug\net8.0\日期範圍測試.pdb
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.sourcelink.json
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.dll
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\refint\日期範圍測試.dll
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.pdb
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\日期範圍測試.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\日期範圍測試\日期範圍測試\obj\Debug\net8.0\ref\日期範圍測試.dll

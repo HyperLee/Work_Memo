@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "日期範圍測試/1.0.0": {
+        "runtime": {
+          "日期範圍測試.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "日期範圍測試/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
