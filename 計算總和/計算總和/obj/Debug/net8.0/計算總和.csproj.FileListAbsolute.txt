@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\計算總和\計算總和\bin\Debug\net8.0\計算總和.exe
+D:\Work_Memo\Work_Memo\計算總和\計算總和\bin\Debug\net8.0\計算總和.deps.json
+D:\Work_Memo\Work_Memo\計算總和\計算總和\bin\Debug\net8.0\計算總和.runtimeconfig.json
+D:\Work_Memo\Work_Memo\計算總和\計算總和\bin\Debug\net8.0\計算總和.dll
+D:\Work_Memo\Work_Memo\計算總和\計算總和\bin\Debug\net8.0\計算總和.pdb
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.sourcelink.json
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.dll
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\refint\計算總和.dll
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.pdb
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\計算總和.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\計算總和\計算總和\obj\Debug\net8.0\ref\計算總和.dll
