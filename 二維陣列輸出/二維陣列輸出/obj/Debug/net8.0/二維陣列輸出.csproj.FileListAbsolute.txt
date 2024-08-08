@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\bin\Debug\net8.0\二維陣列輸出.exe
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\bin\Debug\net8.0\二維陣列輸出.deps.json
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\bin\Debug\net8.0\二維陣列輸出.runtimeconfig.json
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\bin\Debug\net8.0\二維陣列輸出.dll
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\bin\Debug\net8.0\二維陣列輸出.pdb
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.sourcelink.json
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.dll
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\refint\二維陣列輸出.dll
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.pdb
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\二維陣列輸出.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\二維陣列輸出\二維陣列輸出\obj\Debug\net8.0\ref\二維陣列輸出.dll
