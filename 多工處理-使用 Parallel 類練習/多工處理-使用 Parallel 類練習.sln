@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多工處理-使用 Parallel 類練習", "多工處理-使用 Parallel 類練習\多工處理-使用 Parallel 類練習.csproj", "{EECFD747-4832-477E-B9F2-AC9E859672E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EECFD747-4832-477E-B9F2-AC9E859672E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECFD747-4832-477E-B9F2-AC9E859672E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECFD747-4832-477E-B9F2-AC9E859672E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECFD747-4832-477E-B9F2-AC9E859672E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBA0CAFD-C28B-4BB3-A78C-EC863F03389E}
+	EndGlobalSection
+EndGlobal
