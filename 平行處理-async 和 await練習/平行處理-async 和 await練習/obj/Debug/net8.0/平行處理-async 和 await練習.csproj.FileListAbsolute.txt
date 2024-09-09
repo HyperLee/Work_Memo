@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\bin\Debug\net8.0\平行處理-async 和 await練習.exe
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\bin\Debug\net8.0\平行處理-async 和 await練習.deps.json
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\bin\Debug\net8.0\平行處理-async 和 await練習.runtimeconfig.json
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\bin\Debug\net8.0\平行處理-async 和 await練習.dll
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\bin\Debug\net8.0\平行處理-async 和 await練習.pdb
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.sourcelink.json
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.dll
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\refint\平行處理-async 和 await練習.dll
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.pdb
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\平行處理-async 和 await練習.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\平行處理-async 和 await練習\平行處理-async 和 await練習\obj\Debug\net8.0\ref\平行處理-async 和 await練習.dll

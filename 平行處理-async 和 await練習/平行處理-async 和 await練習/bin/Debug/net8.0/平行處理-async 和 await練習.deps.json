@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "平行處理-async 和 await練習/1.0.0": {
+        "runtime": {
+          "平行處理-async 和 await練習.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "平行處理-async 和 await練習/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
