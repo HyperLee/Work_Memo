@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "二元樹輸出/1.0.0": {
+        "runtime": {
+          "二元樹輸出.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "二元樹輸出/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
