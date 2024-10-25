@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "XOR用法,判斷數字只出現一次/1.0.0": {
+        "runtime": {
+          "XOR用法,判斷數字只出現一次.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "XOR用法,判斷數字只出現一次/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

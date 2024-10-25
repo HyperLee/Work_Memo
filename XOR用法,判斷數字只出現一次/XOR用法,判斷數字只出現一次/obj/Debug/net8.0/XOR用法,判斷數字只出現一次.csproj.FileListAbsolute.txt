@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\bin\Debug\net8.0\XOR用法,判斷數字只出現一次.exe
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\bin\Debug\net8.0\XOR用法,判斷數字只出現一次.deps.json
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\bin\Debug\net8.0\XOR用法,判斷數字只出現一次.runtimeconfig.json
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\bin\Debug\net8.0\XOR用法,判斷數字只出現一次.dll
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\bin\Debug\net8.0\XOR用法,判斷數字只出現一次.pdb
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.sourcelink.json
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.dll
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\refint\XOR用法,判斷數字只出現一次.dll
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.pdb
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\XOR用法,判斷數字只出現一次.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\XOR用法,判斷數字只出現一次\XOR用法,判斷數字只出現一次\obj\Debug\net8.0\ref\XOR用法,判斷數字只出現一次.dll
