@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\bin\Debug\net8.0\Dic.TryAdd方法示範.exe
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\bin\Debug\net8.0\Dic.TryAdd方法示範.deps.json
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\bin\Debug\net8.0\Dic.TryAdd方法示範.runtimeconfig.json
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\bin\Debug\net8.0\Dic.TryAdd方法示範.dll
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\bin\Debug\net8.0\Dic.TryAdd方法示範.pdb
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.sourcelink.json
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.dll
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\refint\Dic.TryAdd方法示範.dll
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.pdb
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\Dic.TryAdd方法示範.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\Dic.TryAdd方法示範\Dic.TryAdd方法示範\obj\Debug\net8.0\ref\Dic.TryAdd方法示範.dll

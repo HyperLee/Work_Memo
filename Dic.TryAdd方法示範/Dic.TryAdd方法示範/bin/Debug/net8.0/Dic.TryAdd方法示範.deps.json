@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Dic.TryAdd方法示範/1.0.0": {
+        "runtime": {
+          "Dic.TryAdd方法示範.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dic.TryAdd方法示範/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
