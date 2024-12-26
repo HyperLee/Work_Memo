@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("二元樹輸出")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07d2cb7204f65076c388a2b024694e6f97c60003")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b864fdb24cefd1555c0acdc2b81727391696bb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("二元樹輸出")]
 [assembly: System.Reflection.AssemblyTitleAttribute("二元樹輸出")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

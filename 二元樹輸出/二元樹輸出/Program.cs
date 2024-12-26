@@ -34,7 +34,11 @@
         /// InvertTree 是 翻轉後的 答案
         /// 但是 tree 輸出顯示 要依靠
         /// 前中後序遍歷才能輸出樹狀結構
-        /// 本題使用 中序遍歷 輸出顯示
+        /// 本題分別使用三種遍歷 展示輸出答案
+        /// 
+        /// 前中後序, 所謂的前中後是指根節點位置在哪裡
+        /// 前序就是 前面
+        /// 依此類蓷
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -53,8 +57,16 @@
 
             Console.WriteLine("輸出採用中序遍歷, 訪問順序：左子樹 -> 根節點 -> 右子樹");
             InOrder(res);
+            Console.WriteLine("");
 
-            Console.ReadKey();
+            Console.WriteLine("輸出採用前序遍歷, 訪問順序：根節點 -> 左子樹 -> 右子樹");
+            PreOrder(res);
+            Console.WriteLine("");
+
+            Console.WriteLine("輸出採用後序遍歷, 訪問順序：左子樹 -> 右子樹 -> 根節點");
+            PostOrder(res);
+            Console.WriteLine("");
+
         }
 
 
@@ -79,6 +91,7 @@
         {
             if (root == null)
             {
+                // return root, 同樣意思
                 return null;
             }
 
@@ -96,9 +109,13 @@
 
 
         /// <summary>
-        /// 中序遍歷
+        /// 中序遍歷 InOrder Traversal
         /// 訪問順序：左子樹 -> 根節點 -> 右子樹
-        /// 特點：對於二元搜尋樹，中序遍歷可以得到一個升序的序列。
+        /// 特點：對於二元搜尋樹，這種遍歷方式可以用來生成二叉樹的排序序列。
+        /// 
+        /// 前中後序, 所謂的前中後是指根節點位置在哪裡
+        /// 前序就是 前面
+        /// 依此類蓷
         /// </summary>
         /// <param name="node"></param>
         public static void InOrder(TreeNode node)
@@ -109,37 +126,45 @@
             }
 
             InOrder(node.left);
-            Console.Write(node.val + " ");
+            Console.Write(node.val + ", ");
             InOrder(node.right);
         }
 
 
         /// <summary>
-        /// 前序遍歷
+        /// 前序遍歷 PreOrder Traversal
         /// 訪問順序：根節點 -> 左子樹 -> 右子樹
-        /// 特點：通常用於複製樹的結構。
+        /// 特點：通常用於複製樹結構或計算樹的高度。
+        /// 
+        /// 前中後序, 所謂的前中後是指根節點位置在哪裡
+        /// 前序就是 前面
+        /// 依此類蓷
         /// </summary>
         /// <param name="node"></param>
-        public void PreOrder(TreeNode node)
+        public static void PreOrder(TreeNode node)
         {
             if (node == null)
             {
                 return;
             }
 
-            Console.Write(node.val + " ");
+            Console.Write(node.val + ", ");
             PreOrder(node.left);
             PreOrder(node.right);
         }
 
 
         /// <summary>
-        /// 後序遍歷
+        /// 後序遍歷 PostOrder Traversal
         /// 訪問順序：左子樹 -> 右子樹 -> 根節點
-        /// 特點：通常用於刪除樹。
+        /// 特點：通常用於刪除樹或計算樹的高度。
+        /// 
+        /// 前中後序, 所謂的前中後是指根節點位置在哪裡
+        /// 前序就是 前面
+        /// 依此類蓷
         /// </summary>
         /// <param name="node"></param>
-        public void PostOrder(TreeNode node)
+        public static void PostOrder(TreeNode node)
         {
             if (node == null)
             {
@@ -148,7 +173,7 @@
 
             PostOrder(node.left);
             PostOrder(node.right);
-            Console.Write(node.val + " ");
+            Console.Write(node.val + ", ");
         }
 
     }
