@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\bin\Debug\net8.0\二分法查找標準題.exe
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\bin\Debug\net8.0\二分法查找標準題.deps.json
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\bin\Debug\net8.0\二分法查找標準題.runtimeconfig.json
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\bin\Debug\net8.0\二分法查找標準題.dll
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\bin\Debug\net8.0\二分法查找標準題.pdb
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.sourcelink.json
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.dll
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\refint\二分法查找標準題.dll
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.pdb
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\二分法查找標準題.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\二分法查找標準題\二分法查找標準題\obj\Debug\net8.0\ref\二分法查找標準題.dll

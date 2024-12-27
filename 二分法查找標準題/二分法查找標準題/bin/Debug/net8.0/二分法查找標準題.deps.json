@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "二分法查找標準題/1.0.0": {
+        "runtime": {
+          "二分法查找標準題.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "二分法查找標準題/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

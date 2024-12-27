@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01A4EAC5-67C9-4967-A568-1DC7148FF53D}|\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C.csproj|d:\\work_memo\\work_memo\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01A4EAC5-67C9-4967-A568-1DC7148FF53D}|\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C.csproj|solutionrelative:\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\Program.cs",
+              "RelativeDocumentMoniker": "\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\Program.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\Program.cs",
+              "RelativeToolTip": "\u4E8C\u5206\u6CD5\u67E5\u627E\u6A19\u6E96\u984C\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T01:32:36.442Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
