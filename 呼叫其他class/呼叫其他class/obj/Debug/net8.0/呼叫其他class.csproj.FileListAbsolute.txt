@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\bin\Debug\net8.0\呼叫其他class.exe
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\bin\Debug\net8.0\呼叫其他class.deps.json
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\bin\Debug\net8.0\呼叫其他class.runtimeconfig.json
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\bin\Debug\net8.0\呼叫其他class.dll
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\bin\Debug\net8.0\呼叫其他class.pdb
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.sourcelink.json
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.dll
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\refint\呼叫其他class.dll
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.pdb
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\呼叫其他class.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\呼叫其他class\呼叫其他class\obj\Debug\net8.0\ref\呼叫其他class.dll
