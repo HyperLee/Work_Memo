@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Backtracking 回溯法/1.0.0": {
+        "runtime": {
+          "Backtracking 回溯法.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Backtracking 回溯法/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
