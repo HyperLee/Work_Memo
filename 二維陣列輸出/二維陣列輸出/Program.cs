@@ -16,6 +16,8 @@
 
             var res = SpiralMatrixIII(rows, cols, rstart, cstart);
 
+            // 寫法1; 雙重迴圈
+            Console.WriteLine("=====================================寫法1");
             for (int i = 0; i < res.Length; i++)
             {
                 System.Console.Write("Element({0}): ", i);
@@ -26,6 +28,15 @@
                 }
                 System.Console.WriteLine();
             }
+
+            Console.WriteLine("=====================================寫法2");
+
+            // 寫法2; string.Join, 比較簡潔
+            foreach (var item in res)
+            {
+                Console.WriteLine(string.Join(",", item));
+            }
+            
 
             Console.ReadKey();
         }

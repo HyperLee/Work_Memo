@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("二維陣列輸出")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f12ee5dbb6566c5a579eb388cef6cdea396230")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74d870e31d731610745f7c0b96d9287a7b35bff2")]
 [assembly: System.Reflection.AssemblyProductAttribute("二維陣列輸出")]
 [assembly: System.Reflection.AssemblyTitleAttribute("二維陣列輸出")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
