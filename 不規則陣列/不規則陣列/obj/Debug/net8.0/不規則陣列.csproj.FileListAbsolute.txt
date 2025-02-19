@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\bin\Debug\net8.0\不規則陣列.exe
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\bin\Debug\net8.0\不規則陣列.deps.json
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\bin\Debug\net8.0\不規則陣列.runtimeconfig.json
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\bin\Debug\net8.0\不規則陣列.dll
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\bin\Debug\net8.0\不規則陣列.pdb
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.sourcelink.json
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.dll
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\refint\不規則陣列.dll
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.pdb
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\不規則陣列.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\不規則陣列\不規則陣列\obj\Debug\net8.0\ref\不規則陣列.dll
