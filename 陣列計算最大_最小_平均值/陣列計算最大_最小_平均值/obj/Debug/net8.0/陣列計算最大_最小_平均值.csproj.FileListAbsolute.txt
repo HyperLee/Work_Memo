@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\bin\Debug\net8.0\陣列計算最大_最小_平均值.exe
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\bin\Debug\net8.0\陣列計算最大_最小_平均值.deps.json
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\bin\Debug\net8.0\陣列計算最大_最小_平均值.runtimeconfig.json
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\bin\Debug\net8.0\陣列計算最大_最小_平均值.dll
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\bin\Debug\net8.0\陣列計算最大_最小_平均值.pdb
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.sourcelink.json
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.dll
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\refint\陣列計算最大_最小_平均值.dll
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.pdb
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\陣列計算最大_最小_平均值.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\陣列計算最大_最小_平均值\陣列計算最大_最小_平均值\obj\Debug\net8.0\ref\陣列計算最大_最小_平均值.dll
