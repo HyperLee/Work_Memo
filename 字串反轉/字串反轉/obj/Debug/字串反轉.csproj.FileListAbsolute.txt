@@ -1,8 +1,0 @@
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\字串反轉.exe.config
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\字串反轉.exe
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\字串反轉.pdb
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\字串反轉.csproj.AssemblyReference.cache
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\字串反轉.csproj.SuggestedBindingRedirects.cache
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\字串反轉.csproj.CoreCompileInputs.cache
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\字串反轉.exe
-D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\字串反轉.pdb

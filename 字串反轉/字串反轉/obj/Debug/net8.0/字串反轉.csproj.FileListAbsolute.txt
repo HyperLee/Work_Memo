@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\net8.0\字串反轉.exe
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\net8.0\字串反轉.deps.json
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\net8.0\字串反轉.runtimeconfig.json
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\net8.0\字串反轉.dll
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\bin\Debug\net8.0\字串反轉.pdb
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.sourcelink.json
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.dll
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\refint\字串反轉.dll
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.pdb
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\字串反轉.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\字串反轉\字串反轉\obj\Debug\net8.0\ref\字串反轉.dll

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\\u5B57\u4E32\u53CD\u8F49\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3804A10-3370-4384-B4AD-432113D0E897}|\u5B57\u4E32\u53CD\u8F49\\\u5B57\u4E32\u53CD\u8F49.csproj|d:\\work_memo\\work_memo\\\u5B57\u4E32\u53CD\u8F49\\\u5B57\u4E32\u53CD\u8F49\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3804A10-3370-4384-B4AD-432113D0E897}|\u5B57\u4E32\u53CD\u8F49\\\u5B57\u4E32\u53CD\u8F49.csproj|solutionrelative:\u5B57\u4E32\u53CD\u8F49\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\\u5B57\u4E32\u53CD\u8F49\\\u5B57\u4E32\u53CD\u8F49\\Program.cs",
+              "RelativeDocumentMoniker": "\u5B57\u4E32\u53CD\u8F49\\Program.cs",
+              "ToolTip": "D:\\Work_Memo\\Work_Memo\\\u5B57\u4E32\u53CD\u8F49\\\u5B57\u4E32\u53CD\u8F49\\Program.cs*",
+              "RelativeToolTip": "\u5B57\u4E32\u53CD\u8F49\\Program.cs*",
+              "ViewState": "AgIAACQAAAAAAAAAAADwvwwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:50:43.394Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
