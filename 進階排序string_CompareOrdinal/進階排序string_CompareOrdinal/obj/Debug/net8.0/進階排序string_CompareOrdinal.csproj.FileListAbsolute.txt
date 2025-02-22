@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\bin\Debug\net8.0\進階排序string_CompareOrdinal.exe
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\bin\Debug\net8.0\進階排序string_CompareOrdinal.deps.json
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\bin\Debug\net8.0\進階排序string_CompareOrdinal.runtimeconfig.json
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\bin\Debug\net8.0\進階排序string_CompareOrdinal.dll
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\bin\Debug\net8.0\進階排序string_CompareOrdinal.pdb
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.sourcelink.json
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.dll
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\refint\進階排序string_CompareOrdinal.dll
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.pdb
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\進階排序string_CompareOrdinal.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\進階排序string_CompareOrdinal\進階排序string_CompareOrdinal\obj\Debug\net8.0\ref\進階排序string_CompareOrdinal.dll
