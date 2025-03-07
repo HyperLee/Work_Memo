@@ -1,0 +1,15 @@
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/bin/Debug/net8.0/回文切割
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/bin/Debug/net8.0/回文切割.deps.json
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/bin/Debug/net8.0/回文切割.runtimeconfig.json
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/bin/Debug/net8.0/回文切割.dll
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/bin/Debug/net8.0/回文切割.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.GeneratedMSBuildEditorConfig.editorconfig
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.AssemblyInfoInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.AssemblyInfo.cs
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.csproj.CoreCompileInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.sourcelink.json
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.dll
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/refint/回文切割.dll
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/回文切割.genruntimeconfig.cache
+/Users/qiuzili/WorkMemo/Work_Memo/回文切割/回文切割/obj/Debug/net8.0/ref/回文切割.dll
