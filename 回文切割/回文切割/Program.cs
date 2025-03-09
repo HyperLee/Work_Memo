@@ -29,6 +29,7 @@
         /// </summary>
         private static void Main(string[] args)
         {
+            
             // 測試案例 1: 原始測試案例
             Console.WriteLine("測試案例 1:");
             string s1 = "aababaabce";
@@ -39,12 +40,12 @@
             
             // 測試案例 2: 較短的字串
             Console.WriteLine("測試案例 2:");
-            string s2 = "aba";
+            string s2 = "abacbc";
             int k2 = 2;
             int result2 = Solution.GetMaxSubstring(s2, k2);
             Console.WriteLine($"輸入: s = {s2}, k = {k2}");
             Console.WriteLine($"結果: {result2}\n");
-
+            
             // 測試案例 3: 較長的回文字串
             Console.WriteLine("測試案例 3:");
             string s3 = "abbaabbacc";

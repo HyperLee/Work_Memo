@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("回文切割")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8098bf80673eb5d3be9eb6d0d756c01c42319b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+205b52cf29d0532ec61c34f294d1c7fa3342a01b")]
 [assembly: System.Reflection.AssemblyProductAttribute("回文切割")]
 [assembly: System.Reflection.AssemblyTitleAttribute("回文切割")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
