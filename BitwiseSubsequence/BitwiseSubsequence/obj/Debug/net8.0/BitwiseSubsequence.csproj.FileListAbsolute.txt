@@ -1,0 +1,15 @@
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.deps.json
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.runtimeconfig.json
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.dll
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.AssemblyInfoInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.AssemblyInfo.cs
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.csproj.CoreCompileInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.sourcelink.json
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.dll
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/refint/BitwiseSubsequence.dll
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/BitwiseSubsequence.genruntimeconfig.cache
+/Users/qiuzili/WorkMemo/Work_Memo/BitwiseSubsequence/BitwiseSubsequence/obj/Debug/net8.0/ref/BitwiseSubsequence.dll
