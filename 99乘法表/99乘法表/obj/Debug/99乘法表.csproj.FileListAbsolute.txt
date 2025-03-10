@@ -1,8 +1,0 @@
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\bin\Debug\99乘法表.exe.config
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\bin\Debug\99乘法表.exe
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\bin\Debug\99乘法表.pdb
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\obj\Debug\99乘法表.csproj.AssemblyReference.cache
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\obj\Debug\99乘法表.csproj.SuggestedBindingRedirects.cache
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\obj\Debug\99乘法表.csproj.CoreCompileInputs.cache
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\obj\Debug\99乘法表.exe
-D:\Work_Memo\Work_Memo\99乘法表\99乘法表\obj\Debug\99乘法表.pdb
