@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\bin\Debug\net8.0\迴文範例1.exe
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\bin\Debug\net8.0\迴文範例1.deps.json
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\bin\Debug\net8.0\迴文範例1.runtimeconfig.json
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\bin\Debug\net8.0\迴文範例1.dll
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\bin\Debug\net8.0\迴文範例1.pdb
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.sourcelink.json
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.dll
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\refint\迴文範例1.dll
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.pdb
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\迴文範例1.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\迴文範例1\迴文範例1\obj\Debug\net8.0\ref\迴文範例1.dll
