@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\bin\Debug\net8.0\雙向廣度優先搜尋.exe
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\bin\Debug\net8.0\雙向廣度優先搜尋.deps.json
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\bin\Debug\net8.0\雙向廣度優先搜尋.runtimeconfig.json
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\bin\Debug\net8.0\雙向廣度優先搜尋.dll
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\bin\Debug\net8.0\雙向廣度優先搜尋.pdb
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.sourcelink.json
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.dll
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\refint\雙向廣度優先搜尋.dll
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.pdb
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\雙向廣度優先搜尋.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\雙向廣度優先搜尋\雙向廣度優先搜尋\obj\Debug\net8.0\ref\雙向廣度優先搜尋.dll
