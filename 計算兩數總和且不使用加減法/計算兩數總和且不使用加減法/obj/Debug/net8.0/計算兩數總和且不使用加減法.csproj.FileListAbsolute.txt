@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\bin\Debug\net8.0\計算兩數總和且不使用加減法.exe
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\bin\Debug\net8.0\計算兩數總和且不使用加減法.deps.json
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\bin\Debug\net8.0\計算兩數總和且不使用加減法.runtimeconfig.json
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\bin\Debug\net8.0\計算兩數總和且不使用加減法.dll
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\bin\Debug\net8.0\計算兩數總和且不使用加減法.pdb
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.sourcelink.json
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.dll
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\refint\計算兩數總和且不使用加減法.dll
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.pdb
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\計算兩數總和且不使用加減法.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\計算兩數總和且不使用加減法\計算兩數總和且不使用加減法\obj\Debug\net8.0\ref\計算兩數總和且不使用加減法.dll
