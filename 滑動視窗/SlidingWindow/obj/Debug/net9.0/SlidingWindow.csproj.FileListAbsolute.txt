@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\bin\Debug\net9.0\SlidingWindow.exe
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\bin\Debug\net9.0\SlidingWindow.deps.json
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\bin\Debug\net9.0\SlidingWindow.runtimeconfig.json
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\bin\Debug\net9.0\SlidingWindow.dll
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\bin\Debug\net9.0\SlidingWindow.pdb
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.sourcelink.json
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.dll
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\refint\SlidingWindow.dll
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.pdb
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\SlidingWindow.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\滑動視窗\SlidingWindow\obj\Debug\net9.0\ref\SlidingWindow.dll
