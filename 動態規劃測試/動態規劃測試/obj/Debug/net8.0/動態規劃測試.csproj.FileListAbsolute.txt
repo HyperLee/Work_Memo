@@ -1,0 +1,15 @@
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試.deps.json
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試.runtimeconfig.json
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試.dll
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.GeneratedMSBuildEditorConfig.editorconfig
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.AssemblyInfoInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.AssemblyInfo.cs
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.csproj.CoreCompileInputs.cache
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.sourcelink.json
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.dll
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/refint/動態規劃測試.dll
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.pdb
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/動態規劃測試.genruntimeconfig.cache
+/Users/qiuzili/WorkMemo/Work_Memo/動態規劃測試/動態規劃測試/obj/Debug/net8.0/ref/動態規劃測試.dll

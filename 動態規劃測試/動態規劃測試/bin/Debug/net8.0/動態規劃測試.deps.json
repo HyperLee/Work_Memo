@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "動態規劃測試/1.0.0": {
+        "runtime": {
+          "動態規劃測試.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "動態規劃測試/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
