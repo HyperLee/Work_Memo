@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("動態規劃測試")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+943198c57b02065a2d5419f0e8b15af2259f9fd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9f47d51466c6b55daf4eae177095e2492012a20")]
 [assembly: System.Reflection.AssemblyProductAttribute("動態規劃測試")]
 [assembly: System.Reflection.AssemblyTitleAttribute("動態規劃測試")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
