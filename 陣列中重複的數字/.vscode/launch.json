@@ -1,0 +1,10 @@
+{
+  "type": "coreclr",
+  "request": "launch",
+  "name": "陣列中重複的數字",
+  "program": "${workspaceFolder}/陣列中重複的數字/bin/Debug/net8.0/${input:assemblyName}.dll",
+  "cwd": "${workspaceFolder}/陣列中重複的數字",
+  "stopAtEntry": false,
+  "console": "internalConsole",
+  "preLaunchTask": "build"
+}
