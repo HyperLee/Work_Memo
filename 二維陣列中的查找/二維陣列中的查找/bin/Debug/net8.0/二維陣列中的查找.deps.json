@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "二維陣列中的查找/1.0.0": {
+        "runtime": {
+          "二維陣列中的查找.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "二維陣列中的查找/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

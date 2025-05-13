@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\bin\Debug\net8.0\二維陣列中的查找.exe
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\bin\Debug\net8.0\二維陣列中的查找.deps.json
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\bin\Debug\net8.0\二維陣列中的查找.runtimeconfig.json
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\bin\Debug\net8.0\二維陣列中的查找.dll
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\bin\Debug\net8.0\二維陣列中的查找.pdb
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.sourcelink.json
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.dll
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\refint\二維陣列中的查找.dll
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.pdb
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\二維陣列中的查找.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\二維陣列中的查找\二維陣列中的查找\obj\Debug\net8.0\ref\二維陣列中的查找.dll
