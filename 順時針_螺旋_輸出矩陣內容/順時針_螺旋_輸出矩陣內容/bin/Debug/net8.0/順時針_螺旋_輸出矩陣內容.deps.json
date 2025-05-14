@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "順時針_螺旋_輸出矩陣內容/1.0.0": {
+        "runtime": {
+          "順時針_螺旋_輸出矩陣內容.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "順時針_螺旋_輸出矩陣內容/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

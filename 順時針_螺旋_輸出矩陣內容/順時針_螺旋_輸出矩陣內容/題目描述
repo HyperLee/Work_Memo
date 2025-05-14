@@ -1,0 +1,23 @@
+# LeetCode 54. Spiral Matrix
+
+[題目連結](https://leetcode.com/problems/spiral-matrix/description/)
+
+## 題目描述
+
+給定一個 m x n 的矩陣，請以順時針螺旋順序回傳矩陣中的所有元素。
+
+---
+
+### 範例 1
+
+**輸入：**
+
+```python
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+```
+
+**輸出：**
+
+```python
+[1,2,3,6,9,8,7,4,5]
+```

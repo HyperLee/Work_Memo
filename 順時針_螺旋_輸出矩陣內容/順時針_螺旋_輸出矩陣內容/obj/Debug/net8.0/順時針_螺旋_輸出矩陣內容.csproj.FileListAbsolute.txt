@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\bin\Debug\net8.0\順時針_螺旋_輸出矩陣內容.exe
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\bin\Debug\net8.0\順時針_螺旋_輸出矩陣內容.deps.json
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\bin\Debug\net8.0\順時針_螺旋_輸出矩陣內容.runtimeconfig.json
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\bin\Debug\net8.0\順時針_螺旋_輸出矩陣內容.dll
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\bin\Debug\net8.0\順時針_螺旋_輸出矩陣內容.pdb
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.sourcelink.json
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.dll
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\refint\順時針_螺旋_輸出矩陣內容.dll
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.pdb
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\順時針_螺旋_輸出矩陣內容.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\順時針_螺旋_輸出矩陣內容\順時針_螺旋_輸出矩陣內容\obj\Debug\net8.0\ref\順時針_螺旋_輸出矩陣內容.dll
