@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\替換空格\替換空格\bin\Debug\net8.0\替換空格.exe
+D:\Work_Memo\Work_Memo\替換空格\替換空格\bin\Debug\net8.0\替換空格.deps.json
+D:\Work_Memo\Work_Memo\替換空格\替換空格\bin\Debug\net8.0\替換空格.runtimeconfig.json
+D:\Work_Memo\Work_Memo\替換空格\替換空格\bin\Debug\net8.0\替換空格.dll
+D:\Work_Memo\Work_Memo\替換空格\替換空格\bin\Debug\net8.0\替換空格.pdb
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.sourcelink.json
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.dll
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\refint\替換空格.dll
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.pdb
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\替換空格.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\替換空格\替換空格\obj\Debug\net8.0\ref\替換空格.dll
