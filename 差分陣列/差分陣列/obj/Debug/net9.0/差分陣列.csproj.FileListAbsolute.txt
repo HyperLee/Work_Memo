@@ -1,0 +1,15 @@
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\bin\Debug\net9.0\差分陣列.exe
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\bin\Debug\net9.0\差分陣列.deps.json
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\bin\Debug\net9.0\差分陣列.runtimeconfig.json
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\bin\Debug\net9.0\差分陣列.dll
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\bin\Debug\net9.0\差分陣列.pdb
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.AssemblyInfoInputs.cache
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.AssemblyInfo.cs
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.csproj.CoreCompileInputs.cache
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.sourcelink.json
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.dll
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\refint\差分陣列.dll
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.pdb
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\差分陣列.genruntimeconfig.cache
+D:\Work_Memo\Work_Memo\差分陣列\差分陣列\obj\Debug\net9.0\ref\差分陣列.dll
