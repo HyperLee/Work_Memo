@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("拓扑排序")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b04944184f1b037d38896b65778e0c7d8352a3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01dc785720f57c53488ac377714b0619938903a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("拓扑排序")]
 [assembly: System.Reflection.AssemblyTitleAttribute("拓扑排序")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
