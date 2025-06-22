@@ -9,9 +9,6 @@ class Program
     /// <param name="args">命令列參數陣列</param>
     static void Main(string[] args)
     {
-        // 輸出歡迎訊息到主控台
-        Console.WriteLine("Hello, World!");
-
         // 9*9 乘法表
         // 外層 for 迴圈，i 代表乘數，從 1 執行到 9
         for (int i = 1; i <= 9; i++)
