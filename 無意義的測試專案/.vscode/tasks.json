@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/無意義的測試專案/無意義的測試專案.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

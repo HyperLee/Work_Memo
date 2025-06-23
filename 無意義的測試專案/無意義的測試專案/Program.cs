@@ -4,56 +4,112 @@
 class Program
 {
     /// <summary>
-    /// Main 函式為程式進入點，負責顯示歡迎訊息並輸出 9*9 乘法表。
+    /// 拓樸排序_DFS
     /// </summary>
-    /// <param name="args">命令列參數陣列</param>
+    /// <param name="args"></param>
     static void Main(string[] args)
     {
-        // 測試資料陣列 1，內容為 9, 5, 2, 7, 1, 8, 3, 6, 4
-        int[] arr1 = { 9, 5, 2, 7, 1, 8, 3, 6, 4 };
-        // 測試資料陣列 2，內容為 10, 20, 15, 3, 8
-        int[] arr2 = { 10, 20, 15, 3, 8 };
-        // 測試資料陣列 3，內容為 1
-        int[] arr3 = { 1 };
-        // 對 arr1 執行氣泡排序
-        BubbleSort(arr1);
-        // 對 arr2 執行氣泡排序
-        BubbleSort(arr2);
-        // 對 arr3 執行氣泡排序
-        BubbleSort(arr3);
-        // 輸出 arr1 排序結果
-        Console.WriteLine("氣泡排序結果1：" + string.Join(", ", arr1));
-        // 輸出 arr2 排序結果
-        Console.WriteLine("氣泡排序結果2：" + string.Join(", ", arr2));
-        // 輸出 arr3 排序結果
-        Console.WriteLine("氣泡排序結果3：" + string.Join(", ", arr3));
+        // 節點數量
+        int numVertices = 6;
+        // 建立鄰接清單，初始化每個節點的鄰接串列
+        List<int>[] adjList = new List<int>[numVertices];
+        for (int i = 0; i < numVertices; i++)
+        {
+            adjList[i] = new List<int>();
+        }
+
+        // 建立圖的邊：5→2, 5→0, 4→0, 4→1, 2→3, 3→1
+        adjList[5].Add(2);
+        adjList[5].Add(0);
+        adjList[4].Add(0);
+        adjList[4].Add(1);
+        adjList[2].Add(3);
+        adjList[3].Add(1);
+
+        // 執行 DFS 拓樸排序
+        var sorted = DfsTopologicalSort(numVertices, adjList);
+        if (sorted == null)
+        {
+            // 若有環，顯示錯誤訊息
+            Console.WriteLine("圖中有環，無法進行拓扑排序");
+        }
+        else
+        {
+            // 輸出拓樸排序結果
+            Console.WriteLine("拓扑排序結果 (DFS): " + string.Join(", ", sorted));
+        }
     }
 
+
     /// <summary>
-    /// 氣泡排序演算法，將整數陣列由小到大排序。
+    /// 以 DFS 執行拓樸排序，並偵測有無環
     /// </summary>
-    /// <param name="arr">要排序的整數陣列</param>
-    static void BubbleSort(int[] arr)
+    /// <param name="numVertices">節點數</param>
+    /// <param name="adjList">鄰接清單</param>
+    /// <returns>拓樸排序結果，若有環則回傳 null</returns>
+    public static List<int> DfsTopologicalSort(int numVertices, List<int>[] adjList)
     {
-        // 取得陣列長度
-        int n = arr.Length;
-        // 外層 for 迴圈，控制排序回合數
-        for (int i = 0; i < n - 1; i++)
+        // 記錄哪些節點已訪問
+        bool[] visited = new bool[numVertices];
+        // 用來偵測遞迴路徑上的環
+        bool[] recursionStack = new bool[numVertices];
+        // 用來儲存結果（先完成的節點會後進）
+        Stack<int> stack = new Stack<int>();
+
+        // 遍歷所有節點，避免遺漏孤立節點
+        for (int i = 0; i < numVertices; i++)
         {
-            // 內層 for 迴圈，進行相鄰元素比較與交換
-            for (int j = 0; j < n - i - 1; j++)
+            if (!visited[i])
             {
-                // 如果前一個元素大於後一個元素，則交換兩者
-                if (arr[j] > arr[j + 1])
+                // 若偵測到環，直接回傳 null
+                if (DFS(i, visited, recursionStack, stack, adjList))
                 {
-                    // 暫存 arr[j] 的值
-                    int temp = arr[j];
-                    // 將 arr[j+1] 的值賦給 arr[j]
-                    arr[j] = arr[j + 1];
-                    // 將暫存的值賦給 arr[j+1]
-                    arr[j + 1] = temp;
+                    return null;
                 }
             }
         }
+
+        // 將 stack 轉為 list 並反轉，即為拓扑排序結果
+        List<int> topOrder = new List<int>(stack);
+        topOrder.Reverse();
+        return topOrder;
+    }
+
+
+    /// <summary>
+    /// 遞迴 DFS 函式，並偵測有無環
+    /// </summary>
+    /// <param name="node">目前節點</param>
+    /// <param name="visited">已訪問標記</param>
+    /// <param name="recursionStack">遞迴路徑標記</param>
+    /// <param name="stack">結果堆疊</param>
+    /// <param name="adjList">鄰接清單</param>
+    /// <returns>若偵測到環則回傳 true</returns>
+    private static bool DFS(int node, bool[] visited, bool[] recursionStack, Stack<int> stack, List<int>[] adjList)
+    {
+        // 標記目前節點已訪問，並加入遞迴路徑
+        visited[node] = true;
+        recursionStack[node] = true;
+
+        // 遍歷所有相鄰節點
+        foreach (int neighbor in adjList[node])
+        {
+            if (!visited[neighbor])
+            {
+                // 遞迴處理相鄰節點，若偵測到環則回傳 true
+                if (DFS(neighbor, visited, recursionStack, stack, adjList))
+                    return true;
+            }
+            else if (recursionStack[neighbor])
+            {
+                // 若相鄰節點已在遞迴路徑上，表示有環
+                return true;
+            }
+        }
+
+        // 離開遞迴路徑，並將節點推入 stack
+        recursionStack[node] = false;
+        stack.Push(node);
+        return false;
     }
 }

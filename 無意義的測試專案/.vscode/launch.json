@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "coreclr",
+      "request": "launch",
+      "name": "Launch 無意義的測試專案",
+      "program": "${workspaceFolder}/無意義的測試專案/bin/Debug/net8.0/無意義的測試專案.dll",
+      "preLaunchTask": "build"
+    }
+  ]
+}
