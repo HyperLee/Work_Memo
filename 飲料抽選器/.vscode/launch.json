@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "coreclr",
+      "request": "launch",
+      "name": "Launch ASP.NET Core (飲料抽選器)",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/飲料抽選器/bin/Debug/net8.0/飲料抽選器.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/飲料抽選器",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchBrowser": {
+        "enabled": true,
+        "args": "${auto-detect-url}"
+      }
+    }
+  ]
+}
