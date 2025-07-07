@@ -22,7 +22,7 @@ dotnet new editorconfig
 
 請將以下 `.editorconfig` 設定合併到專案根目錄的 `.editorconfig` 檔案：
 
-```txt
+```ini
 [*]
 insert_final_newline = true
 
@@ -32,6 +32,19 @@ ps1, psm1, ps1mxl, csproj, sln, gitignore, gitattributes,
 editorconfig, md, markdown, txt, asciidoc, adoc, asc, asciidoc, txt, ipynb, py}]
 charset = utf-8-bom
 ```
+
+---
+
+### 4. 加入 startDebugging 設定
+
+```text
+@vscode /startDebugging 幫我產生 debugging 所需要檔案資料
+依據上述回答 幫我建立檔案
+```
+
+---
+
+> 依照上述步驟逐一執行，確保專案初始化設定完善。
 
 ---
 
