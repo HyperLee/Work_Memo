@@ -11,11 +11,13 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly StockGiftService _stockGiftService;
+    private readonly WebSearchService _webSearchService;
 
     public IndexModel(ILogger<IndexModel> logger)
     {
         _logger = logger;
         _stockGiftService = new StockGiftService();
+        _webSearchService = new WebSearchService();
     }
 
     /// <summary>
@@ -31,6 +33,12 @@ public class IndexModel : PageModel
 
     public async Task OnGetAsync()
     {
+        if (string.IsNullOrWhiteSpace(Query))
+        {
+            // 若無查詢條件，顯示網路搜尋預設資料
+            StockGifts = await _webSearchService.FetchDefaultStockGiftListAsync("股東會紀念品");
+            return;
+        }
         var all = await _stockGiftService.FetchStockGiftListAsync();
         IEnumerable<StockGiftInfo> filtered = all;
         if (!string.IsNullOrWhiteSpace(Query))
