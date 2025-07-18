@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "coreclr",
+      "request": "launch",
+      "name": "Launch ASP.NET Core (Bookkeeping App)",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Bookkeeping App/bin/Debug/net9.0/${input:executableName}.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Bookkeeping App",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchBrowser": {
+        "enabled": true,
+        "args": "${auto-detect-url}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "executableName",
+      "type": "promptString",
+      "description": "請輸入產生的 DLL 名稱 (例如 Bookkeeping App)"
+    }
+  ]
+}
