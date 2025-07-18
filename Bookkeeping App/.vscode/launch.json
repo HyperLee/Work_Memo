@@ -27,7 +27,7 @@
     {
       "id": "executableName",
       "type": "promptString",
-      "description": "請輸入產生的 DLL 名稱 (例如 Bookkeeping App)"
+      "description": "Bookkeeping App"
     }
   ]
 }

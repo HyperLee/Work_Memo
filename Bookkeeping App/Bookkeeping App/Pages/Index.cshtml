@@ -1,10 +1,198 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "語音記帳";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+<style>
+    body[data-theme='dark'] {
+        background: #222;
+        color: #eee;
+    }
+    .voice-btn-listening {
+        animation: pulse 1s infinite;
+        background: #ff9800 !important;
+        color: #fff !important;
+    }
+    @@keyframes pulse {
+        0% { box-shadow: 0 0 0 0 #ff980088; }
+        70% { box-shadow: 0 0 0 10px #ff980000; }
+        100% { box-shadow: 0 0 0 0 #ff980000; }
+    }
+    .record-list { max-height: 300px; overflow-y: auto; }
+</style>
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0">語音記帳</h2>
+        <button id="themeToggle" class="btn btn-outline-secondary" title="主題切換">🌗</button>
+    </div>
+    <form id="bookForm" class="row g-2 mb-3" autocomplete="off" onsubmit="return false;">
+        <div class="col-12 col-md-3">
+            <input type="date" class="form-control" id="date" required />
+        </div>
+        <div class="col-12 col-md-2">
+            <input type="number" class="form-control" id="amount" placeholder="金額" min="1" required />
+        </div>
+        <div class="col-12 col-md-2">
+            <select class="form-select" id="type" required>
+                <option value="收入">收入</option>
+                <option value="支出">支出</option>
+            </select>
+        </div>
+        <div class="col-12 col-md-3">
+            <input type="text" class="form-control" id="note" placeholder="備註" maxlength="30" />
+        </div>
+        <div class="col-6 col-md-1 d-grid">
+            <button type="button" id="voiceBtn" class="btn btn-warning">🎤 語音</button>
+        </div>
+        <div class="col-6 col-md-1 d-grid">
+            <button type="submit" class="btn btn-primary">新增</button>
+        </div>
+    </form>
+    <div id="statusMsg" class="mb-2 text-danger small"></div>
+    <div class="card">
+        <div class="card-header">記帳紀錄</div>
+        <div class="card-body p-2 record-list">
+            <table class="table table-sm table-hover mb-0" id="recordTable">
+                <thead><tr><th>日期</th><th>金額</th><th>類別</th><th>備註</th><th></th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
 </div>
+
+<script>
+// 前端暫存記帳資料
+let records = [];
+
+// 載入 localStorage 資料
+function loadRecords() {
+    const data = localStorage.getItem('records');
+    records = data ? JSON.parse(data) : [];
+    renderRecords();
+}
+
+// 初始化日期欄位為今日
+const dateInput = document.getElementById('date');
+dateInput.valueAsDate = new Date();
+
+// 主題切換
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.onclick = () => {
+    const theme = document.body.getAttribute('data-theme') === 'dark' ? '' : 'dark';
+    document.body.setAttribute('data-theme', theme);
+};
+
+// 表單送出
+const form = document.getElementById('bookForm');
+form.onsubmit = () => {
+    addRecord();
+};
+
+// 新增記帳紀錄
+function addRecord() {
+    const date = dateInput.value;
+    const amount = document.getElementById('amount').value;
+    const type = document.getElementById('type').value;
+    const note = document.getElementById('note').value.trim();
+    if (!date || !amount || !type) return;
+    records.push({ date, amount, type, note });
+    localStorage.setItem('records', JSON.stringify(records));
+    renderRecords();
+    form.reset();
+    dateInput.valueAsDate = new Date();
+    document.getElementById('amount').focus();
+}
+
+// 刪除紀錄
+function deleteRecord(idx) {
+    records.splice(idx, 1);
+    localStorage.setItem('records', JSON.stringify(records));
+    renderRecords();
+}
+
+// 渲染紀錄列表
+function renderRecords() {
+    const tbody = document.querySelector('#recordTable tbody');
+    tbody.innerHTML = '';
+    records.forEach((r, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${r.date}</td><td>${r.amount}</td><td>${r.type}</td><td>${r.note}</td><td><button class='btn btn-sm btn-danger' onclick='deleteRecord(${i})'>刪除</button></td>`;
+        tbody.appendChild(tr);
+    });
+}
+
+// 狀態訊息顯示
+function setStatus(msg, isError = false) {
+    const el = document.getElementById('statusMsg');
+    el.textContent = msg;
+    el.className = isError ? 'mb-2 text-danger small' : 'mb-2 text-success small';
+    if (msg) setTimeout(() => el.textContent = '', 3000);
+}
+
+// 語音辨識（Web Speech API）
+let recognition, recognizing = false;
+const voiceBtn = document.getElementById('voiceBtn');
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+    recognition.lang = 'zh-TW';
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.onstart = () => {
+        recognizing = true;
+        voiceBtn.classList.add('voice-btn-listening');
+        setStatus('語音辨識中...');
+    };
+    recognition.onend = () => {
+        recognizing = false;
+        voiceBtn.classList.remove('voice-btn-listening');
+    };
+    recognition.onerror = (e) => {
+        setStatus('語音辨識錯誤: ' + e.error, true);
+    };
+    recognition.onresult = (e) => {
+        const text = e.results[0][0].transcript;
+        parseSpeech(text);
+        setStatus('語音輸入完成');
+    };
+    voiceBtn.onclick = () => {
+        if (recognizing) {
+            recognition.stop();
+        } else {
+            recognition.start();
+        }
+    };
+} else {
+    voiceBtn.disabled = true;
+    setStatus('本瀏覽器不支援語音辨識', true);
+}
+
+// 語音文字解析填入表單
+function parseSpeech(text) {
+    // 範例: "7月18日 支出 120 早餐"
+    // 簡易正則解析
+    const dateMatch = text.match(/(\d{1,2})月(\d{1,2})日/);
+    let date = dateInput.value;
+    if (dateMatch) {
+        const y = new Date().getFullYear();
+        const m = dateMatch[1].padStart(2, '0');
+        const d = dateMatch[2].padStart(2, '0');
+        date = `${y}-${m}-${d}`;
+    }
+    let type = text.includes('收入') ? '收入' : (text.includes('支出') ? '支出' : document.getElementById('type').value);
+    const amountMatch = text.match(/(\d+)(元|塊)?/);
+    const amount = amountMatch ? amountMatch[1] : '';
+    const note = text.replace(/(\d{1,2})月(\d{1,2})日|收入|支出|(\d+)(元|塊)?/g, '').trim();
+    dateInput.value = date;
+    document.getElementById('type').value = type;
+    document.getElementById('amount').value = amount;
+    document.getElementById('note').value = note;
+    document.getElementById('amount').focus();
+}
+
+// 頁面載入時自動載入資料
+window.onload = loadRecords;
+</script>
