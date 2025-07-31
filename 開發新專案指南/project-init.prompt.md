@@ -38,7 +38,7 @@ charset = utf-8-bom
 ### 4. 加入 startDebugging 設定
 
 ```text
-@vscode /startDebugging 幫我產生 debugging 所需要檔案資料
+@vscode /startDebugging 幫我產生 debugging 所需要檔案資料, 執行時候我不要輸入名稱. 我要可以直接執行
 依據上述回答 幫我建立檔案
 ```
 
