@@ -1,0 +1,76 @@
+body {
+  font-family: 'Noto Sans TC', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+:root {
+  --bg: #f5f6fa;
+  --text: #222;
+  --primary: #4e8cff;
+}
+body.dark {
+  --bg: #181c25;
+  --text: #f5f6fa;
+  --primary: #4e8cff;
+}
+header, footer {
+  text-align: center;
+  padding: 1em;
+}
+main {
+  max-width: 400px;
+  margin: auto;
+  padding: 1em;
+}
+section {
+  margin-bottom: 2em;
+}
+#guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#breath-canvas {
+  margin: 1em 0;
+  background: var(--breath-gradient);
+  border-radius: 50%;
+  box-shadow: 0 0 40px 10px #4e8cff88, 0 0 80px 30px #aeefff44;
+  transition: box-shadow 0.5s;
+}
+button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #3570d4;
+}
+.hidden {
+  display: none;
+}
+.breathing {
+  animation: breathGlow 4s ease-in-out infinite;
+}
+@keyframes breathGlow {
+  0% { box-shadow: 0 0 40px 10px #4e8cff88, 0 0 80px 30px #aeefff44; }
+  50% { box-shadow: 0 0 80px 30px #4e8cffcc, 0 0 120px 60px #aeefff88; }
+  100% { box-shadow: 0 0 40px 10px #4e8cff88, 0 0 80px 30px #aeefff44; }
+}
+@media (max-width: 600px) {
+  main {
+    max-width: 100vw;
+    padding: 0.5em;
+  }
+  #breath-canvas {
+    width: 200px;
+    height: 200px;
+  }
+}
