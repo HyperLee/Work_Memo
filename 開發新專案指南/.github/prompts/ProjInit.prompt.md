@@ -1,4 +1,4 @@
-﻿---
+---
 mode: agent
 description: Project Initialization
 ---
