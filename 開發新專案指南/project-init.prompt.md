@@ -39,13 +39,13 @@ charset = utf-8-bom
 
 1. **aks mode**
 
-   ```bash
+   ```text
    @vscode /startDebugging 幫我產生 debugging 所需要檔案資料, 執行時候我不要輸入名稱. 我要可以直接執行
    ```
 
 2. **agent mode**
 
-   ```bash
+   ```text
    依據上述回答 幫我建立檔案
    ```
 
