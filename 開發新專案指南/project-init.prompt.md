@@ -32,8 +32,8 @@ dotnet new editorconfig
 insert_final_newline = true
 
 # 設定預設字元集為 UTF-8-bom
-[*.{cs, csx, vb, vbx, txt, htnl, css, js, json, yml, yaml, xml, config, ini, sh,
-ps1, psm1, ps1mxl, csproj, sln, gitignore, gitattributes,
+[*.{cs, csx, vb, vbx, txt, html, css, js, json, yml, yaml, xml, config, ini, sh,
+ps1, psm1, ps1xml, csproj, sln, gitignore, gitattributes,
 editorconfig, md, markdown, txt, asciidoc, adoc, asc, asciidoc, txt, ipynb, py}]
 charset = utf-8-bom
 ```
@@ -42,7 +42,7 @@ charset = utf-8-bom
 
 ### 4. 加入 startDebugging 設定
 
-1. **aks mode**
+1. **ask mode**
 
    ```text
    @vscode /startDebugging 幫我產生 debugging 所需要檔案資料, 執行時候我不要輸入名稱. 我要可以直接執行

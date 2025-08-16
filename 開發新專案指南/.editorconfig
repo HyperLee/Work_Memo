@@ -363,6 +363,6 @@ dotnet_naming_style.s_camelcase.word_separator =
 dotnet_naming_style.s_camelcase.capitalization = camel_case
 
 # 新增：強制指定副檔名為 UTF-8-bom 編碼
-[*.{cs, csx, vb, vbx, txt, htnl, css, js, json, yml, yaml, xml, config, ini, sh, ps1, psm1, ps1mxl, csproj, sln, gitignore, gitattributes, editorconfig, md, markdown, txt, asciidoc, adoc, asc, asciidoc, txt, ipynb, py}]
+[*.{cs, csx, vb, vbx, txt, html, css, js, json, yml, yaml, xml, config, ini, sh, ps1, psm1, ps1xml, csproj, sln, gitignore, gitattributes, editorconfig, md, markdown, txt, asciidoc, adoc, asc, asciidoc, txt, ipynb, py}]
 charset = utf-8-bom
 
