@@ -1,94 +1,94 @@
 ---
-description: 'C# 應用程式開發指南 (繁體中文版)'
+description: 'C# Application Development Guidelines'
 applyTo: '**/*.cs'
 ---
 
-# C# 應用程式開發指南
+# C# Application Development Guidelines
 
-> 本指南適用於 .NET 10.0 與 C# 14，整合最佳實務與開發規範。
+> This guide applies to .NET 10.0 and C# 14, integrating best practices and development standards.
 
-## 目錄
+## Table of Contents
 
-1. [C# 開發原則](#c-開發原則)
-2. [一般指導方針](#一般指導方針)
-3. [命名規則](#命名規則)
-4. [程式碼格式](#程式碼格式)
-5. [專案設定與結構](#專案設定與結構)
-6. [Nullable 參考型別](#nullable-參考型別)
-7. [資料存取模式](#資料存取模式)
-8. [驗證與授權](#驗證與授權)
-9. [資料驗證與錯誤處理](#資料驗證與錯誤處理)
-10. [API 版本控制與文件](#api-版本控制與文件)
-11. [日誌記錄與監控](#日誌記錄與監控)
-12. [測試](#測試)
-13. [效能最佳化](#效能最佳化)
-14. [部署與 DevOps](#部署與-devops)
+1. [C# Development Principles](#c-development-principles)
+2. [General Guidelines](#general-guidelines)
+3. [Naming Conventions](#naming-conventions)
+4. [Code Formatting](#code-formatting)
+5. [Project Setup and Structure](#project-setup-and-structure)
+6. [Nullable Reference Types](#nullable-reference-types)
+7. [Data Access Patterns](#data-access-patterns)
+8. [Authentication and Authorization](#authentication-and-authorization)
+9. [Data Validation and Error Handling](#data-validation-and-error-handling)
+10. [API Versioning and Documentation](#api-versioning-and-documentation)
+11. [Logging and Monitoring](#logging-and-monitoring)
+12. [Testing](#testing)
+13. [Performance Optimization](#performance-optimization)
+14. [Deployment and DevOps](#deployment-and-devops)
 
 ---
 
-## C# 開發原則
+## C# Development Principles
 
-- 始終使用最新版本的 C#，目前為 C# 14 的功能特性。
-- 為每個函式撰寫清晰且簡潔的註解。
-- 善用 C# 14 新特性：
-  - 主要建構函式 (Primary Constructors)
-  - 集合表達式 (Collection Expressions)
-  - 內嵌陣列 (Inline Arrays)
-  - 選擇性參數的 Lambda 表達式
-  - 擴展方法 (Extension Methods) 增強功能
+- Always use the latest version of C#, currently C# 14 features.
+- Write clear and concise comments for each function.
+- Leverage C# 14 new features:
+  - Primary Constructors
+  - Collection Expressions
+  - Inline Arrays
+  - Optional Parameters for Lambda Expressions
+  - Enhanced Extension Methods
 
-## 一般指導方針
+## General Guidelines
 
-- 程式碼審查時，僅提出高度確信的建議。
-- 撰寫具有良好可維護性的程式碼，包含設計決策原因的註解。
-- 妥善處理邊界情況，撰寫清晰的例外處理邏輯。
-- 對於函式庫或外部相依套件，在註解中說明其用途與目的。
-- 遵循 SOLID 原則設計類別與介面。
-- 優先使用組合 (Composition) 而非繼承 (Inheritance)。
+- Make only high-confidence suggestions when reviewing code changes.
+- Write code with good maintainability practices, including comments on why design decisions were made.
+- Handle edge cases and write clear exception handling logic.
+- For libraries or external dependencies, mention their usage and purpose in comments.
+- Follow SOLID principles when designing classes and interfaces.
+- Prefer composition over inheritance.
 
-## 命名規則
+## Naming Conventions
 
-### 大小寫規則
+### Casing Rules
 
-| 項目 | 規則 | 範例 |
-|------|------|------|
-| 類別、方法、公開成員 | PascalCase | `UserService`, `GetUserById` |
-| 私有欄位 | camelCase 或 _camelCase | `_userRepository`, `userName` |
-| 區域變數 | camelCase | `userCount`, `isValid` |
-| 介面 | I 前綴 + PascalCase | `IUserService`, `IRepository<T>` |
-| 常數 | PascalCase | `MaxRetryCount`, `DefaultTimeout` |
-| 泛型型別參數 | T 前綴 | `TEntity`, `TKey` |
+| Item | Rule | Example |
+|------|------|---------|
+| Classes, Methods, Public Members | PascalCase | `UserService`, `GetUserById` |
+| Private Fields | camelCase or _camelCase | `_userRepository`, `userName` |
+| Local Variables | camelCase | `userCount`, `isValid` |
+| Interfaces | I Prefix + PascalCase | `IUserService`, `IRepository<T>` |
+| Constants | PascalCase | `MaxRetryCount`, `DefaultTimeout` |
+| Generic Type Parameters | T Prefix | `TEntity`, `TKey` |
 
-### 命名建議
+### Naming Recommendations
 
-- 使用有意義且具描述性的名稱。
-- 避免使用縮寫，除非是廣為人知的縮寫 (如 `Id`, `Url`, `Http`)。
-- 布林值變數使用 `is`, `has`, `can` 等前綴。
-- 非同步方法使用 `Async` 後綴。
+- Use meaningful and descriptive names.
+- Avoid abbreviations unless they are widely recognized (e.g., `Id`, `Url`, `Http`).
+- Use prefixes like `is`, `has`, `can` for boolean variables.
+- Use `Async` suffix for asynchronous methods.
 
-## 程式碼格式
+## Code Formatting
 
-### 基本格式規則
+### Basic Formatting Rules
 
-- 套用 `.editorconfig` 中定義的程式碼格式樣式。
-- 偏好使用檔案範圍的 namespace 宣告與單行 using 指示詞。
-- 在任何程式碼區塊 (`if`, `for`, `while`, `foreach`, `using`, `try` 等) 的左大括號前插入換行。
-- 確保方法的最終 return 陳述式位於獨立的一行。
-- 盡可能使用模式比對 (Pattern Matching) 和 switch 表達式。
-- 使用 `nameof` 取代字串常值來參考成員名稱。
+- Apply code-formatting style defined in `.editorconfig`.
+- Prefer file-scoped namespace declarations and single-line using directives.
+- Insert a newline before the opening curly brace of any code block (`if`, `for`, `while`, `foreach`, `using`, `try`, etc.).
+- Ensure that the final return statement of a method is on its own line.
+- Use pattern matching and switch expressions whenever possible.
+- Use `nameof` instead of string literals when referring to member names.
 
-### XML 文件註解
+### XML Documentation Comments
 
-- 為所有公開 API 建立 XML 文件註解。
-- 適用時，包含 `<example>` 和 `<code>` 標籤。
+- Create XML documentation comments for all public APIs.
+- When applicable, include `<example>` and `<code>` tags.
 
 ```csharp
 /// <summary>
-/// 根據使用者 ID 取得使用者資訊。
+/// Retrieves user information by user ID.
 /// </summary>
-/// <param name="userId">使用者的唯一識別碼。</param>
-/// <returns>使用者實體，若找不到則回傳 null。</returns>
-/// <exception cref="ArgumentException">當 userId 為空或無效時擲出。</exception>
+/// <param name="userId">The unique identifier of the user.</param>
+/// <returns>The user entity, or null if not found.</returns>
+/// <exception cref="ArgumentException">Thrown when userId is empty or invalid.</exception>
 /// <example>
 /// <code>
 /// var user = await userService.GetUserByIdAsync(123);
@@ -97,102 +97,102 @@ applyTo: '**/*.cs'
 public async Task<User?> GetUserByIdAsync(int userId)
 ```
 
-### 現代 C# 語法偏好
+### Modern C# Syntax Preferences
 
 ```csharp
-// ✓ 推薦：檔案範圍的 namespace
+// ✓ Recommended: File-scoped namespace
 namespace MyApplication.Services;
 
-// ✓ 推薦：主要建構函式 (C# 12+)
+// ✓ Recommended: Primary Constructor (C# 12+)
 public class UserService(IUserRepository repository, ILogger<UserService> logger)
 {
     public async Task<User?> GetUserAsync(int id) => await repository.FindByIdAsync(id);
 }
 
-// ✓ 推薦：集合表達式 (C# 12+)
+// ✓ Recommended: Collection Expressions (C# 12+)
 List<int> numbers = [1, 2, 3, 4, 5];
 
-// ✓ 推薦：模式比對
+// ✓ Recommended: Pattern Matching
 if (user is { IsActive: true, Role: "Admin" })
 {
-    // 處理管理員邏輯
+    // Handle admin logic
 }
 
-// ✓ 推薦：switch 表達式
+// ✓ Recommended: Switch Expression
 string GetStatusMessage(OrderStatus status) => status switch
 {
-    OrderStatus.Pending => "訂單待處理",
-    OrderStatus.Processing => "訂單處理中",
-    OrderStatus.Completed => "訂單已完成",
-    OrderStatus.Cancelled => "訂單已取消",
-    _ => "未知狀態"
+    OrderStatus.Pending => "Order is pending",
+    OrderStatus.Processing => "Order is being processed",
+    OrderStatus.Completed => "Order is completed",
+    OrderStatus.Cancelled => "Order has been cancelled",
+    _ => "Unknown status"
 };
 ```
 
-## 專案設定與結構
+## Project Setup and Structure
 
-### 建立新專案
+### Creating a New Project
 
-- 引導使用者使用適當的範本建立新 .NET 專案。
-- 說明每個產生檔案和資料夾的用途，幫助理解專案結構。
+- Guide users through creating a new .NET project with appropriate templates.
+- Explain the purpose of each generated file and folder to help understand the project structure.
 
-### 專案結構建議
+### Recommended Project Structure
 
 ```
 src/
-├── MyApp.Api/                    # Web API 專案
-│   ├── Controllers/              # API 控制器
-│   ├── Endpoints/                # Minimal API 端點 (擇一使用)
-│   ├── Filters/                  # Action 過濾器
-│   ├── Middleware/               # 自訂中介軟體
+├── MyApp.Api/                    # Web API Project
+│   ├── Controllers/              # API Controllers
+│   ├── Endpoints/                # Minimal API Endpoints (choose one)
+│   ├── Filters/                  # Action Filters
+│   ├── Middleware/               # Custom Middleware
 │   └── Program.cs
-├── MyApp.Application/            # 應用程式層
-│   ├── Commands/                 # CQRS 命令
-│   ├── Queries/                  # CQRS 查詢
-│   ├── Services/                 # 應用程式服務
-│   └── Validators/               # FluentValidation 驗證器
-├── MyApp.Domain/                 # 領域層
-│   ├── Entities/                 # 領域實體
-│   ├── ValueObjects/             # 值物件
-│   ├── Interfaces/               # 領域介面
-│   └── Events/                   # 領域事件
-└── MyApp.Infrastructure/         # 基礎建設層
+├── MyApp.Application/            # Application Layer
+│   ├── Commands/                 # CQRS Commands
+│   ├── Queries/                  # CQRS Queries
+│   ├── Services/                 # Application Services
+│   └── Validators/               # FluentValidation Validators
+├── MyApp.Domain/                 # Domain Layer
+│   ├── Entities/                 # Domain Entities
+│   ├── ValueObjects/             # Value Objects
+│   ├── Interfaces/               # Domain Interfaces
+│   └── Events/                   # Domain Events
+└── MyApp.Infrastructure/         # Infrastructure Layer
     ├── Data/                     # EF Core DbContext
-    ├── Repositories/             # 儲存庫實作
-    └── Services/                 # 外部服務整合
+    ├── Repositories/             # Repository Implementations
+    └── Services/                 # External Service Integrations
 
 tests/
-├── MyApp.UnitTests/              # 單元測試
-├── MyApp.IntegrationTests/       # 整合測試
-└── MyApp.FunctionalTests/        # 功能測試
+├── MyApp.UnitTests/              # Unit Tests
+├── MyApp.IntegrationTests/       # Integration Tests
+└── MyApp.FunctionalTests/        # Functional Tests
 ```
 
-### 功能資料夾組織
+### Feature Folder Organization
 
-- 展示如何使用功能資料夾 (Feature Folders) 或領域驅動設計 (DDD) 原則組織程式碼。
-- 呈現模型、服務和資料存取層的適當關注點分離。
+- Demonstrate how to organize code using Feature Folders or Domain-Driven Design (DDD) principles.
+- Show proper separation of concerns with models, services, and data access layers.
 
-### ASP.NET Core 10 設定
+### ASP.NET Core 10 Configuration
 
-- 說明 ASP.NET Core 10 中的 `Program.cs` 和設定系統。
-- 包含環境特定設定的說明。
+- Explain the `Program.cs` and configuration system in ASP.NET Core 10.
+- Include explanation of environment-specific settings.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-// 設定服務
+// Configure Services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 相依性注入
+// Dependency Injection
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
-// 設定 HTTP 請求管線
+// Configure HTTP Request Pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -206,14 +206,14 @@ app.MapControllers();
 app.Run();
 ```
 
-## Nullable 參考型別
+## Nullable Reference Types
 
-- 將變數宣告為非 null，並在進入點檢查 `null`。
-- 始終使用 `is null` 或 `is not null` 而非 `== null` 或 `!= null`。
-- 信任 C# 的 null 註解，當型別系統表明值不能為 null 時，不要新增不必要的 null 檢查。
+- Declare variables as non-nullable and check for `null` at entry points.
+- Always use `is null` or `is not null` instead of `== null` or `!= null`.
+- Trust C# null annotations and don't add unnecessary null checks when the type system guarantees a value cannot be null.
 
 ```csharp
-// ✓ 推薦
+// ✓ Recommended
 public void ProcessUser(User? user)
 {
     if (user is null)
@@ -221,28 +221,28 @@ public void ProcessUser(User? user)
         throw new ArgumentNullException(nameof(user));
     }
     
-    // 此時 user 已確認非 null
+    // user is now confirmed to be non-null
     Console.WriteLine(user.Name);
 }
 
-// ✓ 推薦：使用 ArgumentNullException.ThrowIfNull (C# 10+)
+// ✓ Recommended: Using ArgumentNullException.ThrowIfNull (C# 10+)
 public void ProcessUser(User? user)
 {
     ArgumentNullException.ThrowIfNull(user);
     Console.WriteLine(user.Name);
 }
 
-// ✗ 避免
-if (user == null) { }  // 使用 is null 代替
-if (user != null) { }  // 使用 is not null 代替
+// ✗ Avoid
+if (user == null) { }  // Use is null instead
+if (user != null) { }  // Use is not null instead
 ```
 
-## 資料存取模式
+## Data Access Patterns
 
 ### Entity Framework Core
 
-- 引導使用 Entity Framework Core 實作資料存取層。
-- 說明開發和生產環境的不同選項 (SQL Server, SQLite, In-Memory)。
+- Guide the implementation of data access layer using Entity Framework Core.
+- Explain different options for development and production environments (SQL Server, SQLite, In-Memory).
 
 ```csharp
 public class AppDbContext : DbContext
@@ -259,10 +259,10 @@ public class AppDbContext : DbContext
 }
 ```
 
-### 儲存庫模式
+### Repository Pattern
 
-- 展示儲存庫模式的實作及其適用場景。
-- 說明資料庫遷移和資料種子的實作方式。
+- Demonstrate repository pattern implementation and its beneficial scenarios.
+- Explain how to implement database migrations and data seeding.
 
 ```csharp
 public interface IRepository<T> where T : class
@@ -275,18 +275,18 @@ public interface IRepository<T> where T : class
 }
 ```
 
-### 高效查詢模式
+### Efficient Query Patterns
 
-- 說明高效的查詢模式以避免常見的效能問題。
-- 使用 `AsNoTracking()` 進行唯讀查詢。
-- 避免 N+1 查詢問題，善用 `Include()` 預先載入。
+- Explain efficient query patterns to avoid common performance issues.
+- Use `AsNoTracking()` for read-only queries.
+- Avoid N+1 query problems by leveraging `Include()` for eager loading.
 
-## 驗證與授權
+## Authentication and Authorization
 
-### JWT Bearer Token 驗證
+### JWT Bearer Token Authentication
 
-- 引導使用者使用 JWT Bearer Token 實作驗證。
-- 說明與 ASP.NET Core 相關的 OAuth 2.0 和 OpenID Connect 概念。
+- Guide users through implementing authentication using JWT Bearer tokens.
+- Explain OAuth 2.0 and OpenID Connect concepts as they relate to ASP.NET Core.
 
 ```csharp
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -306,17 +306,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 ```
 
-### 授權策略
+### Authorization Policies
 
-- 展示如何實作角色型和策略型授權。
-- 說明如何一致地保護控制器型和 Minimal API。
+- Demonstrate how to implement role-based and policy-based authorization.
+- Explain how to consistently secure both controller-based and Minimal APIs.
 
 ```csharp
-// 角色型授權
+// Role-based Authorization
 [Authorize(Roles = "Admin")]
 public class AdminController : ControllerBase { }
 
-// 策略型授權
+// Policy-based Authorization
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireAdminRole", policy =>
@@ -327,37 +327,37 @@ builder.Services.AddAuthorization(options =>
 });
 ```
 
-### Microsoft Entra ID 整合
+### Microsoft Entra ID Integration
 
-- 展示與 Microsoft Entra ID (前身為 Azure AD) 的整合。
+- Demonstrate integration with Microsoft Entra ID (formerly Azure AD).
 
-## 資料驗證與錯誤處理
+## Data Validation and Error Handling
 
-### 模型驗證
+### Model Validation
 
-- 引導使用資料註解和 FluentValidation 實作模型驗證。
+- Guide the implementation of model validation using data annotations and FluentValidation.
 
 ```csharp
-// 使用 FluentValidation
+// Using FluentValidation
 public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
 {
     public CreateUserCommandValidator()
     {
         RuleFor(x => x.Email)
-            .NotEmpty().WithMessage("電子郵件為必填")
-            .EmailAddress().WithMessage("電子郵件格式無效");
+            .NotEmpty().WithMessage("Email is required")
+            .EmailAddress().WithMessage("Email format is invalid");
             
         RuleFor(x => x.Password)
-            .NotEmpty().WithMessage("密碼為必填")
-            .MinimumLength(8).WithMessage("密碼長度至少 8 個字元");
+            .NotEmpty().WithMessage("Password is required")
+            .MinimumLength(8).WithMessage("Password must be at least 8 characters");
     }
 }
 ```
 
-### 全域例外處理
+### Global Exception Handling
 
-- 展示使用中介軟體的全域例外處理策略。
-- 說明 Problem Details (RFC 7807) 的實作以提供標準化錯誤回應。
+- Demonstrate a global exception handling strategy using middleware.
+- Explain Problem Details (RFC 7807) implementation for standardized error responses.
 
 ```csharp
 public class GlobalExceptionHandler : IExceptionHandler
@@ -374,12 +374,12 @@ public class GlobalExceptionHandler : IExceptionHandler
         Exception exception, 
         CancellationToken cancellationToken)
     {
-        _logger.LogError(exception, "發生未處理的例外");
+        _logger.LogError(exception, "An unhandled exception occurred");
 
         var problemDetails = new ProblemDetails
         {
             Status = StatusCodes.Status500InternalServerError,
-            Title = "伺服器錯誤",
+            Title = "Server Error",
             Detail = exception.Message
         };
 
@@ -391,11 +391,11 @@ public class GlobalExceptionHandler : IExceptionHandler
 }
 ```
 
-## API 版本控制與文件
+## API Versioning and Documentation
 
-### API 版本控制策略
+### API Versioning Strategy
 
-- 引導使用者實作並說明 API 版本控制策略。
+- Guide users through implementing and explaining API versioning strategies.
 
 ```csharp
 builder.Services.AddApiVersioning(options =>
@@ -414,10 +414,10 @@ builder.Services.AddApiVersioning(options =>
 });
 ```
 
-### Swagger/OpenAPI 文件
+### Swagger/OpenAPI Documentation
 
-- 展示具有適當文件的 Swagger/OpenAPI 實作。
-- 說明如何記錄端點、參數、回應和驗證。
+- Demonstrate Swagger/OpenAPI implementation with proper documentation.
+- Explain how to document endpoints, parameters, responses, and authentication.
 
 ```csharp
 builder.Services.AddSwaggerGen(options =>
@@ -426,30 +426,30 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "My API",
         Version = "v1",
-        Description = "API 說明文件",
+        Description = "API Documentation",
         Contact = new OpenApiContact
         {
-            Name = "開發團隊",
+            Name = "Development Team",
             Email = "dev@example.com"
         }
     });
     
-    // 加入 XML 註解
+    // Include XML comments
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     options.IncludeXmlComments(xmlPath);
 });
 ```
 
-## 日誌記錄與監控
+## Logging and Monitoring
 
-### 結構化日誌
+### Structured Logging
 
-- 引導使用 Serilog 或其他提供者實作結構化日誌記錄。
-- 說明日誌層級及其使用時機。
+- Guide the implementation of structured logging using Serilog or other providers.
+- Explain logging levels and when to use each.
 
 ```csharp
-// Serilog 設定
+// Serilog Configuration
 builder.Host.UseSerilog((context, configuration) =>
 {
     configuration
@@ -461,31 +461,31 @@ builder.Host.UseSerilog((context, configuration) =>
 });
 ```
 
-### 日誌層級指南
+### Logging Levels Guide
 
-| 層級 | 用途 |
-|------|------|
-| Trace | 最詳細的資訊，通常僅在開發時使用 |
-| Debug | 除錯用資訊 |
-| Information | 一般資訊性訊息 |
-| Warning | 警告訊息，可能有問題但不影響運作 |
-| Error | 錯誤訊息，功能無法正常運作 |
-| Critical | 嚴重錯誤，應用程式可能無法繼續執行 |
+| Level | Purpose |
+|-------|---------|
+| Trace | Most detailed information, typically used only during development |
+| Debug | Debug information |
+| Information | General informational messages |
+| Warning | Warning messages that may indicate issues but don't affect operation |
+| Error | Error messages indicating functionality cannot operate normally |
+| Critical | Critical errors where the application may be unable to continue |
 
-### Application Insights 整合
+### Application Insights Integration
 
-- 展示與 Application Insights 的整合以收集遙測資料。
-- 說明如何實作自訂遙測和相關聯識別碼進行請求追蹤。
+- Demonstrate integration with Application Insights for telemetry collection.
+- Explain how to implement custom telemetry and correlation IDs for request tracking.
 
-## 測試
+## Testing
 
-### 測試原則
+### Testing Principles
 
-- 始終為應用程式的關鍵路徑包含測試案例。
-- 不要撰寫 "Arrange"、"Act"、"Assert" 註解。
-- 複製鄰近檔案的現有風格，包括測試方法名稱和大小寫。
+- Always include test cases for critical paths of the application.
+- Do not write "Arrange", "Act", "Assert" comments.
+- Copy existing style in nearby files for test method names and capitalization.
 
-### 單元測試
+### Unit Tests
 
 ```csharp
 public class UserServiceTests
@@ -502,7 +502,7 @@ public class UserServiceTests
     [Fact]
     public async Task GetUserByIdAsync_WhenUserExists_ReturnsUser()
     {
-        var expectedUser = new User { Id = 1, Name = "測試使用者" };
+        var expectedUser = new User { Id = 1, Name = "Test User" };
         _mockRepository
             .Setup(r => r.GetByIdAsync(1, default))
             .ReturnsAsync(expectedUser);
@@ -528,10 +528,10 @@ public class UserServiceTests
 }
 ```
 
-### 整合測試
+### Integration Tests
 
-- 說明 API 端點的整合測試方法。
-- 展示如何有效地模擬相依性進行測試。
+- Explain integration testing approaches for API endpoints.
+- Demonstrate how to mock dependencies effectively for testing.
 
 ```csharp
 public class UsersControllerTests : IClassFixture<WebApplicationFactory<Program>>
@@ -554,57 +554,57 @@ public class UsersControllerTests : IClassFixture<WebApplicationFactory<Program>
 }
 ```
 
-### 測試驅動開發 (TDD)
+### Test-Driven Development (TDD)
 
-- 說明應用於 API 開發的測試驅動開發原則。
-- 展示如何測試驗證與授權邏輯。
+- Explain test-driven development principles as applied to API development.
+- Show how to test authentication and authorization logic.
 
-## 效能最佳化
+## Performance Optimization
 
-### 快取策略
+### Caching Strategies
 
-- 引導使用者實作快取策略 (記憶體內、分散式、回應快取)。
+- Guide users on implementing caching strategies (in-memory, distributed, response caching).
 
 ```csharp
-// 記憶體內快取
+// In-Memory Cache
 builder.Services.AddMemoryCache();
 
-// 分散式快取 (Redis)
+// Distributed Cache (Redis)
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
     options.InstanceName = "MyApp_";
 });
 
-// 回應快取
+// Response Caching
 builder.Services.AddResponseCaching();
 app.UseResponseCaching();
 ```
 
-### 非同步程式設計
+### Asynchronous Programming
 
-- 說明非同步程式設計模式及其對 API 效能的重要性。
-- 正確使用 `async`/`await`，避免阻塞呼叫。
+- Explain asynchronous programming patterns and why they matter for API performance.
+- Use `async`/`await` correctly and avoid blocking calls.
 
 ```csharp
-// ✓ 推薦：完全非同步
+// ✓ Recommended: Fully Asynchronous
 public async Task<IActionResult> GetUsersAsync()
 {
     var users = await _userService.GetAllUsersAsync();
     return Ok(users);
 }
 
-// ✗ 避免：阻塞呼叫
+// ✗ Avoid: Blocking Call
 public IActionResult GetUsers()
 {
-    var users = _userService.GetAllUsersAsync().Result; // 阻塞！
+    var users = _userService.GetAllUsersAsync().Result; // Blocks!
     return Ok(users);
 }
 ```
 
-### 分頁、篩選與排序
+### Pagination, Filtering, and Sorting
 
-- 展示大型資料集的分頁、篩選和排序功能。
+- Demonstrate pagination, filtering, and sorting for large datasets.
 
 ```csharp
 public class PaginatedList<T>
@@ -631,26 +631,26 @@ public class PaginatedList<T>
 }
 ```
 
-## 部署與 DevOps
+## Deployment and DevOps
 
-### 容器化
+### Containerization
 
-- 引導使用者使用 .NET 的內建容器支援將 API 容器化。
+- Guide users through containerizing their API using .NET's built-in container support.
 
 ```bash
-# 使用 .NET 內建容器發佈功能
+# Using .NET Built-in Container Publishing
 dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer
 
-# 或使用 .NET 8+ 的簡化語法
+# Or using .NET 8+ Simplified Syntax
 dotnet publish -c Release --os linux --arch x64 /t:PublishContainer
 ```
 
-- 說明手動建立 Dockerfile 與 .NET 容器發佈功能的差異。
+- Explain the differences between manual Dockerfile creation and .NET container publishing features.
 
-### CI/CD 管線
+### CI/CD Pipeline
 
-- 說明 .NET 應用程式的 CI/CD 管線。
-- 範例 GitHub Actions 工作流程：
+- Explain CI/CD pipelines for .NET applications.
+- Example GitHub Actions Workflow:
 
 ```yaml
 name: .NET CI/CD
@@ -678,9 +678,9 @@ jobs:
       run: dotnet test --no-build --verbosity normal
 ```
 
-### 健康檢查
+### Health Checks
 
-- 展示如何實作健康檢查和就緒探測。
+- Demonstrate how to implement health checks and readiness probes.
 
 ```csharp
 builder.Services.AddHealthChecks()
@@ -699,38 +699,38 @@ app.MapHealthChecks("/ready", new HealthCheckOptions
 });
 ```
 
-### 部署目標
+### Deployment Targets
 
-- 展示部署到 Azure App Service、Azure Container Apps 或其他主機選項。
-- 說明不同部署階段的環境特定設定。
+- Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
+- Explain environment-specific configurations for different deployment stages.
 
 ---
 
-## 附錄：常用 .NET CLI 命令
+## Appendix: Common .NET CLI Commands
 
 ```bash
-# 建立新專案
+# Create New Projects
 dotnet new webapi -n MyApi -o src/MyApi
 dotnet new classlib -n MyApp.Domain -o src/MyApp.Domain
 dotnet new xunit -n MyApp.Tests -o tests/MyApp.Tests
 
-# 新增套件
+# Add Packages
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Serilog.AspNetCore
 dotnet add package FluentValidation.AspNetCore
 
-# EF Core 遷移
+# EF Core Migrations
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-# 執行測試
+# Run Tests
 dotnet test --collect:"XPlat Code Coverage"
 
-# 發佈
+# Publish
 dotnet publish -c Release -o ./publish
 ```
 
 ---
 
-*最後更新：2025 年 12 月*
-*適用版本：.NET 10.0 / C# 14*
+*Last Updated: December 2025*
+*Applicable Versions: .NET 10.0 / C# 14*
