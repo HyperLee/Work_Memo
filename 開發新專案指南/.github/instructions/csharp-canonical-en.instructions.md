@@ -1,13 +1,9 @@
 ---
-description: "Canonical C# application development guidelines (merged from en + ja sources) — by HyperLee"
+description: "Canonical C# application development guidelines"
 applyTo: '**/*.cs'
 ---
 
 # C# Application Development — Canonical Guidelines
-
-This canonical guideline merges best practices from existing English and Japanese instructions into a single, practical, English-language reference for C# development teams. It targets .NET 7+ and C# 10+ (adapt to your project's target framework and language version).
-
-Use this file as a living document: keep it in your repo's .github/instructions directory and sync updates across localized versions.
 
 ## Quick Principles
 - Prefer clarity and readability over cleverness.
@@ -313,9 +309,3 @@ app.Map("/error", (HttpContext httpContext) => Results.Problem("An unexpected er
 - Serilog and Application Insights docs for logging and telemetry.
 
 ---
-
-If you'd like, I can:
-- Create this file in your repository at .github/instructions/csharp-canonical-en.instructions.md (non-destructive name) and open a PR.
-- Or produce a branch + PR with the new file and optional edits to the existing csharp.instructions.md.
-
-Tell me whether you want me to create the file in the repository and, if so, whether to open a PR or push directly to a branch.  
