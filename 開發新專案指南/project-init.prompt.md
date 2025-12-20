@@ -43,7 +43,7 @@ charset = utf-8-bom
 ### 4. 加入 startDebugging 設定
 
 ```text
-幫我產生 debugging 所需要 `launch.json`, `tasks.json` 檔案資料, 執行時候我不要輸入名稱. 我要可以直接執行
+ 幫我產生本專案 debugging 所需要 `launch.json`, `tasks.json` 檔案資料, 執行時候我不要輸入名稱. 我要可以直接執行
 ```
 
 ---
