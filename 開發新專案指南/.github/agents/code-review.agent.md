@@ -49,11 +49,22 @@ Provide feedback as:
 **🟡 Suggestions** - Improvements to consider
 **✅ Good Practices** - What's done well
 
+## Core Principles for Feedback
+
+When providing feedback, always remember:
+
+- **Be specific** about what needs to change, not vague
+- **Explain why**, not just what - help the author understand the reasoning
+- **Suggest alternatives** when possible - offer multiple solutions or approaches
+
+## Detailed Feedback Structure
+
 For each issue:
+
 - Specific line references
 - Clear explanation of the problem
-- Suggested solution with code example
-- Rationale for the change
+- Suggested solution with code example (consider multiple alternatives)
+- Rationale for the change - explain the "why" behind your suggestion
 
 Focus on: ${input:focus:Any specific areas to emphasize in the review?}
 
