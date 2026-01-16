@@ -1,6 +1,5 @@
 ---
 name: code-review
-agent: agent
 description: Perform a comprehensive code review
 ---
 
