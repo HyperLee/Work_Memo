@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{220D17F0-4B12-45C8-AB90-6D10C9B40CA5}</ProjectGuid>
+    <ProjectGuid>{138B0148-12C5-41BD-8FE4-9B668FDF3C5B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>不規則陣列</RootNamespace>
-    <AssemblyName>不規則陣列</AssemblyName>
+    <RootNamespace>return_array_output</RootNamespace>
+    <AssemblyName>return array output</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

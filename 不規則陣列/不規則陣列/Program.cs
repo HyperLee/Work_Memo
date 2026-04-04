@@ -1,4 +1,10 @@
-﻿namespace 不規則陣列
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 不規則陣列
 {
     internal class Program
     {
@@ -31,7 +37,6 @@
             //System.Console.WriteLine(input.Length);
 
             int sum = 0;
-            Console.WriteLine("-------------------------------輸出 陣列資料1");
             // 輸出 陣列資料
             for (int i = 0; i < input.Length; i++)
             {
@@ -45,31 +50,10 @@
                 System.Console.WriteLine();
             }
 
-            Console.WriteLine("-------------------------------輸出總和1");
-            // 輸出總和1
+            // 輸出總和
             Console.WriteLine("sum: " + sum);
 
-            Console.WriteLine("-------------------------------輸出 陣列資料2");
-            // string.Join 會比較簡潔
-            sum = 0;
-            for (int i = 0; i < input.Length; i++)
-            {
-                System.Console.Write("Element({0}): ", i);
-
-                // 使用 string.Join 來輸出每行的元素
-                System.Console.WriteLine(string.Join(" ", input[i]));
-
-                //// 計算 sum
-                for (int j = 0; j < input[i].Length; j++)
-                {
-                    sum += input[i][j];
-                }
-            }
-
-            Console.WriteLine("-------------------------------輸出總和2");
-            // 輸出總和2
-            Console.WriteLine("sum: " + sum);
-
+            Console.ReadKey();
         }
     }
 }

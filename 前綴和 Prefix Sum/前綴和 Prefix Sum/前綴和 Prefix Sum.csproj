@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{220D17F0-4B12-45C8-AB90-6D10C9B40CA5}</ProjectGuid>
+    <ProjectGuid>{224CCEE7-1F1A-4AB1-9403-02CBF53B84D1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>不規則陣列</RootNamespace>
-    <AssemblyName>不規則陣列</AssemblyName>
+    <RootNamespace>前綴和_Prefix_Sum</RootNamespace>
+    <AssemblyName>前綴和 Prefix Sum</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

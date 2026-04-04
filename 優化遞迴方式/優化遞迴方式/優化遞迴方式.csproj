@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{220D17F0-4B12-45C8-AB90-6D10C9B40CA5}</ProjectGuid>
+    <ProjectGuid>{BBBEC8AE-7B6B-430E-B832-101D257726CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>不規則陣列</RootNamespace>
-    <AssemblyName>不規則陣列</AssemblyName>
+    <RootNamespace>優化遞迴方式</RootNamespace>
+    <AssemblyName>優化遞迴方式</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

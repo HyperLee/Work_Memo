@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\\u4E0D\u898F\u5247\u9663\u5217\\",
+  "WorkspaceRootPath": "D:\\Leetcode_folder\\Leetcode_folder\\\u4E0D\u898F\u5247\u9663\u5217\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32E9C93F-EC40-45E2-8E18-6FE7FD016ABD}|\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217.csproj|d:\\work_memo\\work_memo\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32E9C93F-EC40-45E2-8E18-6FE7FD016ABD}|\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217.csproj|solutionrelative:\u4E0D\u898F\u5247\u9663\u5217\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{220D17F0-4B12-45C8-AB90-6D10C9B40CA5}|\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217.csproj|d:\\leetcode_folder\\leetcode_folder\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220D17F0-4B12-45C8-AB90-6D10C9B40CA5}|\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217.csproj|solutionrelative:\u4E0D\u898F\u5247\u9663\u5217\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
+              "DocumentMoniker": "D:\\Leetcode_folder\\Leetcode_folder\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
               "RelativeDocumentMoniker": "\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
-              "ToolTip": "D:\\Work_Memo\\Work_Memo\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
+              "ToolTip": "D:\\Leetcode_folder\\Leetcode_folder\\\u4E0D\u898F\u5247\u9663\u5217\\\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
               "RelativeToolTip": "\u4E0D\u898F\u5247\u9663\u5217\\Program.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T08:18:41.836Z",
+              "WhenOpened": "2023-06-05T02:51:49.336Z",
               "EditorCaption": ""
             }
           ]
