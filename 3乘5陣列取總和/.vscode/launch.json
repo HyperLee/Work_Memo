@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug 3乘5陣列取總和",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/3乘5陣列取總和/bin/Debug/net10.0/3乘5陣列取總和.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/3乘5陣列取總和",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
