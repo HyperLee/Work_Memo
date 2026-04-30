@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug BackTrack",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build BackTrack",
+      "program": "${workspaceFolder}/BackTrack/bin/Debug/net10.0/BackTrack.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/BackTrack",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
