@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 差分陣列",
-      "program": "${workspaceFolder}/差分陣列/bin/Debug/net9.0/差分陣列.dll",
+      "program": "${workspaceFolder}/差分陣列/bin/Debug/net10.0/差分陣列.dll",
       "cwd": "${workspaceFolder}/差分陣列",
       "console": "integratedTerminal",
       "stopAtEntry": false,

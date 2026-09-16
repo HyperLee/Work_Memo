@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 二維陣列輸出",
-      "program": "${workspaceFolder}/二維陣列輸出/二維陣列輸出/bin/Debug/net8.0/二維陣列輸出.dll",
+      "program": "${workspaceFolder}/二維陣列輸出/二維陣列輸出/bin/Debug/net10.0/二維陣列輸出.dll",
       "cwd": "${workspaceFolder}/二維陣列輸出/二維陣列輸出",
       "console": "integratedTerminal",
       "stopAtEntry": false

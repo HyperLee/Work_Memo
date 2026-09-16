@@ -3,7 +3,7 @@
 ## Project
 
 - Path: list排序/list排序/list排序.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

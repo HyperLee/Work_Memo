@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 插入排序/插入排序/插入排序.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

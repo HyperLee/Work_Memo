@@ -1,6 +1,6 @@
 # list內含二維陣列輸出範例
 
-這個 net8.0 主控台專案保留原始教學程式與公開方法，並以固定 smoke test 驗證可重現結果。
+這個 net10.0 主控台專案保留原始教學程式與公開方法，並以固定 smoke test 驗證可重現結果。
 
 ## 題目或原始需求說明
 
@@ -23,13 +23,7 @@ dotnet build list內含二維陣列輸出範例/list內含二維陣列輸出範�
 dotnet run --project list內含二維陣列輸出範例/list內含二維陣列輸出範例/list內含二維陣列輸出範例.csproj --no-build --nologo
 ```
 
-目前主機若只有 .NET 10 runtime，執行 net8/net9 成品時可使用：
-
-```bash
-DOTNET_ROLL_FORWARD=Major dotnet run --project list內含二維陣列輸出範例/list內含二維陣列輸出範例/list內含二維陣列輸出範例.csproj --no-build --nologo
-```
-
-這是環境 fallback，不代表原生目標 runtime 驗證。
+本專案已升級為 net10.0；在已安裝 .NET 10 runtime 的主機上直接執行上列命令即可。
 
 ## 解題概念與出發點
 

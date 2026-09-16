@@ -1,6 +1,6 @@
 # C# `PriorityQueue<TElement, TPriority>` 介紹
 
-本專案使用 C# / .NET 9 示範 `PriorityQueue<TElement, TPriority>` 的預設排序行為：數字優先權值越小，越早被 `Peek` 與 `Dequeue` 取出。固定 smoke harness 同時驗證每一步的 `Count`、`Peek` 與出隊元素。
+本專案使用 C# / .NET 10 示範 `PriorityQueue<TElement, TPriority>` 的預設排序行為：數字優先權值越小，越早被 `Peek` 與 `Dequeue` 取出。固定 smoke harness 同時驗證每一步的 `Count`、`Peek` 與出隊元素。
 
 ## 閱讀導覽
 
@@ -36,10 +36,9 @@ PriorityQueue<int, int>
 ```bash
 dotnet restore PriorityQueue介紹/PriorityQueue介紹.csproj
 dotnet build PriorityQueue介紹/PriorityQueue介紹.csproj --nologo
-DOTNET_ROLL_FORWARD=Major dotnet run --project PriorityQueue介紹/PriorityQueue介紹.csproj --no-build --nologo
 ```
 
-`DOTNET_ROLL_FORWARD=Major` 只在本機沒有 .NET 9 runtime、但有相容的較新 runtime 時需要。成功時最後一行為：
+`DOTNET_ROLL_FORWARD=Major` 只在本機沒有 .NET 10 runtime、但有相容的較新 runtime 時需要。成功時最後一行為：
 
 ```text
 Summary: 9/9 checks passed.
@@ -249,10 +248,10 @@ PriorityQueue介紹/
 - `Peek()` 與 `Dequeue()` 對空佇列會拋出 `InvalidOperationException`；本例以 `Count > 0` 保護呼叫。
 - 反向比較器與負優先權只保留在原始 XML 說明中，本 harness 不驗證「數字越大先出隊」模式。
 - smoke harness 是固定案例的快速驗證，不取代完整單元測試。
-- 專案目標仍為 `net9.0`；較新 runtime 的 roll-forward 只用於本機缺少 .NET 9 runtime 的情況。
+- 專案目標仍為 `net10.0`；較新 runtime 的 roll-forward 只用於本機缺少 .NET 10 runtime 的情況。
 
 ### 參考資料
 
-- [Microsoft Learn：PriorityQueue 類別](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2?view=net-9.0)
-- [Microsoft Learn：PriorityQueue.Dequeue](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2.dequeue?view=net-9.0)
-- [Microsoft Learn：PriorityQueue.Peek](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2.peek?view=net-9.0)
+- [Microsoft Learn：PriorityQueue 類別](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2?view=net-10.0)
+- [Microsoft Learn：PriorityQueue.Dequeue](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2.dequeue?view=net-10.0)
+- [Microsoft Learn：PriorityQueue.Peek](https://learn.microsoft.com/dotnet/api/system.collections.generic.priorityqueue-2.peek?view=net-10.0)

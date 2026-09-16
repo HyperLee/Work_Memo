@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build Tuple方法介紹",
-      "program": "${workspaceFolder}/Tuple方法介紹/Tuple方法介紹/bin/Debug/net8.0/Tuple方法介紹.dll",
+      "program": "${workspaceFolder}/Tuple方法介紹/Tuple方法介紹/bin/Debug/net10.0/Tuple方法介紹.dll",
       "cwd": "${workspaceFolder}/Tuple方法介紹/Tuple方法介紹",
       "console": "integratedTerminal",
       "stopAtEntry": false

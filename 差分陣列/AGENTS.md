@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This directory is a small .NET 9 console project for LeetCode 3355, Zero Array Transformation I.
+This directory is a small .NET 10 console project for LeetCode 3355, Zero Array Transformation I.
 
 - `差分陣列/Program.cs` contains the entry point, three public solution methods, and the deterministic smoke-test harness.
-- `差分陣列/差分陣列.csproj` defines the executable target (`net9.0`).
+- `差分陣列/差分陣列.csproj` defines the executable target (`net10.0`).
 - `.vscode/launch.json` and `.vscode/tasks.json` provide optional VS Code build and debug integration.
 - `README.md` is the Traditional Chinese tutorial, while `docs/readme-template.md` contains first-README guidance.
 
@@ -20,7 +20,7 @@ DOTNET_ROLL_FORWARD=Major dotnet run --project 差分陣列/差分陣列.csproj 
 dotnet format 差分陣列/差分陣列.csproj --verify-no-changes
 ```
 
-The roll-forward variable is only needed when a matching .NET 9 runtime is unavailable. There is no separate test project; use the fixed `Main` harness as the smoke test and require `Summary: 15/15 checks passed.` with exit code 0.
+The roll-forward variable is only needed when a matching .NET 10 runtime is unavailable. There is no separate test project; use the fixed `Main` harness as the smoke test and require `Summary: 15/15 checks passed.` with exit code 0.
 
 ## Coding Style & Documentation
 

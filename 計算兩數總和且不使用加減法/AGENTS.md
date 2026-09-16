@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 計算兩數總和且不使用加減法/計算兩數總和且不使用加減法/計算兩數總和且不使用加減法.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

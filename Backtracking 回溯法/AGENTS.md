@@ -3,7 +3,7 @@
 ## Project
 
 - Path: Backtracking 回溯法/Backtracking 回溯法/Backtracking 回溯法.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

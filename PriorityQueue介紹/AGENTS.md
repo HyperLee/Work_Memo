@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This directory is a small .NET 9 console project that introduces `PriorityQueue<TElement, TPriority>`.
+This directory is a small .NET 10 console project that introduces `PriorityQueue<TElement, TPriority>`.
 
 - `PriorityQueue介紹/Program.cs` contains the entry point, queue helpers, and the deterministic smoke-test harness.
-- `PriorityQueue介紹/PriorityQueue介紹.csproj` defines the executable target (`net9.0`).
+- `PriorityQueue介紹/PriorityQueue介紹.csproj` defines the executable target (`net10.0`).
 - `.vscode/launch.json` and `.vscode/tasks.json` provide optional VS Code build and debug integration.
 - `README.md` is the Traditional Chinese tutorial, while `docs/readme-template.md` contains first-README guidance.
 
@@ -20,7 +20,7 @@ DOTNET_ROLL_FORWARD=Major dotnet run --project PriorityQueue介紹/PriorityQueue
 dotnet format PriorityQueue介紹/PriorityQueue介紹.csproj --verify-no-changes
 ```
 
-The roll-forward variable is only needed when a matching .NET 9 runtime is unavailable. There is no separate test project; use the fixed `Main` harness as the smoke test and require `Summary: 9/9 checks passed.` with exit code 0.
+The roll-forward variable is only needed when a matching .NET 10 runtime is unavailable. There is no separate test project; use the fixed `Main` harness as the smoke test and require `Summary: 9/9 checks passed.` with exit code 0.
 
 ## Coding Style & Documentation
 

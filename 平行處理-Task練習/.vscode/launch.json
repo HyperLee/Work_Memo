@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 平行處理-Task練習",
-      "program": "${workspaceFolder}/平行處理-Task練習/平行處理-Task練習/bin/Debug/net8.0/平行處理-Task練習.dll",
+      "program": "${workspaceFolder}/平行處理-Task練習/平行處理-Task練習/bin/Debug/net10.0/平行處理-Task練習.dll",
       "cwd": "${workspaceFolder}/平行處理-Task練習/平行處理-Task練習",
       "console": "integratedTerminal",
       "stopAtEntry": false

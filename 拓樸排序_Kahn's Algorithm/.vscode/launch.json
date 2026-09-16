@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 拓樸排序_Kahn's Algorithm",
-      "program": "${workspaceFolder}/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/bin/Debug/net8.0/拓樸排序_Kahn's Algorithm.dll",
+      "program": "${workspaceFolder}/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/bin/Debug/net10.0/拓樸排序_Kahn's Algorithm.dll",
       "cwd": "${workspaceFolder}/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm",
       "console": "integratedTerminal",
       "stopAtEntry": false

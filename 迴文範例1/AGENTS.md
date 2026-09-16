@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 迴文範例1/迴文範例1/迴文範例1.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

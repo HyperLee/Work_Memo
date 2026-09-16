@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build Floyd-Warshall算法",
-      "program": "${workspaceFolder}/Floyd-Warshall算法/Floyd-Warshall算法/bin/Debug/net8.0/Floyd-Warshall算法.dll",
+      "program": "${workspaceFolder}/Floyd-Warshall算法/Floyd-Warshall算法/bin/Debug/net10.0/Floyd-Warshall算法.dll",
       "cwd": "${workspaceFolder}/Floyd-Warshall算法/Floyd-Warshall算法",
       "console": "integratedTerminal",
       "stopAtEntry": false

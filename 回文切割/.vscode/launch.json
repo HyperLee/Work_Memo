@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 回文切割",
-      "program": "${workspaceFolder}/回文切割/回文切割/bin/Debug/net8.0/回文切割.dll",
+      "program": "${workspaceFolder}/回文切割/回文切割/bin/Debug/net10.0/回文切割.dll",
       "cwd": "${workspaceFolder}/回文切割/回文切割",
       "console": "integratedTerminal",
       "stopAtEntry": false

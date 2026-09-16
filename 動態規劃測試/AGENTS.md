@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 動態規劃測試/動態規劃測試/動態規劃測試.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

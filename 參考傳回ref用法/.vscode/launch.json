@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 參考傳回ref用法",
-      "program": "${workspaceFolder}/參考傳回ref用法/參考傳回ref用法/bin/Debug/net8.0/參考傳回ref用法.dll",
+      "program": "${workspaceFolder}/參考傳回ref用法/參考傳回ref用法/bin/Debug/net10.0/參考傳回ref用法.dll",
       "cwd": "${workspaceFolder}/參考傳回ref用法/參考傳回ref用法",
       "console": "integratedTerminal",
       "stopAtEntry": false

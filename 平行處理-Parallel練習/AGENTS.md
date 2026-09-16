@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 平行處理-Parallel練習/平行處理-Parallel練習/平行處理-Parallel練習.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

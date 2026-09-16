@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build Grid題目類型解法",
-      "program": "${workspaceFolder}/Grid題目類型解法/Grid題目類型解法/bin/Debug/net8.0/Grid題目類型解法.dll",
+      "program": "${workspaceFolder}/Grid題目類型解法/Grid題目類型解法/bin/Debug/net10.0/Grid題目類型解法.dll",
       "cwd": "${workspaceFolder}/Grid題目類型解法/Grid題目類型解法",
       "console": "integratedTerminal",
       "stopAtEntry": false

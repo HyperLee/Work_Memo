@@ -1,6 +1,6 @@
 # LeetCode 3355：零陣列轉換 I（差分陣列）
 
-本專案使用 C# / .NET 9 示範如何以差分陣列統計區間查詢的覆蓋次數，並保留三種公開解法互相比對。固定 smoke harness 會執行 5 組案例、共 15 項方法檢查。
+本專案使用 C# / .NET 10 示範如何以差分陣列統計區間查詢的覆蓋次數，並保留三種公開解法互相比對。固定 smoke harness 會執行 5 組案例、共 15 項方法檢查。
 
 - [LeetCode 3355：Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/)
 - [LeetCode 中文題目：零陣列變換 I](https://leetcode.cn/problems/zero-array-transformation-i/)
@@ -49,10 +49,9 @@ public bool IsZeroArray3(int[] nums, int[][] queries)
 ```bash
 dotnet restore 差分陣列/差分陣列.csproj
 dotnet build 差分陣列/差分陣列.csproj --nologo
-DOTNET_ROLL_FORWARD=Major dotnet run --project 差分陣列/差分陣列.csproj --no-build --nologo
 ```
 
-`DOTNET_ROLL_FORWARD=Major` 只在本機沒有 .NET 9 runtime、但有相容的較新 runtime 時需要。若已安裝 .NET 9 runtime，可直接執行 `dotnet run`。
+`DOTNET_ROLL_FORWARD=Major` 只在本機沒有 .NET 10 runtime、但有相容的較新 runtime 時需要。若已安裝 .NET 10 runtime，可直接執行 `dotnet run`。
 
 成功時最後一行是：
 
@@ -300,7 +299,7 @@ Summary: 15/15 checks passed.
 - 方法依賴題目保證：`nums` 非空、數值非負、查詢格式與索引合法。
 - 不處理 `null`、空 `nums`、反向區間或越界查詢。
 - smoke harness 是固定案例的快速驗證，不取代完整單元測試或窮舉測試。
-- 專案目標仍為 `net9.0`；較新 runtime 的 roll-forward 只用於本機缺少 .NET 9 runtime 的情況。
+- 專案目標仍為 `net10.0`；較新 runtime 的 roll-forward 只用於本機缺少 .NET 10 runtime 的情況。
 
 ### 參考資料
 

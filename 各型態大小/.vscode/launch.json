@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 各型態大小",
-      "program": "${workspaceFolder}/各型態大小/各型態大小/bin/Debug/net8.0/各型態大小.dll",
+      "program": "${workspaceFolder}/各型態大小/各型態大小/bin/Debug/net10.0/各型態大小.dll",
       "cwd": "${workspaceFolder}/各型態大小/各型態大小",
       "console": "integratedTerminal",
       "stopAtEntry": false

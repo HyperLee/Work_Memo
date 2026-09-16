@@ -3,7 +3,7 @@
 ## Project
 
 - Path: list內含二維陣列輸出範例/list內含二維陣列輸出範例/list內含二維陣列輸出範例.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

@@ -3,7 +3,7 @@
 ## Project
 
 - Path: Dictionary存陣列資料輸出/Dictionary存陣列資料輸出/Dictionary存陣列資料輸出.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

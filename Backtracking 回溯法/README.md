@@ -1,6 +1,6 @@
 # Backtracking 回溯法
 
-這個 net8.0 主控台專案保留原始演算法與公開方法，並以固定 smoke test 驗證結果。
+這個 net10.0 主控台專案保留原始演算法與公開方法，並以固定 smoke test 驗證結果。
 
 ## 題目或原始需求說明
 
@@ -19,10 +19,8 @@ dotnet restore Backtracking 回溯法/Backtracking 回溯法/Backtracking 回溯
 dotnet build Backtracking 回溯法/Backtracking 回溯法/Backtracking 回溯法.csproj --nologo
 dotnet run --project Backtracking 回溯法/Backtracking 回溯法/Backtracking 回溯法.csproj --no-build --nologo
 
-本機只有 .NET 10 runtime；net8.0 可執行時使用：
-DOTNET_ROLL_FORWARD=Major dotnet run --project Backtracking 回溯法/Backtracking 回溯法/Backtracking 回溯法.csproj --no-build --nologo
+本機使用 .NET 10 runtime；本專案已設定為 net10.0，可直接執行上列命令。
 
-fallback 是環境限制下的執行方式，不等同原生 TFM runtime 驗證。
 
 ## 解題概念與出發點
 
@@ -87,4 +85,4 @@ Summary: 3/3 checks passed.
 
 ## 參考資料與已知限制
 
-題目與 API 參考資料保留於 Program.cs XML 註解。smoke test 是自包含 console 驗證，不是獨立測試框架；目前 net8/net9 run 需依主機 runtime 狀態解讀 fallback。
+題目與 API 參考資料保留於 Program.cs XML 註解。smoke test 是自包含 console 驗證，不是獨立測試框架；目前已升級為 net10.0；在已安裝 .NET 10 runtime 的主機上直接執行即可。

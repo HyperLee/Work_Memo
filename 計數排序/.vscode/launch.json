@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 計數排序",
-      "program": "${workspaceFolder}/計數排序/計數排序/bin/Debug/net8.0/計數排序.dll",
+      "program": "${workspaceFolder}/計數排序/計數排序/bin/Debug/net10.0/計數排序.dll",
       "cwd": "${workspaceFolder}/計數排序/計數排序",
       "console": "integratedTerminal",
       "stopAtEntry": false

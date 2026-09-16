@@ -1,6 +1,6 @@
 # 使用 async、await 與 Task.WhenAll 的穩定多工範例
 
-這個 .NET 8 主控台專案示範同時啟動多個非同步工作、等待全部完成，再以固定順序彙總結果。預設路徑適合無人值守執行，不依賴鍵盤、長時間延遲或排程交錯順序。
+這個 .NET 10 主控台專案示範同時啟動多個非同步工作、等待全部完成，再以固定順序彙總結果。預設路徑適合無人值守執行，不依賴鍵盤、長時間延遲或排程交錯順序。
 
 ## 題目與需求
 
@@ -29,7 +29,7 @@ dotnet build "多工處理-使用 async 和 await練習/多工處理-使用 asyn
 dotnet run --project "多工處理-使用 async 和 await練習/多工處理-使用 async 和 await練習.csproj" --no-build --nologo
 ```
 
-若系統沒有 .NET 8 runtime、只有較新 major runtime，可在執行命令前加上 `DOTNET_ROLL_FORWARD=Major`。任何案例失敗時會設定 `Environment.ExitCode = 1`。
+若系統沒有 .NET 10 runtime、只有較新 major runtime，可在執行命令前加上 `DOTNET_ROLL_FORWARD=Major`。任何案例失敗時會設定 `Environment.ExitCode = 1`。
 
 ## 核心概念
 

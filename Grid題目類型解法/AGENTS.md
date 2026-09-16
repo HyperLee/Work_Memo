@@ -3,7 +3,7 @@
 ## Project
 
 - Path: Grid題目類型解法/Grid題目類型解法/Grid題目類型解法.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

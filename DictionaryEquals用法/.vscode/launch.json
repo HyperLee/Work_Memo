@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build DictionaryEquals用法",
-      "program": "${workspaceFolder}/DictionaryEquals用法/bin/Debug/net9.0/DictionaryEquals用法.dll",
+      "program": "${workspaceFolder}/DictionaryEquals用法/bin/Debug/net10.0/DictionaryEquals用法.dll",
       "cwd": "${workspaceFolder}/DictionaryEquals用法",
       "console": "integratedTerminal",
       "stopAtEntry": false

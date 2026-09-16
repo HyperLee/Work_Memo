@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build BitwiseSubsequence",
-      "program": "${workspaceFolder}/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.dll",
+      "program": "${workspaceFolder}/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net10.0/BitwiseSubsequence.dll",
       "cwd": "${workspaceFolder}/BitwiseSubsequence/BitwiseSubsequence",
       "console": "integratedTerminal",
       "stopAtEntry": false

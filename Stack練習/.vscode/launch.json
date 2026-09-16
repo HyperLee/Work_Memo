@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build Stack練習",
-      "program": "${workspaceFolder}/Stack練習/Stack練習/bin/Debug/net8.0/Stack練習.dll",
+      "program": "${workspaceFolder}/Stack練習/Stack練習/bin/Debug/net10.0/Stack練習.dll",
       "cwd": "${workspaceFolder}/Stack練習/Stack練習",
       "console": "integratedTerminal",
       "stopAtEntry": false

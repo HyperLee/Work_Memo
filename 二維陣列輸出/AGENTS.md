@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 二維陣列輸出/二維陣列輸出/二維陣列輸出.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

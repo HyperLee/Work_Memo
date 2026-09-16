@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 多工處理-使用 Thread 類練習",
-      "program": "${workspaceFolder}/多工處理-使用 Thread 類練習/多工處理-使用 Thread 類練習/bin/Debug/net8.0/多工處理-使用 Thread 類練習.dll",
+      "program": "${workspaceFolder}/多工處理-使用 Thread 類練習/多工處理-使用 Thread 類練習/bin/Debug/net10.0/多工處理-使用 Thread 類練習.dll",
       "cwd": "${workspaceFolder}/多工處理-使用 Thread 類練習/多工處理-使用 Thread 類練習",
       "console": "integratedTerminal",
       "stopAtEntry": false

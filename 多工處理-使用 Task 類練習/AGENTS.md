@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 多工處理-使用 Task 類練習/多工處理-使用 Task 類練習/多工處理-使用 Task 類練習.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

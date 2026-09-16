@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 呼叫其他class",
-      "program": "${workspaceFolder}/呼叫其他class/呼叫其他class/bin/Debug/net8.0/呼叫其他class.dll",
+      "program": "${workspaceFolder}/呼叫其他class/呼叫其他class/bin/Debug/net10.0/呼叫其他class.dll",
       "cwd": "${workspaceFolder}/呼叫其他class/呼叫其他class",
       "console": "integratedTerminal",
       "stopAtEntry": false

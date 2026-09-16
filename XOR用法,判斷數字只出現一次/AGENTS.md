@@ -3,7 +3,7 @@
 ## Project
 
 - Path: XOR用法,判斷數字只出現一次/XOR用法,判斷數字只出現一次/XOR用法,判斷數字只出現一次.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

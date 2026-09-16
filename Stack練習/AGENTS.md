@@ -3,7 +3,7 @@
 ## Project
 
 - Path: Stack練習/Stack練習/Stack練習.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

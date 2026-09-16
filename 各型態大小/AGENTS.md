@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 各型態大小/各型態大小/各型態大小.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

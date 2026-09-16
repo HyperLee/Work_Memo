@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 計算兩數總和且不使用加減法",
-      "program": "${workspaceFolder}/計算兩數總和且不使用加減法/計算兩數總和且不使用加減法/bin/Debug/net8.0/計算兩數總和且不使用加減法.dll",
+      "program": "${workspaceFolder}/計算兩數總和且不使用加減法/計算兩數總和且不使用加減法/bin/Debug/net10.0/計算兩數總和且不使用加減法.dll",
       "cwd": "${workspaceFolder}/計算兩數總和且不使用加減法/計算兩數總和且不使用加減法",
       "console": "integratedTerminal",
       "stopAtEntry": false

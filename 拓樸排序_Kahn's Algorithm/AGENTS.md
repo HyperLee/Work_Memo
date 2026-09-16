@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

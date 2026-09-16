@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This directory contains a .NET 9 console teaching project with two sliding-window algorithms.
+This directory contains a .NET 10 console teaching project with two sliding-window algorithms.
 
 - `SlidingWindow/Program.cs` contains the public algorithms and deterministic console smoke harness.
-- `SlidingWindow/SlidingWindow.csproj` targets `net9.0`.
+- `SlidingWindow/SlidingWindow.csproj` targets `net10.0`.
 - `SlidingWindow.Tests/` is an adjacent xUnit project and is outside this task's change scope.
 
 ## Build, Test, and Development Commands
@@ -19,7 +19,7 @@ DOTNET_ROLL_FORWARD=Major dotnet run --project SlidingWindow/SlidingWindow.cspro
 dotnet format SlidingWindow/SlidingWindow.csproj --verify-no-changes
 ```
 
-The console harness is the scoped smoke test and exits nonzero on failure. Do not use or modify `SlidingWindow.Tests` for this task. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 9 runtime is unavailable.
+The console harness is the scoped smoke test and exits nonzero on failure. Do not use or modify `SlidingWindow.Tests` for this task. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 10 runtime is unavailable.
 
 ## Coding Style & Documentation
 

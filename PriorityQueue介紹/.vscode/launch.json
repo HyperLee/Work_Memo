@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build PriorityQueue介紹",
-      "program": "${workspaceFolder}/PriorityQueue介紹/bin/Debug/net9.0/PriorityQueue介紹.dll",
+      "program": "${workspaceFolder}/PriorityQueue介紹/bin/Debug/net10.0/PriorityQueue介紹.dll",
       "cwd": "${workspaceFolder}/PriorityQueue介紹",
       "console": "integratedTerminal",
       "stopAtEntry": false,

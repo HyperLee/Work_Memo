@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 二元樹輸出/二元樹輸出/二元樹輸出.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 二分法查找標準題",
-      "program": "${workspaceFolder}/二分法查找標準題/二分法查找標準題/bin/Debug/net8.0/二分法查找標準題.dll",
+      "program": "${workspaceFolder}/二分法查找標準題/二分法查找標準題/bin/Debug/net10.0/二分法查找標準題.dll",
       "cwd": "${workspaceFolder}/二分法查找標準題/二分法查找標準題",
       "console": "integratedTerminal",
       "stopAtEntry": false

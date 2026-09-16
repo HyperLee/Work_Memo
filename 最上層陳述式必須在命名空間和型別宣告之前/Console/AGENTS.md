@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This directory contains a .NET 9 console teaching project about C# top-level statements and LeetCode 2 linked-list addition.
+This directory contains a .NET 10 console teaching project about C# top-level statements and LeetCode 2 linked-list addition.
 
 - `ConsoleApp1/Program.cs` keeps the top-level entry before all type declarations and includes deterministic smoke cases.
-- `ConsoleApp1/ConsoleApp1.csproj` targets `net9.0`.
+- `ConsoleApp1/ConsoleApp1.csproj` targets `net10.0`.
 - `.vscode/` provides project-specific build and debug integration.
 
 ## Build, Test, and Development Commands
@@ -19,7 +19,7 @@ DOTNET_ROLL_FORWARD=Major dotnet run --project ConsoleApp1/ConsoleApp1.csproj --
 dotnet format ConsoleApp1/ConsoleApp1.csproj --verify-no-changes
 ```
 
-The console harness is the automated smoke test and exits nonzero on failure. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 9 runtime is unavailable.
+The console harness is the automated smoke test and exits nonzero on failure. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 10 runtime is unavailable.
 
 ## Coding Style & Documentation
 

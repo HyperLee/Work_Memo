@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 參考傳回ref用法/參考傳回ref用法/參考傳回ref用法.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

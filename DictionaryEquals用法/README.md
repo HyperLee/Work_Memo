@@ -1,6 +1,6 @@
 # LeetCode 290：Word Pattern（Dictionary 雙向對應）
 
-這個 .NET 9 主控台專案使用兩個 `Dictionary` 驗證 pattern 字元與單字之間的雙射關係，並以固定案例提供可重複執行的 smoke test。
+這個 .NET 10 主控台專案使用兩個 `Dictionary` 驗證 pattern 字元與單字之間的雙射關係，並以固定案例提供可重複執行的 smoke test。
 
 ## 題目與需求
 

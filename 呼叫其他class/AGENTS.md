@@ -3,7 +3,7 @@
 ## Project
 
 - Path: 呼叫其他class/呼叫其他class/呼叫其他class.csproj
-- Target framework: net8.0
+- Target framework: net10.0
 - Type: self-contained console project
 
 ## Commands

@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-This directory contains a .NET 8 console teaching project for `Task`, `async`, `await`, and `Task.WhenAll`.
+This directory contains a .NET 10 console teaching project for `Task`, `async`, `await`, and `Task.WhenAll`.
 
 - `多工處理-使用 async 和 await練習/Program.cs` contains async workers and the deterministic console smoke harness.
-- `多工處理-使用 async 和 await練習/多工處理-使用 async 和 await練習.csproj` targets `net8.0`.
+- `多工處理-使用 async 和 await練習/多工處理-使用 async 和 await練習.csproj` targets `net10.0`.
 - `.vscode/` provides project-specific build and debug integration.
 
 ## Build, Test, and Development Commands
@@ -19,7 +19,7 @@ DOTNET_ROLL_FORWARD=Major dotnet run --project "多工處理-使用 async 和 aw
 dotnet format "多工處理-使用 async 和 await練習/多工處理-使用 async 和 await練習.csproj" --verify-no-changes
 ```
 
-The console harness is the automated smoke test and exits nonzero on failure. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 8 runtime is unavailable.
+The console harness is the automated smoke test and exits nonzero on failure. `DOTNET_ROLL_FORWARD=Major` is needed only when a matching .NET 10 runtime is unavailable.
 
 ## Coding Style & Documentation
 

@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 陣列中重複的數字",
-      "program": "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字/bin/Debug/net8.0/陣列中重複的數字.dll",
+      "program": "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字/bin/Debug/net10.0/陣列中重複的數字.dll",
       "cwd": "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字",
       "console": "integratedTerminal",
       "stopAtEntry": false

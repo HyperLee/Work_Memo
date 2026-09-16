@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build 替換空格",
-      "program": "${workspaceFolder}/替換空格/替換空格/bin/Debug/net8.0/替換空格.dll",
+      "program": "${workspaceFolder}/替換空格/替換空格/bin/Debug/net10.0/替換空格.dll",
       "cwd": "${workspaceFolder}/替換空格/替換空格",
       "console": "integratedTerminal",
       "stopAtEntry": false

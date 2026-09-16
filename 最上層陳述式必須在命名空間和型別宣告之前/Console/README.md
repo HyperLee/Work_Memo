@@ -1,6 +1,6 @@
 # C# 最上層陳述式與 Add Two Numbers
 
-這個 .NET 9 主控台專案保留「最上層陳述式必須在型別宣告之前」的教學目的，並用 LeetCode 2 的反向鏈結串列加法作為可執行範例。
+這個 .NET 10 主控台專案保留「最上層陳述式必須在型別宣告之前」的教學目的，並用 LeetCode 2 的反向鏈結串列加法作為可執行範例。
 
 ## 題目與需求
 
@@ -26,7 +26,7 @@ dotnet build ConsoleApp1/ConsoleApp1.csproj --nologo
 dotnet run --project ConsoleApp1/ConsoleApp1.csproj --no-build --nologo
 ```
 
-若沒有 .NET 9 runtime 而只有較新 major runtime，可在執行命令前加上 `DOTNET_ROLL_FORWARD=Major`。
+若沒有 .NET 10 runtime 而只有較新 major runtime，可在執行命令前加上 `DOTNET_ROLL_FORWARD=Major`。
 
 ## 核心概念
 

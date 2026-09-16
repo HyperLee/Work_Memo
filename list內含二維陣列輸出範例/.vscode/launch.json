@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build list內含二維陣列輸出範例",
-      "program": "${workspaceFolder}/list內含二維陣列輸出範例/list內含二維陣列輸出範例/bin/Debug/net8.0/list內含二維陣列輸出範例.dll",
+      "program": "${workspaceFolder}/list內含二維陣列輸出範例/list內含二維陣列輸出範例/bin/Debug/net10.0/list內含二維陣列輸出範例.dll",
       "cwd": "${workspaceFolder}/list內含二維陣列輸出範例/list內含二維陣列輸出範例",
       "console": "integratedTerminal",
       "stopAtEntry": false
