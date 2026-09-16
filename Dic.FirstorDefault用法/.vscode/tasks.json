@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build Dic.FirstorDefault用法",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/Dic.FirstorDefault用法/Dic.FirstorDefault用法/Dic.FirstorDefault用法.csproj",
+        "--configuration",
+        "Debug",
+        "--nologo"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

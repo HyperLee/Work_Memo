@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 進階排序string_CompareOrdinal",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 進階排序string_CompareOrdinal",
+      "program": "${workspaceFolder}/進階排序string_CompareOrdinal/進階排序string_CompareOrdinal/bin/Debug/net8.0/進階排序string_CompareOrdinal.dll",
+      "cwd": "${workspaceFolder}/進階排序string_CompareOrdinal/進階排序string_CompareOrdinal",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

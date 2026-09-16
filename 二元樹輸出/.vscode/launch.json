@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 二元樹輸出",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 二元樹輸出",
+      "program": "${workspaceFolder}/二元樹輸出/二元樹輸出/bin/Debug/net8.0/二元樹輸出.dll",
+      "cwd": "${workspaceFolder}/二元樹輸出/二元樹輸出",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,10 +1,15 @@
 {
-  "type": "coreclr",
-  "request": "launch",
-  "name": "陣列中重複的數字",
-  "program": "${workspaceFolder}/陣列中重複的數字/bin/Debug/net8.0/${input:assemblyName}.dll",
-  "cwd": "${workspaceFolder}/陣列中重複的數字",
-  "stopAtEntry": false,
-  "console": "internalConsole",
-  "preLaunchTask": "build"
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 陣列中重複的數字",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 陣列中重複的數字",
+      "program": "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字/bin/Debug/net8.0/陣列中重複的數字.dll",
+      "cwd": "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
 }

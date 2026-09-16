@@ -21,15 +21,77 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { 2, 3, 5 };
-            int target = 8;
-
-            var result = CombinationSum(input, target);
-            foreach (var item in result)
+            (int[] Candidates, int Target, string Expected)[] cases =
             {
-                Console.WriteLine(string.Join(",", item));
+                (new[] { 2, 3, 5 }, 8, "2+2+2+2|2+3+3|3+5"),
+                (new[] { 2, 3, 6, 7 }, 7, "2+2+3|7"),
+                (new[] { 5 }, 3, "(none)")
+            };
+
+            int total = 0;
+            int passed = 0;
+            foreach (var testCase in cases)
+            {
+                RunCase(
+                    $"target={testCase.Target}",
+                    testCase.Expected,
+                    () => Normalize(CombinationSum(testCase.Candidates.ToArray(), testCase.Target)),
+                    ref total,
+                    ref passed);
             }
-            Console.WriteLine();
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 將組合結果轉成排序固定的文字，忽略回溯產生順序的差異。
+        /// </summary>
+        /// <param name="combinations">回溯法找到的組合集合。</param>
+        /// <returns>以加號分隔元素、以直線分隔組合的文字。</returns>
+        private static string Normalize(IList<IList<int>> combinations)
+        {
+            List<string> values = combinations
+                .Select(combination => string.Join("+", combination))
+                .OrderBy(value => value, StringComparer.Ordinal)
+                .ToList();
+            return values.Count == 0 ? "(none)" : string.Join("|", values);
+        }
+
+        /// <summary>
+        /// 執行一個組合總和案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期組合集合。</param>
+        /// <param name="actualFactory">產生實際組合集合的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 

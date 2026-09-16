@@ -11,11 +11,36 @@ namespace 插入排序
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] array = { 12, 11, 13, 5, 6 };
-            InsertionSort(array);
-            Console.WriteLine("Sorted array:");
-            PrintArray(array);
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("一般資料", new int[] { 5, 6, 11, 12, 13 }, new int[] { 12, 11, 13, 5, 6 });
+            passed += RunCase("含重複值", new int[] { 1, 1, 2, 3 }, new int[] { 3, 1, 2, 1 });
+            passed += RunCase("已排序資料", new int[] { -1, 0, 4 }, new int[] { -1, 0, 4 });
+
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行插入排序並比較整個陣列內容。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期升冪陣列。</param>
+        /// <param name="input">本案例獨立的輸入陣列。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, int[] expected, int[] input)
+        {
+            int[] actual = [.. input];
+            InsertionSort(actual);
+            bool passed = expected.SequenceEqual(actual);
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: [{string.Join(", ", expected)}]");
+            Console.WriteLine($"Actual: [{string.Join(", ", actual)}]");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -37,7 +62,7 @@ namespace 插入排序
         static void InsertionSort(int[] array)
         {
             int n = array.Length;
-            for(int i = 1; i < n; i++)
+            for (int i = 1; i < n; i++)
             {
                 //  將第一個元素視為已經排序。
                 int key = array[i];

@@ -2,19 +2,51 @@
 
 class Program
 {
+    /// <summary>
+    /// 執行固定矩陣案例，驗證順時針螺旋輸出。
+    /// </summary>
+    /// <param name="args">程式執行參數；固定 smoke test 不需額外參數。</param>
     static void Main(string[] args)
     {
-        // 建立測試用的矩陣
-        int[][] matrix = new int[][] {
-            new int[] {1, 2, 3},
-            new int[] {4, 5, 6},
-            new int[] {7, 8, 9}
-        };
-        
-        // 執行螺旋順序輸出，取得結果
-        IList<int> result = SpiralOrder(matrix);
-        // 輸出結果到主控台
-        Console.WriteLine("res: " + string.Join(", ", result));
+        int passed = 0;
+        passed += RunCase("三乘三矩陣", "1,2,3,6,9,8,7,4,5", new int[][]
+        {
+            new int[] { 1, 2, 3 },
+            new int[] { 4, 5, 6 },
+            new int[] { 7, 8, 9 }
+        });
+        passed += RunCase("二乘二矩陣", "1,2,4,3", new int[][]
+        {
+            new int[] { 1, 2 },
+            new int[] { 3, 4 }
+        });
+        passed += RunCase("空矩陣", string.Empty, Array.Empty<int[]>());
+
+        Console.WriteLine($"Summary: {passed}/3 checks passed.");
+        if (passed != 3)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
+
+    /// <summary>
+    /// 以新矩陣執行螺旋走訪，避免 sentinel 標記跨案例污染。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">逗號分隔的預期走訪值。</param>
+    /// <param name="input">本案例獨立的矩陣。</param>
+    /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+    private static int RunCase(string name, string expected, int[][] input)
+    {
+        IList<int> result = SpiralOrder(input.Select(row => row.ToArray()).ToArray());
+        string actual = string.Join(",", result);
+        bool passed = expected == actual;
+        Console.WriteLine($"Case: {name}");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+        Console.WriteLine();
+        return passed ? 1 : 0;
     }
 
     /// <summary>
@@ -24,7 +56,7 @@ class Program
     /// {0, -1}: 向左移動
     /// {-1, 0}: 向上移動
     /// </summary>
-    private static readonly int[,] DIRS = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    private static readonly int[,] DIRS = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
 
     /// <summary>
     /// 以順時針螺旋順序回傳矩陣中的所有元素
@@ -54,7 +86,7 @@ class Program
     public static IList<int> SpiralOrder(int[][] matrix)
     {
         int m = matrix.Length; // 矩陣的列數
-        if(m == 0)
+        if (m == 0)
         {
             // 若矩陣為空，直接回傳空串列
             return new List<int>();
@@ -69,7 +101,7 @@ class Program
         int di = 0; // 當前方向索引
 
         // 走訪所有元素
-        for(int k = 0; k < m * n; k++)
+        for (int k = 0; k < m * n; k++)
         {
             res.Add(matrix[i][j]); // 加入目前元素
             matrix[i][j] = int.MaxValue; // 標記已拜訪過

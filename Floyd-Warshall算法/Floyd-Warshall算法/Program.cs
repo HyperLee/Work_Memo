@@ -14,35 +14,115 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int INF = int.MaxValue / 2; // 使用一個足夠大的數來表示無限大
-            int[,] graph = 
+            int inf = int.MaxValue / 2;
+            int[][,] graphs =
             {
-                { 0, 3, INF, 7 },
-                { 8, 0, 2, INF },
-                { 5, INF, 0, 1 },
-                { 2, INF, INF, 0 }
+                new int[,]
+                {
+                    { 0, 3, inf, 7 },
+                    { 8, 0, 2, inf },
+                    { 5, inf, 0, 1 },
+                    { 2, inf, inf, 0 }
+                },
+                new int[,]
+                {
+                    { 0, 4, inf },
+                    { inf, 0, 2 },
+                    { inf, inf, 0 }
+                }
+            };
+            string[] expected =
+            {
+                "0,3,5,6;5,0,2,3;3,6,0,1;2,5,7,0",
+                "0,4,6;INF,0,2;INF,INF,0"
             };
 
-            int[,] dist = FloydWarshall(graph);
-
-            // 輸出結果
-            for (int i = 0; i < dist.GetLength(0); i++)
+            int total = 0;
+            int passed = 0;
+            for (int i = 0; i < graphs.Length; i++)
             {
-                for (int j = 0; j < dist.GetLength(1); j++)
-                {
-                    if (dist[i,j] == INF)
-                    {
-                        Console.Write("INF ");
-                    }
-                    else
-                    {
-                        Console.Write(dist[i,j] + " ");
-                    }
-                }
-                Console.WriteLine();
+                int caseIndex = i;
+                RunCase(
+                    $"graph={caseIndex + 1}",
+                    expected[caseIndex],
+                    () => MatrixToText(FloydWarshall(CloneMatrix(graphs[caseIndex]))),
+                    ref total,
+                    ref passed);
             }
 
-            Console.ReadKey();
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 複製距離矩陣，讓每個案例的動態規劃狀態彼此隔離。
+        /// </summary>
+        /// <param name="matrix">要複製的距離矩陣。</param>
+        /// <returns>新的二維距離矩陣。</returns>
+        private static int[,] CloneMatrix(int[,] matrix)
+        {
+            int[,] copy = new int[matrix.GetLength(0), matrix.GetLength(1)];
+            Array.Copy(matrix, copy, matrix.Length);
+            return copy;
+        }
+
+        /// <summary>
+        /// 將距離矩陣轉成固定格式，並將無限距離標示為 INF。
+        /// </summary>
+        /// <param name="matrix">Floyd–Warshall 的結果矩陣。</param>
+        /// <returns>以分號分隔列、逗號分隔欄的文字。</returns>
+        private static string MatrixToText(int[,] matrix)
+        {
+            int inf = int.MaxValue / 2;
+            List<string> rows = new List<string>();
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                List<string> values = new List<string>();
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    values.Add(matrix[i, j] == inf ? "INF" : matrix[i, j].ToString());
+                }
+
+                rows.Add(string.Join(",", values));
+            }
+
+            return string.Join(";", rows);
+        }
+
+        /// <summary>
+        /// 執行一個 Floyd–Warshall 案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期距離矩陣。</param>
+        /// <param name="actualFactory">產生實際距離矩陣的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 
@@ -53,7 +133,6 @@
         /// <returns></returns>
         static int[,] FloydWarshall(int[,] graph)
         {
-            int INF = int.MaxValue / 2;
             int V = graph.GetLength(0);
             int[,] dist = new int[V, V];
 

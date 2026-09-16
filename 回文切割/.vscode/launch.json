@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 回文切割",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 回文切割",
+      "program": "${workspaceFolder}/回文切割/回文切割/bin/Debug/net8.0/回文切割.dll",
+      "cwd": "${workspaceFolder}/回文切割/回文切割",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 動態規劃測試",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 動態規劃測試",
+      "program": "${workspaceFolder}/動態規劃測試/動態規劃測試/bin/Debug/net8.0/動態規劃測試.dll",
+      "cwd": "${workspaceFolder}/動態規劃測試/動態規劃測試",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

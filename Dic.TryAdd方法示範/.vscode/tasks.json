@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build Dic.TryAdd方法示範",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/Dic.TryAdd方法示範/Dic.TryAdd方法示範/Dic.TryAdd方法示範.csproj",
+        "--configuration",
+        "Debug",
+        "--nologo"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

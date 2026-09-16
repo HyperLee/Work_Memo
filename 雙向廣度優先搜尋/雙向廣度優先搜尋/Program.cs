@@ -22,28 +22,103 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            // 建立一個無向圖的鄰接表表示法
-            // 每個節點都存儲了與其相連的所有節點列表
-            Dictionary<int, List<int>> graph = new Dictionary<int, List<int>>
+            int total = 0;
+            int passed = 0;
+            BidirectionalBFS bfs = new BidirectionalBFS();
+
+            RunCase(
+                "可達路徑",
+                "3",
+                () => bfs.FindShortestPath(CreateConnectedGraph(), 1, 6).ToString(),
+                ref total,
+                ref passed);
+
+            RunCase(
+                "相同起點終點",
+                "0",
+                () => bfs.FindShortestPath(CreateConnectedGraph(), 3, 3).ToString(),
+                ref total,
+                ref passed);
+
+            RunCase(
+                "不可達路徑",
+                "-1",
+                () => bfs.FindShortestPath(CreateDisconnectedGraph(), 1, 6).ToString(),
+                ref total,
+                ref passed);
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
             {
-                { 1, new List<int> { 2, 3 } },   // 節點1連接到節點2和3
-                { 2, new List<int> { 1, 4 } },   // 節點2連接到節點1和4
-                { 3, new List<int> { 1, 4, 5 } },// 節點3連接到節點1,4,5
-                { 4, new List<int> { 2, 3, 6 } },// 節點4連接到節點2,3,6
-                { 5, new List<int> { 3, 6 } },   // 節點5連接到節點3和6
-                { 6, new List<int> { 4, 5 } }    // 節點6連接到節點4和5
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 建立包含 1 到 6 最短三步路徑的無向圖。
+        /// </summary>
+        /// <returns>固定的連通圖鄰接表。</returns>
+        private static Dictionary<int, List<int>> CreateConnectedGraph()
+        {
+            return new Dictionary<int, List<int>>
+            {
+                { 1, new List<int> { 2, 3 } },
+                { 2, new List<int> { 1, 4 } },
+                { 3, new List<int> { 1, 4, 5 } },
+                { 4, new List<int> { 2, 3, 6 } },
+                { 5, new List<int> { 3, 6 } },
+                { 6, new List<int> { 4, 5 } }
             };
+        }
 
-            // 定義搜尋的起點和終點節點
-            int start = 1;  // 從節點1開始
-            int target = 6; // 到節點6結束
+        /// <summary>
+        /// 建立兩個互不相連的元件，驗證找不到路徑時回傳 -1。
+        /// </summary>
+        /// <returns>固定的非連通圖鄰接表。</returns>
+        private static Dictionary<int, List<int>> CreateDisconnectedGraph()
+        {
+            return new Dictionary<int, List<int>>
+            {
+                { 1, new List<int> { 2 } },
+                { 2, new List<int> { 1 } },
+                { 3, new List<int>() },
+                { 4, new List<int> { 5 } },
+                { 5, new List<int> { 4 } },
+                { 6, new List<int>() }
+            };
+        }
 
-            // 初始化雙向BFS搜尋器並執行搜尋
-            var bfs = new BidirectionalBFS();
-            int distance = bfs.FindShortestPath(graph, start, target);
+        /// <summary>
+        /// 執行一個雙向 BFS 案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期最短距離。</param>
+        /// <param name="actualFactory">產生實際距離的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
 
-            // 輸出搜尋結果，如果返回-1表示沒有找到路徑
-            Console.WriteLine($"從節點 {start} 到節點 {target} 的最短距離是: {distance}");
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
     }
 

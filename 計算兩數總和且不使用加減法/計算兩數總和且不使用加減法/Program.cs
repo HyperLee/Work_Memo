@@ -11,21 +11,37 @@ class Program
     /// <param name="args"></param>
     static void Main(string[] args)
     {
-        // 測試加法
-        int a = 1, b = 2;
-        Console.WriteLine($"加法測試:");
-        Console.WriteLine($"a = {a}, b = {b} => GetSum(a, b) = {GetSum(a, b)}");
-        a = 2; b = 3;
-        Console.WriteLine($"a = {a}, b = {b} => GetSum(a, b) = {GetSum(a, b)}");
+        int passed = 0;
+        passed += RunCase("正數加法", 3, GetSum(1, 2));
+        passed += RunCase("包含負數的加法", -2, GetSum(-5, 3));
+        passed += RunCase("零與整數相加", 42, GetSum(0, 42));
+        passed += RunCase("正數減法", 2, GetDiff(5, 3));
+        passed += RunCase("負結果減法", -4, GetDiff(3, 7));
+        passed += RunCase("零差值", 0, GetDiff(9, 9));
 
-        // 測試減法
-        Console.WriteLine($"\n減法測試:");
-        a = 5; b = 3;
-        Console.WriteLine($"a = {a}, b = {b} => GetDiff(a, b) = {GetDiff(a, b)}"); // 應該輸出 2
-        a = 10; b = 7;
-        Console.WriteLine($"a = {a}, b = {b} => GetDiff(a, b) = {GetDiff(a, b)}"); // 應該輸出 3
-        a = 3; b = 2;
-        Console.WriteLine($"a = {a}, b = {b} => GetDiff(a, b) = {GetDiff(a, b)}"); // 應該輸出 1
+        Console.WriteLine($"Summary: {passed}/6 checks passed.");
+        if (passed != 6)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
+
+    /// <summary>
+    /// 比較位元運算加減法的預期與實際整數結果。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期結果。</param>
+    /// <param name="actual">演算法回傳的實際結果。</param>
+    /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+    private static int RunCase(string name, int expected, int actual)
+    {
+        bool passed = expected == actual;
+        Console.WriteLine($"Case: {name}");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+        Console.WriteLine();
+        return passed ? 1 : 0;
     }
 
     /// <summary>
@@ -48,7 +64,7 @@ class Program
     /// <param name="a"></param>
     /// <param name="b"></param>
     /// <returns></returns>
-    public static int GetSum(int a, int b) 
+    public static int GetSum(int a, int b)
     {
         // 1. 计算 a 和 b 的按位与，得到进位 carry
         // 2. 计算 a 和 b 的按位异或，得到不带进位的和 sum
@@ -58,8 +74,8 @@ class Program
         // 例如: 計算 3 + 2
         // 3 的二進位是 0011
         // 2 的二進位是 0010
-        
-        while (b != 0) 
+
+        while (b != 0)
         {
             // Step 1: 計算進位 (carry)
             // 使用位元AND運算 (&) 找出哪些位置需要進位
@@ -80,7 +96,7 @@ class Program
             // 現在 a = 0001, b = 0100
             // 繼續循環直到沒有進位 (b = 0)
         }
-        
+
         // 最終 a 包含了完整的加法結果
         return a;
     }
@@ -106,7 +122,7 @@ class Program
         // 3 的二進位：0011
         // 1. 取反：1100
         // 2. 加1：1101 (這就是-3的二補數表示)
-        
+
         // 使用 ~ 運算符取反，再加1
         return GetSum(a, GetSum(~b, 1));
     }

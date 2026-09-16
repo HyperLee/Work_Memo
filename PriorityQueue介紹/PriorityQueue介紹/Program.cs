@@ -21,28 +21,88 @@ class Program
     /// 在建立 PriorityQueue 時使用反向比較器：
     /// 1. var priorityQueue = new PriorityQueue<int, int>(Comparer<int>.Create((a, b) => b.CompareTo(a)));
     /// 2. 或是在設定優先級時使用負數：priorityQueue.Enqueue(1, -100);
-    /// <param name="args"></param>
+    /// </summary>
+    /// <param name="args">程式執行參數；固定 smoke test 不需額外參數。</param>
     static void Main(string[] args)
     {
-        // 創建一個優先級隊列，存儲整數並按優先級排序
-        // 預設排序是從小到大，數字越小優先級越高 
-        // 如果想要數字越大優先級越高，可以使用 Comparer<int>.Create((a, b) => b.CompareTo(a))
-        // TElement 你想存的元素（例如字串、物件等），TPriority 用來排序的「優先權」值。通常是 int 或其他可比大小的類型（如 double、DateTime 等）。
-        PriorityQueue<int, int> priorityQueue = new PriorityQueue<int, int>();
+        QueueStep[] expectedSteps =
+        [
+            new(3, 2, 2),
+            new(2, 3, 3),
+            new(1, 1, 1)
+        ];
+        QueueStep[] actualSteps = DrainDemoQueue(CreateDemoQueue());
 
-        // 添加元素到隊列中，第二個參數是優先級
+        int passedChecks = 0;
+        Console.WriteLine("Case: 預設比較器依數字優先權由小到大出隊");
+        for (int i = 0; i < expectedSteps.Length; i++)
+        {
+            passedChecks += PrintCheck($"Step {i + 1} Count", expectedSteps[i].Count, actualSteps[i].Count);
+            passedChecks += PrintCheck($"Step {i + 1} Peek", expectedSteps[i].Peek, actualSteps[i].Peek);
+            passedChecks += PrintCheck($"Step {i + 1} Dequeue", expectedSteps[i].Dequeued, actualSteps[i].Dequeued);
+        }
+
+        int totalChecks = expectedSteps.Length * 3;
+        Console.WriteLine($"Summary: {passedChecks}/{totalChecks} checks passed.");
+        if (passedChecks != totalChecks)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
+
+    private sealed record QueueStep(int Count, int Peek, int Dequeued);
+
+    /// <summary>
+    /// 建立包含原始示範資料的全新優先佇列。
+    /// </summary>
+    /// <returns>元素為 1、2、3，對應優先權為 100、10、50 的佇列。</returns>
+    private static PriorityQueue<int, int> CreateDemoQueue()
+    {
+        PriorityQueue<int, int> priorityQueue = new();
+
+        // 預設比較器以較小的數字優先權先出隊。
         priorityQueue.Enqueue(1, 100);
         priorityQueue.Enqueue(2, 10);
         priorityQueue.Enqueue(3, 50);
 
-        // 取出並移除優先級最高的元素
-        while (priorityQueue.Count > 0) 
+        return priorityQueue;
+    }
+
+    /// <summary>
+    /// 逐步記錄佇列在出隊前的 Count、Peek 與實際出隊元素。
+    /// </summary>
+    /// <param name="priorityQueue">要完整取出的非空整數優先佇列。</param>
+    /// <returns>依出隊順序排列的觀察結果；輸入佇列會被清空。</returns>
+    private static QueueStep[] DrainDemoQueue(PriorityQueue<int, int> priorityQueue)
+    {
+        List<QueueStep> steps = [];
+        while (priorityQueue.Count > 0)
         {
-            Console.WriteLine("Count:" + priorityQueue.Count);
-            Console.WriteLine("Peek(): " + priorityQueue.Peek());
-            var item = priorityQueue.Dequeue();
-            Console.WriteLine("Dequeue(): " + item);
-            Console.WriteLine("-----");
+            // Peek 與 Dequeue 必須指向同一個當前最小優先權元素。
+            int count = priorityQueue.Count;
+            int peek = priorityQueue.Peek();
+            int dequeued = priorityQueue.Dequeue();
+            steps.Add(new(count, peek, dequeued));
         }
+
+        return [.. steps];
+    }
+
+    /// <summary>
+    /// 輸出單一整數檢查的 Expected、Actual 與 PASS/FAIL 結果。
+    /// </summary>
+    /// <param name="name">可辨識檢查階段與欄位的名稱。</param>
+    /// <param name="expected">手動推導的預期整數。</param>
+    /// <param name="actual">執行佇列操作得到的實際整數。</param>
+    /// <returns>檢查通過時回傳 1，否則回傳 0，供總結累計。</returns>
+    private static int PrintCheck(string name, int expected, int actual)
+    {
+        bool passed = expected == actual;
+        Console.WriteLine($"Check: {name}");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+        Console.WriteLine();
+        return passed ? 1 : 0;
     }
 }

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 陣列計算最大_最小_平均值",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 陣列計算最大_最小_平均值",
+      "program": "${workspaceFolder}/陣列計算最大_最小_平均值/陣列計算最大_最小_平均值/bin/Debug/net8.0/陣列計算最大_最小_平均值.dll",
+      "cwd": "${workspaceFolder}/陣列計算最大_最小_平均值/陣列計算最大_最小_平均值",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

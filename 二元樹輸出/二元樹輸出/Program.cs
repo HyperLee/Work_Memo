@@ -43,30 +43,174 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            TreeNode root = new TreeNode(4);
+            int total = 0;
+            int passed = 0;
 
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(7);
+            RunCase(
+                "翻轉完整二元樹",
+                "inorder=9,7,6,4,3,2,1;preorder=4,7,9,6,2,3,1;postorder=9,6,7,3,1,2,4",
+                () =>
+                {
+                    TreeNode root = CreateSampleTree();
+                    TreeNode inverted = InvertTree(root);
+                    return $"inorder={string.Join(",", CollectInOrder(inverted))};" +
+                           $"preorder={string.Join(",", CollectPreOrder(inverted))};" +
+                           $"postorder={string.Join(",", CollectPostOrder(inverted))}";
+                },
+                ref total,
+                ref passed);
+
+            RunCase(
+                "翻轉空樹",
+                "null",
+                () => InvertTree(null) is null ? "null" : "not-null",
+                ref total,
+                ref passed);
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 建立每個測試案例獨立使用的完整二元樹。
+        /// </summary>
+        /// <returns>符合翻轉二元樹題目範例的根節點。</returns>
+        private static TreeNode CreateSampleTree()
+        {
+            TreeNode root = new TreeNode(4)
+            {
+                left = new TreeNode(2),
+                right = new TreeNode(7)
+            };
 
             root.left.left = new TreeNode(1);
             root.left.right = new TreeNode(3);
             root.right.left = new TreeNode(6);
             root.right.right = new TreeNode(9);
+            return root;
+        }
 
-            var res = InvertTree(root);
+        /// <summary>
+        /// 將樹以中序順序收集成清單，供 smoke test 比對而不直接寫入主控台。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <returns>左、根、右順序的節點值。</returns>
+        private static List<int> CollectInOrder(TreeNode node)
+        {
+            List<int> values = new List<int>();
+            CollectInOrder(node, values);
+            return values;
+        }
 
-            Console.WriteLine("輸出採用中序遍歷, 訪問順序：左子樹 -> 根節點 -> 右子樹");
-            InOrder(res);
-            Console.WriteLine("");
+        /// <summary>
+        /// 遞迴收集中序遍歷結果。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <param name="values">累積節點值的清單。</param>
+        private static void CollectInOrder(TreeNode node, List<int> values)
+        {
+            if (node == null)
+            {
+                return;
+            }
 
-            Console.WriteLine("輸出採用前序遍歷, 訪問順序：根節點 -> 左子樹 -> 右子樹");
-            PreOrder(res);
-            Console.WriteLine("");
+            CollectInOrder(node.left, values);
+            values.Add(node.val);
+            CollectInOrder(node.right, values);
+        }
 
-            Console.WriteLine("輸出採用後序遍歷, 訪問順序：左子樹 -> 右子樹 -> 根節點");
-            PostOrder(res);
-            Console.WriteLine("");
+        /// <summary>
+        /// 將樹以 preorder 順序收集成清單。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <returns>根、左、右順序的節點值。</returns>
+        private static List<int> CollectPreOrder(TreeNode node)
+        {
+            List<int> values = new List<int>();
+            CollectPreOrder(node, values);
+            return values;
+        }
 
+        /// <summary>
+        /// 遞迴收集前序遍歷結果。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <param name="values">累積節點值的清單。</param>
+        private static void CollectPreOrder(TreeNode node, List<int> values)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            values.Add(node.val);
+            CollectPreOrder(node.left, values);
+            CollectPreOrder(node.right, values);
+        }
+
+        /// <summary>
+        /// 將樹以 postorder 順序收集成清單。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <returns>左、右、根順序的節點值。</returns>
+        private static List<int> CollectPostOrder(TreeNode node)
+        {
+            List<int> values = new List<int>();
+            CollectPostOrder(node, values);
+            return values;
+        }
+
+        /// <summary>
+        /// 遞迴收集後序遍歷結果。
+        /// </summary>
+        /// <param name="node">目前拜訪的節點。</param>
+        /// <param name="values">累積節點值的清單。</param>
+        private static void CollectPostOrder(TreeNode node, List<int> values)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            CollectPostOrder(node.left, values);
+            CollectPostOrder(node.right, values);
+            values.Add(node.val);
+        }
+
+        /// <summary>
+        /// 執行一個固定案例並輸出統一的 Expected、Actual 與 PASS-FAIL 結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期結果。</param>
+        /// <param name="actualFactory">產生實際結果的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 

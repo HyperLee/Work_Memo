@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 迴文範例1",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 迴文範例1",
+      "program": "${workspaceFolder}/迴文範例1/迴文範例1/bin/Debug/net8.0/迴文範例1.dll",
+      "cwd": "${workspaceFolder}/迴文範例1/迴文範例1",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

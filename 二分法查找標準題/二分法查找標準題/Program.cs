@@ -12,9 +12,63 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { -1, 0, 3, 5, 9, 12 };
-            int target = 9;
-            Console.WriteLine("res: " + Search(input, target));
+            (int[] Numbers, int Target, int Expected)[] cases =
+            {
+                (new[] { -1, 0, 3, 5, 9, 12 }, 9, 4),
+                (new[] { -1, 0, 3, 5, 9, 12 }, 2, -1),
+                (new[] { 1, 2, 3, 4 }, 1, 0)
+            };
+
+            int total = 0;
+            int passed = 0;
+            foreach (var testCase in cases)
+            {
+                RunCase(
+                    $"target={testCase.Target}",
+                    testCase.Expected.ToString(),
+                    () => Search(testCase.Numbers, testCase.Target).ToString(),
+                    ref total,
+                    ref passed);
+            }
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行一個二分搜尋案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期索引。</param>
+        /// <param name="actualFactory">產生實際索引的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 

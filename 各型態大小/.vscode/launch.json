@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 各型態大小",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 各型態大小",
+      "program": "${workspaceFolder}/各型態大小/各型態大小/bin/Debug/net8.0/各型態大小.dll",
+      "cwd": "${workspaceFolder}/各型態大小/各型態大小",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

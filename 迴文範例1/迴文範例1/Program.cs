@@ -25,11 +25,73 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int s = 11;
+            int[] inputs = { 121, -121, 10, 0, 1221 };
+            Func<int, bool>[] methods = { IsPalindrome, IsPalindrome2, IsPalindrome3 };
 
-            Console.WriteLine("方法1: " + IsPalindrome(s));
-            Console.WriteLine("方法2: " + IsPalindrome2(s));
-            Console.WriteLine("方法3: " + IsPalindrome3(s));
+            int total = 0;
+            int passed = 0;
+            foreach (int input in inputs)
+            {
+                bool expected = input switch
+                {
+                    121 => true,
+                    -121 => false,
+                    10 => false,
+                    0 => true,
+                    1221 => true,
+                    _ => false
+                };
+
+                for (int methodIndex = 0; methodIndex < methods.Length; methodIndex++)
+                {
+                    int selectedMethod = methodIndex;
+                    RunCase(
+                        $"method={selectedMethod + 1},input={input}",
+                        expected.ToString(),
+                        () => methods[selectedMethod](input).ToString(),
+                        ref total,
+                        ref passed);
+                }
+            }
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行一個回文數案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期是否為回文數。</param>
+        /// <param name="actualFactory">產生實際結果的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 

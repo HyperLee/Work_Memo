@@ -25,37 +25,85 @@ class Program
     /// <param name="args"></param>
     static void Main(string[] args)
     {
-        // 測試資料
-        int[][] matrix = new int[][]
+        int[][] matrix =
         {
-            new int[] {1, 4, 7, 11, 15},
-            new int[] {2, 5, 8, 12, 19},
-            new int[] {3, 6, 9, 16, 22},
-            new int[] {10, 13, 14, 17, 24},
-            new int[] {18, 21, 23, 26, 30}
+            new[] { 1, 4, 7, 11, 15 },
+            new[] { 2, 5, 8, 12, 19 },
+            new[] { 3, 6, 9, 16, 22 },
+            new[] { 10, 13, 14, 17, 24 },
+            new[] { 18, 21, 23, 26, 30 }
         };
-        int target1 = 5;
-        int target2 = 20;
 
-        Program p = new Program();
+        (string Name, Func<int[][], int, bool> Search, int Target, bool Expected)[] cases =
+        {
+            ("暴力法-存在", (data, target) => new Program().SearchMatrix(data, target), 5, true),
+            ("暴力法-不存在", (data, target) => new Program().SearchMatrix(data, target), 20, false),
+            ("二分法-存在", (data, target) => new Program().SearchMatrix_binary(data, target), 5, true),
+            ("二分法-不存在", (data, target) => new Program().SearchMatrix_binary(data, target), 20, false),
+            ("右上角法-存在", (data, target) => new Program().SearchMatrix_RightTop(data, target), 5, true),
+            ("右上角法-不存在", (data, target) => new Program().SearchMatrix_RightTop(data, target), 20, false)
+        };
 
-        // 使用暴力法驗證
-        bool result1 = p.SearchMatrix(matrix, target1);
-        bool result2 = p.SearchMatrix(matrix, target2);
-        Console.WriteLine($"[暴力法] 搜尋 {target1} 結果: {result1}"); // 預期 true
-        Console.WriteLine($"[暴力法] 搜尋 {target2} 結果: {result2}"); // 預期 false
+        int total = 0;
+        int passed = 0;
+        foreach (var testCase in cases)
+        {
+            RunCase(
+                testCase.Name,
+                testCase.Expected.ToString(),
+                () => testCase.Search(CloneMatrix(matrix), testCase.Target).ToString(),
+                ref total,
+                ref passed);
+        }
 
-        // 使用二分搜尋法驗證
-        bool result3 = p.SearchMatrix_binary(matrix, target1);
-        bool result4 = p.SearchMatrix_binary(matrix, target2);
-        Console.WriteLine($"[二分法] 搜尋 {target1} 結果: {result3}"); // 預期 true
-        Console.WriteLine($"[二分法] 搜尋 {target2} 結果: {result4}"); // 預期 false
+        Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+        if (passed != total)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
 
-        // 使用從右上角開始搜尋法驗證
-        bool result5 = p.SearchMatrix_RightTop(matrix, target1);
-        bool result6 = p.SearchMatrix_RightTop(matrix, target2);
-        Console.WriteLine($"[右上角法] 搜尋 {target1} 結果: {result5}"); // 預期 true
-        Console.WriteLine($"[右上角法] 搜尋 {target2} 結果: {result6}"); // 預期 false
+    /// <summary>
+    /// 複製矩陣，讓每個方法都在獨立輸入上執行。
+    /// </summary>
+    /// <param name="matrix">要複製的矩陣。</param>
+    /// <returns>新的鋸齒狀二維陣列。</returns>
+    private static int[][] CloneMatrix(int[][] matrix)
+    {
+        return matrix.Select(row => row.ToArray()).ToArray();
+    }
+
+    /// <summary>
+    /// 執行一個矩陣搜尋案例並輸出統一的驗證結果。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期布林結果。</param>
+    /// <param name="actualFactory">產生實際結果的函式。</param>
+    /// <param name="total">累積案例數。</param>
+    /// <param name="passed">累積通過數。</param>
+    private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+    {
+        total++;
+        string actual;
+        try
+        {
+            actual = actualFactory();
+        }
+        catch (Exception exception)
+        {
+            actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+        }
+
+        bool isPassed = actual == expected;
+        if (isPassed)
+        {
+            passed++;
+        }
+
+        Console.WriteLine($"[{name}]");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
     }
 
 
@@ -68,16 +116,16 @@ class Program
     /// <param name="matrix">二維整數陣列，每一個 row 代表一行</param>
     /// <param name="target">要搜尋的目標值</param>
     /// <returns>若找到目標值則回傳 true，否則回傳 false</returns>
-    public bool SearchMatrix(int[][] matrix, int target) 
+    public bool SearchMatrix(int[][] matrix, int target)
     {
         // 逐行遍歷矩陣
-        foreach(int[] row in matrix)
+        foreach (int[] row in matrix)
         {
             // 逐列檢查當前行的每個元素
-            foreach(int element in row)
+            foreach (int element in row)
             {
                 // 若元素等於目標值，立即回傳 true
-                if(element == target)
+                if (element == target)
                 {
                     return true;
                 }
@@ -99,15 +147,15 @@ class Program
     /// <param name="matrix">二維整數陣列，每一個 row 代表一行</param>
     /// <param name="target">要搜尋的目標值</param>
     /// <returns>若找到目標值則回傳 true，否則回傳 false</returns>
-    public bool SearchMatrix_binary(int[][] matrix, int target) 
+    public bool SearchMatrix_binary(int[][] matrix, int target)
     {
         // 逐行遍歷矩陣
-        foreach(int[] row in matrix)
+        foreach (int[] row in matrix)
         {
             // 對當前行使用二分搜尋法
             int index = Search(row, target);
             // 若找到目標值，立即回傳 true
-            if(index >= 0)
+            if (index >= 0)
             {
                 return true;
             }
@@ -125,7 +173,7 @@ class Program
     /// <param name="nums">已排序的一維整數陣列</param>
     /// <param name="target">要搜尋的目標值</param>
     /// <returns>若找到目標值則回傳其索引，否則回傳 -1</returns>
-    public int Search(int[] nums, int target) 
+    public int Search(int[] nums, int target)
     {
         int low = 0;
         int high = nums.Length - 1;
@@ -169,7 +217,7 @@ class Program
     /// <param name="matrix">二維整數陣列，每一個 row 代表一行</param>
     /// <param name="target">要搜尋的目標值</param>
     /// <returns>若找到目標值則回傳 true，否則回傳 false</returns>
-    public bool SearchMatrix_RightTop(int[][] matrix, int target) 
+    public bool SearchMatrix_RightTop(int[][] matrix, int target)
     {
         // 從右上角 (第0行, 最後一列) 開始
         int i = 0;

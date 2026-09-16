@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 平行處理-Task練習",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 平行處理-Task練習",
+      "program": "${workspaceFolder}/平行處理-Task練習/平行處理-Task練習/bin/Debug/net8.0/平行處理-Task練習.dll",
+      "cwd": "${workspaceFolder}/平行處理-Task練習/平行處理-Task練習",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -25,51 +25,69 @@
         /// 3. 符合不重疊要求：沒有兩個子字串重疊。
         /// 
         /// 這是一個經典的回文切割（Palindrome Partitioning）問題的變形，我們的目標是找出最多的不重疊回文子字串，並且這些子字串的長度至少為 k。
-        /// <param name="args"></param>
         /// </summary>
+        /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            
-            // 測試案例 1: 原始測試案例
-            Console.WriteLine("測試案例 1:");
-            string s1 = "aababaabce";
-            int k1 = 3;
-            int result1 = Solution.GetMaxSubstring(s1, k1);
-            Console.WriteLine($"輸入: s = {s1}, k = {k1}");
-            Console.WriteLine($"結果: {result1}\n");
-            
-            // 測試案例 2: 較短的字串
-            Console.WriteLine("測試案例 2:");
-            string s2 = "abacbc";
-            int k2 = 2;
-            int result2 = Solution.GetMaxSubstring(s2, k2);
-            Console.WriteLine($"輸入: s = {s2}, k = {k2}");
-            Console.WriteLine($"結果: {result2}\n");
-            
-            // 測試案例 3: 較長的回文字串
-            Console.WriteLine("測試案例 3:");
-            string s3 = "abbaabbacc";
-            int k3 = 4;
-            int result3 = Solution.GetMaxSubstring(s3, k3);
-            Console.WriteLine($"輸入: s = {s3}, k = {k3}");
-            Console.WriteLine($"結果: {result3}\n");
+            (string Text, int MinimumLength, int Expected)[] cases =
+            {
+                ("aababaabce", 3, 2),
+                ("abacbc", 2, 2),
+                ("abbaabbacc", 4, 2),
+                ("abcde", 2, 0),
+                ("racecar", 7, 1)
+            };
 
-            // 測試案例 4: 無回文的情況
-            Console.WriteLine("測試案例 4:");
-            string s4 = "abcde";
-            int k4 = 2;
-            int result4 = Solution.GetMaxSubstring(s4, k4);
-            Console.WriteLine($"輸入: s = {s4}, k = {k4}");
-            Console.WriteLine($"結果: {result4}\n");
+            int total = 0;
+            int passed = 0;
+            foreach (var testCase in cases)
+            {
+                RunCase(
+                    $"s={testCase.Text},k={testCase.MinimumLength}",
+                    testCase.Expected.ToString(),
+                    () => Solution.GetMaxSubstring(testCase.Text, testCase.MinimumLength).ToString(),
+                    ref total,
+                    ref passed);
+            }
 
-            // 測試案例 5: k值等於字串長度
-            Console.WriteLine("測試案例 5:");
-            string s5 = "racecar";
-            int k5 = 7;
-            int result5 = Solution.GetMaxSubstring(s5, k5);
-            Console.WriteLine($"輸入: s = {s5}, k = {k5}");
-            Console.WriteLine($"結果: {result5}\n");
-            
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行一個回文切割案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期可選取的子字串數量。</param>
+        /// <param name="actualFactory">產生實際結果的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
     }
 
@@ -107,7 +125,7 @@
     ///    - 額外空間：O(1)
     ///    - 總空間複雜度：O(n)
     /// </summary>
-    public class Solution 
+    public class Solution
     {
         /// <summary>
         /// 取得最大不重疊回文子字串數量
@@ -115,41 +133,27 @@
         /// <param name="s">輸入字串</param>
         /// <param name="k">最小子字串長度</param>
         /// <returns>最大有效子字串數量</returns>
-        public static int GetMaxSubstring(string s, int k) 
+        public static int GetMaxSubstring(string s, int k)
         {
             // 獲取字串長度
             int n = s.Length;
             // dp[i] 表示到位置i為止能形成的最大有效子字串數量
             int[] dp = new int[n + 1];
 
-            // 外層迴圈: 遍歷所有可能的子字串起點
-            for (int i = 0; i < n; i++)
+            // 以終點遞增建立前綴答案，確保 dp[start] 只代表回文開始前的非重疊結果。
+            for (int end = 1; end <= n; end++)
             {
-                // 繼承前一個位置的最大值，確保不重疊
-                if (i > 0)
-                {
-                    dp[i] = dp[i - 1];
-                }
-
-                // 內層迴圈: 檢查所有以i為起點的子字串結尾位置
-                for (int j = i; j < n; j++)
+                // 不選取以 end - 1 結束的回文時，沿用更短前綴的答案。
+                dp[end] = dp[end - 1];
+                for (int start = 0; start < end; start++)
                 {
                     // 條件檢查：
-                    // 1. j-i+1 >= k 確保子字串長度符合最小要求
+                    // 1. end-start >= k 確保子字串長度符合最小要求
                     // 2. IsPalindrome 檢查是否為回文
-                    if (j - i + 1 >= k && IsPalindrome(s, i, j))
+                    if (end - start >= k && IsPalindrome(s, start, end - 1))
                     {
-                        // 更新dp數組：
-                        // 如果是從字串開頭開始(i=0)，直接設為1
-                        // 否則，取當前值和 dp[i]+1 的最大值
-                        if (i == 0)
-                        {
-                            dp[j + 1] = Math.Max(dp[j + 1], 1);
-                        }   
-                        else
-                        {
-                            dp[j + 1] = Math.Max(dp[j + 1], dp[i] + 1);
-                        }
+                        // dp[start] 與目前回文不重疊，接上目前回文後數量加一。
+                        dp[end] = Math.Max(dp[end], dp[start] + 1);
                     }
                 }
             }

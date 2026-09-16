@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Backtracking 回溯法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Backtracking 回溯法",
+      "program": "${workspaceFolder}/Backtracking 回溯法/Backtracking 回溯法/bin/Debug/net8.0/Backtracking 回溯法.dll",
+      "cwd": "${workspaceFolder}/Backtracking 回溯法/Backtracking 回溯法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

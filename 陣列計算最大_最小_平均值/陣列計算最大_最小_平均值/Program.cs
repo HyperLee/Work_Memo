@@ -2,51 +2,72 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// 使用 LINQ 與手動迴圈計算固定整數陣列的最大值、最小值與平均值。
+        /// </summary>
+        /// <param name="args">程式執行參數；固定 smoke test 不需額外參數。</param>
+        private static void Main(string[] args)
         {
-            int[] array = { 10, 15, 50, 65, 34, 80, 90, 45 };
+            int passed = 0;
+            passed += RunCase("題目範例", new int[] { 10, 15, 50, 65, 34, 80, 90, 45 }, "max=90; min=10; average=48.625", "max=90; min=10; average=48.63");
+            passed += RunCase("包含負數", new int[] { -5, 0, 5 }, "max=5; min=-5; average=0", "max=5; min=-5; average=0.00");
 
-            // 找出最大值
-            int max = array.Max();
-            // 找出最小值
-            int min = array.Min();
-            // 計算平均值
-            double average = array.Average();
-
-            Console.WriteLine("陣列中的最大值是: " + max);
-            Console.WriteLine("陣列中的最小值是: " + min);
-            Console.WriteLine("陣列的平均值是: " + average);
-
-            //------ 不使用API方式求解 ------
-            // 初始化最大值、最小值和總和
-            int maxValue = array[0];
-            int minValue = array[0];
-            int sum = 0;
-
-            // 使用迴圈計算最大值、最小值和總和
-            for (int i = 0; i < array.Length; i++)
+            Console.WriteLine($"Summary: {passed}/4 checks passed.");
+            if (passed != 4)
             {
-                if (array[i] > maxValue)
-                {
-                    maxValue = array[i];
-                }
+                Environment.ExitCode = 1;
+            }
+        }
 
-                if (array[i] < minValue)
-                {
-                    minValue = array[i];
-                }
+        /// <summary>
+        /// 同時比較 LINQ API 與手動迴圈計算的最大值、最小值與平均值。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="input">本案例獨立的整數陣列。</param>
+        /// <param name="expectedApi">API 計算的預期文字。</param>
+        /// <param name="expectedManual">手動計算的預期文字。</param>
+        /// <returns>兩種計算各自通過時各計 1 分。</returns>
+        private static int RunCase(string name, int[] input, string expectedApi, string expectedManual)
+        {
+            int max = input.Max();
+            int min = input.Min();
+            double average = input.Average();
+            string actualApi = $"max={max}; min={min}; average={average}";
 
-                sum += array[i];
+            int maxValue = input[0];
+            int minValue = input[0];
+            int sum = 0;
+            foreach (int value in input)
+            {
+                maxValue = Math.Max(maxValue, value);
+                minValue = Math.Min(minValue, value);
+                sum += value;
             }
 
-            // 計算平均值
-            double averageValue = (double)sum / array.Length;
+            double roundedAverage = Math.Round((double)sum / input.Length, 2, MidpointRounding.AwayFromZero);
+            string actualManual = $"max={maxValue}; min={minValue}; average={roundedAverage.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)}";
+            int passed = 0;
+            passed += PrintResult($"{name} / LINQ", expectedApi, actualApi);
+            passed += PrintResult($"{name} / 迴圈", expectedManual, actualManual);
+            return passed;
+        }
 
-            // 輸出結果
-            Console.WriteLine($"最大值: {maxValue}");
-            Console.WriteLine($"最小值: {minValue}");
-            Console.WriteLine($"平均值: {averageValue:F2}");
-
+        /// <summary>
+        /// 輸出字串計算結果的固定 smoke-test 欄位。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期字串。</param>
+        /// <param name="actual">實際字串。</param>
+        /// <returns>通過時回傳 1，否則回傳 0。</returns>
+        private static int PrintResult(string name, string expected, string actual)
+        {
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
     }
 }

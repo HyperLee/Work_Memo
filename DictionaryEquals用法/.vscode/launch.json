@@ -1,16 +1,15 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug DictionaryEquals用法",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DictionaryEquals用法/bin/Debug/net9.0/DictionaryEquals用法.exe",
-            "args": [],
-            "cwd": "${workspaceFolder}/DictionaryEquals用法",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug DictionaryEquals用法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build DictionaryEquals用法",
+      "program": "${workspaceFolder}/DictionaryEquals用法/bin/Debug/net9.0/DictionaryEquals用法.dll",
+      "cwd": "${workspaceFolder}/DictionaryEquals用法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
 }

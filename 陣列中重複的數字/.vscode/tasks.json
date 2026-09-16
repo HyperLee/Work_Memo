@@ -2,18 +2,21 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
-      "command": "dotnet",
+      "label": "build 陣列中重複的數字",
       "type": "process",
+      "command": "dotnet",
       "args": [
         "build",
-        "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字.csproj"
+        "${workspaceFolder}/陣列中重複的數字/陣列中重複的數字/陣列中重複的數字.csproj",
+        "--configuration",
+        "Debug",
+        "--nologo"
       ],
       "problemMatcher": "$msCompile",
       "group": {
-				"kind": "build",
-				"isDefault": true
-			}
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }

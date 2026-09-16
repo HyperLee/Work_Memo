@@ -4,35 +4,125 @@ class Program
 {
     static void Main(string[] args)
     {
-        // 節點數量
-        int numVertices = 6;
-        // 建立鄰接清單，初始化每個節點的鄰接串列
-        List<int>[] adjList = new List<int>[numVertices];
-        for (int i = 0; i < numVertices; i++)
+        int total = 0;
+        int passed = 0;
+
+        RunCase(
+            "DAG",
+            "valid",
+            () =>
+            {
+                List<int>[] graph = CreateGraph(6, (5, 2), (5, 0), (4, 0), (4, 1), (2, 3), (3, 1));
+                List<int> order = DfsTopologicalSort(graph.Length, graph);
+                return IsValidTopologicalOrder(order, graph) ? "valid" : "invalid";
+            },
+            ref total,
+            ref passed);
+
+        RunCase(
+            "含環圖",
+            "cycle-detected",
+            () =>
+            {
+                List<int>[] graph = CreateGraph(2, (0, 1), (1, 0));
+                return DfsTopologicalSort(graph.Length, graph) is null ? "cycle-detected" : "invalid";
+            },
+            ref total,
+            ref passed);
+
+        Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+        if (passed != total)
         {
-            adjList[i] = new List<int>();
+            Environment.ExitCode = 1;
+        }
+    }
+
+    /// <summary>
+    /// 建立固定的有向圖，供每個測試案例獨立使用。
+    /// </summary>
+    /// <param name="vertexCount">節點數量。</param>
+    /// <param name="edges">由起點指向終點的邊。</param>
+    /// <returns>鄰接清單。</returns>
+    private static List<int>[] CreateGraph(int vertexCount, params (int From, int To)[] edges)
+    {
+        List<int>[] graph = new List<int>[vertexCount];
+        for (int i = 0; i < vertexCount; i++)
+        {
+            graph[i] = new List<int>();
         }
 
-        // 建立圖的邊：5→2, 5→0, 4→0, 4→1, 2→3, 3→1
-        adjList[5].Add(2);
-        adjList[5].Add(0);
-        adjList[4].Add(0);
-        adjList[4].Add(1);
-        adjList[2].Add(3);
-        adjList[3].Add(1);
+        foreach ((int from, int to) in edges)
+        {
+            graph[from].Add(to);
+        }
 
-        // 執行 DFS 拓樸排序
-        var sorted = DfsTopologicalSort(numVertices, adjList);
-        if (sorted == null)
+        return graph;
+    }
+
+    /// <summary>
+    /// 驗證排序是否包含每個節點一次，且每條邊的起點都排在終點之前。
+    /// </summary>
+    /// <param name="order">待驗證的拓樸順序。</param>
+    /// <param name="graph">原始鄰接清單。</param>
+    /// <returns>若順序合法則回傳 true。</returns>
+    private static bool IsValidTopologicalOrder(List<int> order, List<int>[] graph)
+    {
+        if (order is null || order.Count != graph.Length || order.Distinct().Count() != graph.Length)
         {
-            // 若有環，顯示錯誤訊息
-            Console.WriteLine("圖中有環，無法進行拓扑排序");
+            return false;
         }
-        else
+
+        int[] positions = new int[graph.Length];
+        for (int i = 0; i < order.Count; i++)
         {
-            // 輸出拓樸排序結果
-            Console.WriteLine("拓扑排序結果 (DFS): " + string.Join(", ", sorted));
+            positions[order[i]] = i;
         }
+
+        for (int from = 0; from < graph.Length; from++)
+        {
+            foreach (int to in graph[from])
+            {
+                if (positions[from] >= positions[to])
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// 執行一個 DFS 拓樸排序案例並輸出統一的驗證結果。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期狀態。</param>
+    /// <param name="actualFactory">產生實際狀態的函式。</param>
+    /// <param name="total">累積案例數。</param>
+    /// <param name="passed">累積通過數。</param>
+    private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+    {
+        total++;
+        string actual;
+        try
+        {
+            actual = actualFactory();
+        }
+        catch (Exception exception)
+        {
+            actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+        }
+
+        bool isPassed = actual == expected;
+        if (isPassed)
+        {
+            passed++;
+        }
+
+        Console.WriteLine($"[{name}]");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
     }
 
 
@@ -64,9 +154,8 @@ class Program
             }
         }
 
-        // 將 stack 轉為 list 並反轉，即為拓扑排序結果
+        // Stack 由完成時間倒序列舉，該順序正好符合每條邊的起點先於終點。
         List<int> topOrder = new List<int>(stack);
-        topOrder.Reverse();
         return topOrder;
     }
 

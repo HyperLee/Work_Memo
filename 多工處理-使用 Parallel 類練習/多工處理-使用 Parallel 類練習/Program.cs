@@ -12,16 +12,47 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            // 總共執行 10 次
-            // 由於是平行處理, 所以順序不是固定 0 ~ 9
-            Parallel.For(0, 10, i =>
-            {
-                Console.WriteLine($"Parallel Task - 第 {i} 次迭代");
-                Task.Delay(1000).Wait();
-            });
+            int[] doubledValues = new int[5];
+            Parallel.ForEach(Enumerable.Range(1, doubledValues.Length), value => doubledValues[value - 1] = value * 2);
 
-            Console.WriteLine("Parallel For 完成");
-            Console.ReadKey();
+            RunCase(
+                "Parallel.ForEach 完成",
+                "2,4,6,8,10",
+                () => string.Join(",", doubledValues),
+                out int passed);
+
+            Console.WriteLine($"Summary: {passed}/1 checks passed.");
+            if (passed != 1)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 輸出一個 Parallel.ForEach 案例的固定驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期結果集合。</param>
+        /// <param name="actualFactory">產生實際結果的函式。</param>
+        /// <param name="passed">輸出通過數量。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, out int passed)
+        {
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            passed = isPassed ? 1 : 0;
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
     }
 }

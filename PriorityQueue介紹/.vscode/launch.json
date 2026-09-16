@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug PriorityQueue介紹",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build PriorityQueue介紹",
+      "program": "${workspaceFolder}/PriorityQueue介紹/bin/Debug/net9.0/PriorityQueue介紹.dll",
+      "cwd": "${workspaceFolder}/PriorityQueue介紹",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "env": {
+        "DOTNET_ROLL_FORWARD": "Major"
+      }
+    }
+  ]
+}

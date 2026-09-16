@@ -18,33 +18,52 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            int passed = 0;
+            passed += RunCase("LIFO 操作", "top=5; pop=5; peek=4; count=4; clear=0");
+            passed += RunCase("空堆疊重新建立", "top=9; pop=9; peek=7; count=1; clear=0");
+
+            Console.WriteLine($"Summary: {passed}/2 checks passed.");
+            if (passed != 2)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 建立獨立堆疊並驗證 Push、Pop、Peek、Count 與 Clear 的狀態轉換。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期狀態文字。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected)
+        {
             Stack<string> numbers = new Stack<string>();
-            numbers.Push("1");
-            numbers.Push("2");
-            numbers.Push("3");
-            numbers.Push("4");
-            numbers.Push("5");
-
-            Console.WriteLine("原始輸入字串");
-            foreach (string number in numbers) //依序印出
+            if (name == "LIFO 操作")
             {
-                Console.WriteLine(number);
+                foreach (string number in new[] { "1", "2", "3", "4", "5" })
+                {
+                    numbers.Push(number);
+                }
+            }
+            else
+            {
+                numbers.Push("7");
+                numbers.Push("9");
             }
 
-            Console.WriteLine("\nPop後資料 : " + numbers.Pop());
-
-            Console.WriteLine("\npeek後的資料 : " + numbers.Peek()); 
-            foreach (string number in numbers) //依序印出
-            {
-                Console.WriteLine(number);
-            }
-
-            Console.WriteLine("\ncount筆數 : " + numbers.Count);
-
+            string top = numbers.Peek();
+            string pop = numbers.Pop();
+            string peek = numbers.Peek();
+            int count = numbers.Count;
             numbers.Clear();
-            Console.WriteLine("\n經過Clear資料 : " + numbers.Count);
-
-            Console.ReadKey();
+            string actual = $"top={top}; pop={pop}; peek={peek}; count={count}; clear={numbers.Count}";
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

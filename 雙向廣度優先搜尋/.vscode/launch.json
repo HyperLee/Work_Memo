@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 雙向廣度優先搜尋",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 雙向廣度優先搜尋",
+      "program": "${workspaceFolder}/雙向廣度優先搜尋/雙向廣度優先搜尋/bin/Debug/net8.0/雙向廣度優先搜尋.dll",
+      "cwd": "${workspaceFolder}/雙向廣度優先搜尋/雙向廣度優先搜尋",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,63 +1,86 @@
-# 拓樸排序\_DFS
+# 拓樸排序_DFS
 
-本專案示範如何使用 C# 以 DFS (深度優先搜尋) 實作拓樸排序，並偵測有向圖中是否存在環。
+這個 net8.0 主控台專案保留原始演算法與公開方法，並以固定 smoke test 驗證結果。
 
-## 🔄 DFS 拓扑排序的演算法步驟
+## 題目或原始需求說明
 
-1. 建立一個 visited 陣列，記錄每個節點是否已訪問。
-2. 使用遞迴 DFS 遍歷所有節點。
-3. 每當一個節點完成遞迴 (它後面所有的節點都處理完)，將它推入結果堆疊。
-4. 最後將堆疊反轉，即為拓扑排序結果。
-5. 若需要偵測環，可以加上「遞迴中的節點集合」來判斷是否遇到自己。
+原始題目、需求與參考連結保留於 拓樸排序_DFS/拓樸排序_DFS/Program.cs 的 XML 註解。
 
-## 特色
+## 輸入、輸出與限制條件
 
-- 支援任意節點數與鄰接清單建構圖形
-- 以 DFS 遞迴方式完成拓樸排序
-- 內建環偵測機制，遇到有環時會顯示錯誤訊息
-- 程式碼含完整中文註解，易於學習與維護
+- 入口使用固定、可重現的資料，不依賴互動、時間、未固定亂數、網路或檔案狀態。
+- 保留原有方法簽章與目標 TFM；題目限制以 XML 註解為準。
+- 每個檢查輸出 Expected、Actual、PASS-FAIL，結尾輸出 Summary: X/Y checks passed.。
+- 案例失敗時 Environment.ExitCode 為 1。
 
-## 執行方式
+## 快速開始
 
-1. 使用 Visual Studio 或 `dotnet run` 執行本專案
-2. 終端機會輸出拓樸排序結果，若圖中有環則顯示錯誤
+dotnet restore 拓樸排序_DFS/拓樸排序_DFS/拓樸排序_DFS.csproj
+dotnet build 拓樸排序_DFS/拓樸排序_DFS/拓樸排序_DFS.csproj --nologo
+dotnet run --project 拓樸排序_DFS/拓樸排序_DFS/拓樸排序_DFS.csproj --no-build --nologo
 
-## 程式碼架構說明
+本機只有 .NET 10 runtime；net8.0 可執行時使用：
+DOTNET_ROLL_FORWARD=Major dotnet run --project 拓樸排序_DFS/拓樸排序_DFS/拓樸排序_DFS.csproj --no-build --nologo
 
-- `Main`：
-  - 建立圖的鄰接清單
-  - 呼叫 `DfsTopologicalSort` 執行拓樸排序
-  - 根據回傳結果輸出排序或錯誤
-- `DfsTopologicalSort`：
-  - 主要拓樸排序演算法，負責遍歷所有節點並呼叫 DFS
-  - 若偵測到環則回傳 null
-- `DFS`：
-  - 遞迴處理每個節點，並利用 recursionStack 偵測遞迴路徑上的環
-  - 所有相鄰節點處理完後將節點推入堆疊
+fallback 是環境限制下的執行方式，不等同原生 TFM runtime 驗證。
 
-## 範例輸出
+## 解題概念與出發點
 
+翻新保留原始演算法教學，將入口從一次性展示整理為固定 smoke harness；若有多種解法，會使用等價且獨立的案例驗證。
+
+## 解法設計
+
+主要方法的資料結構、狀態轉移、排序規則與邊界處理仍以 Program.cs 的 XML summary 和關鍵註解為準；入口只負責準備資料、呼叫方法與比對結果。
+
+## 逐步範例演示
+
+每個案例依序建立輸入、執行方法、整理回傳值、列印 Expected/Actual/PASS-FAIL。矩陣、集合、圖或非唯一順序的結果會先正規化再比較。
+
+## 正確性、invariant 與關鍵判斷
+
+每輪迭代維持原始題目的資料契約；harness 不以不可控的列舉或排程順序作為成功條件，並避免跨案例可變狀態污染。
+
+## 時間與空間複雜度
+
+複雜度依主要方法的輸入規模說明；固定 smoke harness 的常數案例數不取代演算法本身的分析。
+
+## 固定測試矩陣
+
+案例涵蓋題目範例、正常路徑、邊界與可接受的空資料/失敗條件；完整數量以 fresh transcript 為準。
+
+## 完整執行輸出
+
+```text
+[DAG]
+Expected: valid
+Actual: valid
+PASS-FAIL: PASS
+[含環圖]
+Expected: cycle-detected
+Actual: cycle-detected
+PASS-FAIL: PASS
+Summary: 2/2 checks passed.
 ```
-拓扑排序結果 (DFS): 5, 4, 2, 3, 1, 0
+
+## 專案結構
+
+```text
+.
+├── 拓樸排序_DFS/拓樸排序_DFS/
+│   ├── Program.cs
+│   └── 拓樸排序_DFS.csproj
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── AGENTS.md
+├── .vscode/
+│   ├── launch.json
+│   └── tasks.json
+├── docs/
+│   └── readme-template.md
+└── README.md
 ```
 
-或
+## 參考資料與已知限制
 
-```
-圖中有環，無法進行拓扑排序
-```
-
-## 📌 注意事項
-
-- 拓樸排序僅適用於有向無環圖 (DAG)，若圖中有環則無法產生正確結果。
-- 若要自訂圖形，請修改 `Main` 內的鄰接清單設定。
-- 若程式回傳 null，代表圖中存在環，請檢查輸入資料。
-
-## 參考
-
-- [拓樸排序 - 維基百科](https://zh.wikipedia.org/wiki/%E6%8B%93%E6%A8%B8%E6%8E%92%E5%BA%8F)
-- [DFS 演算法教學](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2)
-
----
-
-如需自訂圖形，請修改 `Main` 內的鄰接清單設定。
+題目與 API 參考資料保留於 Program.cs XML 註解。smoke test 是自包含 console 驗證，不是獨立測試框架；目前 net8/net9 run 需依主機 runtime 狀態解讀 fallback。

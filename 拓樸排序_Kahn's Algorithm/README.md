@@ -1,42 +1,86 @@
-# 拓樸排序 Kahn's Algorithm
+# 拓樸排序_Kahn's Algorithm
 
-## 基本介紹
+這個 net8.0 主控台專案保留原始演算法與公開方法，並以固定 smoke test 驗證結果。
 
-拓樸排序 (Topological Sort) 是一種針對有向無環圖 (DAG, Directed Acyclic Graph) 的排序方法，目的是將圖中的所有節點排成一個線性序列，使得對於每一條有向邊 ( u to v )，節點 ( u ) 都排在 ( v ) 之前。Kahn's Algorithm 是一種常見且高效的拓樸排序演算法，主要利用節點的入度 (in-degree) 來進行排序。
+## 題目或原始需求說明
 
-Kahn's Algorithm 步驟如下：
+原始題目、需求與參考連結保留於 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/Program.cs 的 XML 註解。
 
-1. 計算每個節點的入度。
-2. 將所有入度為 0 的節點加入佇列。
-3. 重複以下步驟直到佇列為空：
-   - 從佇列取出一個節點，加入排序結果。
-   - 將該節點的所有相鄰節點入度減 1，若入度變為 0，則加入佇列。
-4. 若排序結果節點數不等於原圖節點數，代表圖中有環，無法進行拓樸排序。
+## 輸入、輸出與限制條件
 
-## 常見應用場合
+- 入口使用固定、可重現的資料，不依賴互動、時間、未固定亂數、網路或檔案狀態。
+- 保留原有方法簽章與目標 TFM；題目限制以 XML 註解為準。
+- 每個檢查輸出 Expected、Actual、PASS-FAIL，結尾輸出 Summary: X/Y checks passed.。
+- 案例失敗時 Environment.ExitCode 為 1。
 
-- 任務排程 (如：專案管理中的任務依賴)
-- 編譯器中的語言解析 (如：語法樹建構、符號依賴)
-- 課程安排 (如：先修課程規劃)
-- 軟體建構系統 (如：Makefile 任務依賴)
-- 資料處理流程 (如：資料管道依賴順序)
+## 快速開始
 
-## 注意事項
+dotnet restore 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm.csproj
+dotnet build 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm.csproj --nologo
+dotnet run --project 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm.csproj --no-build --nologo
 
-- 拓樸排序僅適用於有向無環圖 (DAG)，若圖中存在環，則無法產生合法的拓樸序列。
-- 若有多個入度為 0 的節點，排序結果可能不唯一。
-- 在實作時，需特別注意入度的計算與佇列的操作，避免遺漏或重複處理節點。
-- 若需偵測圖中是否有環，可在排序結束後檢查排序結果節點數是否等於原圖節點數。
+本機只有 .NET 10 runtime；net8.0 可執行時使用：
+DOTNET_ROLL_FORWARD=Major dotnet run --project 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm.csproj --no-build --nologo
 
-🧠 **演算法步驟回顧：Kahn's Algorithm**
+fallback 是環境限制下的執行方式，不等同原生 TFM runtime 驗證。
 
-1. 計算每個節點的「入度」（in-degree）。
-2. 將入度為 0 的節點加入佇列。
-3. 從佇列中取出節點，將其加入結果中，並將它指向的節點的入度減 1。
-4. 如果某個節點的入度變為 0，則加入佇列。
-5. 重複直到佇列為空。
-6. 如果排序結果的節點數不等於原圖節點數，表示圖中有環（不是 DAG），無法拓樸排序。
+## 解題概念與出發點
 
----
+翻新保留原始演算法教學，將入口從一次性展示整理為固定 smoke harness；若有多種解法，會使用等價且獨立的案例驗證。
 
-本程式碼示範如何使用 Kahn's Algorithm 進行拓樸排序，並提供簡單的圖結構與排序結果輸出。
+## 解法設計
+
+主要方法的資料結構、狀態轉移、排序規則與邊界處理仍以 Program.cs 的 XML summary 和關鍵註解為準；入口只負責準備資料、呼叫方法與比對結果。
+
+## 逐步範例演示
+
+每個案例依序建立輸入、執行方法、整理回傳值、列印 Expected/Actual/PASS-FAIL。矩陣、集合、圖或非唯一順序的結果會先正規化再比較。
+
+## 正確性、invariant 與關鍵判斷
+
+每輪迭代維持原始題目的資料契約；harness 不以不可控的列舉或排程順序作為成功條件，並避免跨案例可變狀態污染。
+
+## 時間與空間複雜度
+
+複雜度依主要方法的輸入規模說明；固定 smoke harness 的常數案例數不取代演算法本身的分析。
+
+## 固定測試矩陣
+
+案例涵蓋題目範例、正常路徑、邊界與可接受的空資料/失敗條件；完整數量以 fresh transcript 為準。
+
+## 完整執行輸出
+
+```text
+[DAG]
+Expected: valid
+Actual: valid
+PASS-FAIL: PASS
+[含環圖]
+Expected: cycle-detected
+Actual: cycle-detected
+PASS-FAIL: PASS
+Summary: 2/2 checks passed.
+```
+
+## 專案結構
+
+```text
+.
+├── 拓樸排序_Kahn's Algorithm/拓樸排序_Kahn's Algorithm/
+│   ├── Program.cs
+│   └── 拓樸排序_Kahn's Algorithm.csproj
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── AGENTS.md
+├── .vscode/
+│   ├── launch.json
+│   └── tasks.json
+├── docs/
+│   └── readme-template.md
+└── README.md
+```
+
+## 參考資料與已知限制
+
+題目與 API 參考資料保留於 Program.cs XML 註解。smoke test 是自包含 console 驗證，不是獨立測試框架；目前 net8/net9 run 需依主機 runtime 狀態解讀 fallback。

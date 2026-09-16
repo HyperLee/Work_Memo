@@ -4,9 +4,9 @@ class Program
 {
     /// <summary>
     /// 3355. Zero Array Transformation I
-    /// https://leetcode.com/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20
+    /// https://leetcode.com/problems/zero-array-transformation-i/description/?envType=daily-question&amp;envId=2025-05-20
     /// 3355. 零数组变换 I
-    /// https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&envId=2025-05-20
+    /// https://leetcode.cn/problems/zero-array-transformation-i/description/?envType=daily-question&amp;envId=2025-05-20
     /// 
     /// 題目描述：
     /// 給你一個整數陣列 nums，你可以對 nums 中的每個元素進行以下操作：
@@ -20,120 +20,86 @@ class Program
     /// 本題可以使用差分陣列技術高效處理區間操作。通過建立差分陣列，我們可以在 O(1) 時間內對一個區間進行加值或減值操作，
     /// 然後透過前綴和計算出每個位置實際被操作的次數，最後檢查這些操作次數是否足夠將原始陣列的所有元素變為 0。
     /// </summary>
-    /// <param name="args">程式執行參數</param>
+    /// <param name="args">程式執行參數；固定 smoke test 不需額外參數。</param>
     static void Main(string[] args)
     {
-        Console.WriteLine("零陣列轉換演示程式");
-        Console.WriteLine("------------------");
+        Program solution = new();
+        TestCase[] testCases =
+        [
+            new("已是零陣列", [0, 0, 0], [], true),
+            new("操作次數不足", [2, 1], [[0, 1]], false),
+            new("剛好覆蓋需求", [1, 2, 1], [[0, 2], [1, 1]], true),
+            new("空查詢但仍需操作", [1], [], false),
+            new("左右邊界皆被涵蓋", [1, 1, 1, 1], [[0, 0], [3, 3], [1, 2]], true)
+        ];
 
-        // 建立測試實例
-        Program instance = new Program();
+        int passedChecks = 0;
+        foreach (TestCase testCase in testCases)
+        {
+            bool[] actualResults = RunTestCase(solution, testCase);
 
-        // 測試案例 1: 可以轉換為全零陣列的情況
-        Console.WriteLine("測試案例 1:");
-        int[] nums1 = { 2, 1, 3, 2 };
-        int[][] queries1 = {
-            new int[] { 0, 1 },
-            new int[] { 1, 3 },
-            new int[] { 0, 3 },
-            new int[] { 0, 3 }  // 加入一次額外操作
-        };
-        Console.WriteLine($"輸入陣列: [{string.Join(", ", nums1)}]");
-        Console.WriteLine($"操作區間: {QueriesString(queries1)}");
+            Console.WriteLine($"Case: {testCase.Name}");
+            Console.WriteLine($"Input: nums = [{string.Join(", ", testCase.Nums)}], queries = {QueriesString(testCase.Queries)}");
 
-        // 方法一測試
-        bool result1Method1 = IsZeroArray(nums1, queries1);
-        Console.WriteLine($"方法一結果: {(result1Method1 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
+            for (int i = 0; i < actualResults.Length; i++)
+            {
+                bool passed = actualResults[i] == testCase.Expected;
+                Console.WriteLine($"Check: Method {i + 1}");
+                Console.WriteLine($"Expected: {testCase.Expected}");
+                Console.WriteLine($"Actual: {actualResults[i]}");
+                Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+                Console.WriteLine();
+                passedChecks += passed ? 1 : 0;
+            }
+        }
 
-        // 方法二測試
-        bool result1Method2 = IsZeroArray2(nums1, queries1);
-        Console.WriteLine($"方法二結果: {(result1Method2 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
+        int totalChecks = testCases.Length * 3;
+        Console.WriteLine($"Summary: {passedChecks}/{totalChecks} checks passed.");
+        if (passedChecks != totalChecks)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
 
-        // 方法三測試
-        bool result1Method3 = instance.IsZeroArray3(nums1, queries1);
-        Console.WriteLine($"方法三結果: {(result1Method3 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
+    private sealed record TestCase(string Name, int[] Nums, int[][] Queries, bool Expected);
 
-        Console.WriteLine();
-
-        // 測試案例 2: 無法轉換為全零陣列的情況
-        Console.WriteLine("測試案例 2:");
-        int[] nums2 = { 3, 2, 1, 4 };
-        int[][] queries2 = {
-            new int[] { 0, 2 },
-            new int[] { 1, 3 }
-        };
-        Console.WriteLine($"輸入陣列: [{string.Join(", ", nums2)}]");
-        Console.WriteLine($"操作區間: {QueriesString(queries2)}");
-
-        // 方法一測試
-        bool result2Method1 = IsZeroArray(nums2, queries2);
-        Console.WriteLine($"方法一結果: {(result2Method1 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法二測試
-        bool result2Method2 = IsZeroArray2(nums2, queries2);
-        Console.WriteLine($"方法二結果: {(result2Method2 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法三測試
-        bool result2Method3 = instance.IsZeroArray3(nums2, queries2);
-        Console.WriteLine($"方法三結果: {(result2Method3 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        Console.WriteLine();
-
-        // 測試案例 3: 剛好能轉換為全零陣列的邊界情況
-        Console.WriteLine("測試案例 3:");
-        int[] nums3 = { 1, 2, 1 };
-        int[][] queries3 = {
-            new int[] { 0, 0 },
-            new int[] { 1, 1 },
-            new int[] { 2, 2 },
-            new int[] { 0, 2 }
-        };
-        Console.WriteLine($"輸入陣列: [{string.Join(", ", nums3)}]");
-        Console.WriteLine($"操作區間: {QueriesString(queries3)}");
-
-        // 方法一測試
-        bool result3Method1 = IsZeroArray(nums3, queries3);
-        Console.WriteLine($"方法一結果: {(result3Method1 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法二測試
-        bool result3Method2 = IsZeroArray2(nums3, queries3);
-        Console.WriteLine($"方法二結果: {(result3Method2 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法三測試
-        bool result3Method3 = instance.IsZeroArray3(nums3, queries3);
-        Console.WriteLine($"方法三結果: {(result3Method3 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 測試案例 4: 極端情況 - 所有元素都是 0
-        Console.WriteLine("\n測試案例 4:");
-        int[] nums4 = { 0, 0, 0 };
-        int[][] queries4 = { };  // 不需要任何操作
-        Console.WriteLine($"輸入陣列: [{string.Join(", ", nums4)}]");
-        Console.WriteLine($"操作區間: {(queries4.Length == 0 ? "無操作" : QueriesString(queries4))}");
-
-        // 方法一測試
-        bool result4Method1 = IsZeroArray(nums4, queries4);
-        Console.WriteLine($"方法一結果: {(result4Method1 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法二測試
-        bool result4Method2 = IsZeroArray2(nums4, queries4);
-        Console.WriteLine($"方法二結果: {(result4Method2 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
-
-        // 方法三測試
-        bool result4Method3 = instance.IsZeroArray3(nums4, queries4);
-        Console.WriteLine($"方法三結果: {(result4Method3 ? "可以轉換為全零陣列" : "無法轉換為全零陣列")}");
+    /// <summary>
+    /// 使用彼此獨立的陣列與查詢副本執行三種零陣列判斷方法。
+    /// </summary>
+    /// <param name="solution">提供第三種實例方法的解法物件。</param>
+    /// <param name="testCase">包含輸入、查詢與預期布林值的固定案例。</param>
+    /// <returns>依序為 <see cref="IsZeroArray"/>、<see cref="IsZeroArray2"/> 與 <see cref="IsZeroArray3"/> 的結果。</returns>
+    private static bool[] RunTestCase(Program solution, TestCase testCase)
+    {
+        return
+        [
+            IsZeroArray([.. testCase.Nums], CloneQueries(testCase.Queries)),
+            IsZeroArray2([.. testCase.Nums], CloneQueries(testCase.Queries)),
+            solution.IsZeroArray3([.. testCase.Nums], CloneQueries(testCase.Queries))
+        ];
     }
 
     /// <summary>
-    /// 將查詢操作陣列格式化為便於顯示的字串
+    /// 深層複製二維查詢陣列，確保每個方法都收到全新的可變輸入。
     /// </summary>
-    /// <param name="queries">查詢操作陣列</param>
-    /// <returns>格式化後的字串</returns>
-    private static string QueriesString(int[][] queries)
+    /// <param name="queries">每個元素皆為閉區間 [l, r] 的查詢陣列。</param>
+    /// <returns>內容相同、但不共用內層陣列的查詢副本。</returns>
+    private static int[][] CloneQueries(int[][] queries)
     {
-        return string.Join(", ", queries.Select(q => $"[{q[0]}, {q[1]}]"));
+        return queries.Select(query => (int[])[.. query]).ToArray();
     }
 
-
+    /// <summary>
+    /// 將查詢操作陣列格式化為便於核對固定案例的字串。
+    /// </summary>
+    /// <param name="queries">查詢操作陣列</param>
+    /// <returns>空查詢回傳 []；其餘回傳以逗號分隔的 [l, r] 清單。</returns>
+    private static string QueriesString(int[][] queries)
+    {
+        return queries.Length == 0
+            ? "[]"
+            : string.Join(", ", queries.Select(query => $"[{query[0]}, {query[1]}]"));
+    }
     /// <summary>
     /// 判斷是否可以將陣列轉換為全零陣列 (方法一)
     /// 

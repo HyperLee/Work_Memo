@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 差分陣列",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 差分陣列",
+      "program": "${workspaceFolder}/差分陣列/bin/Debug/net9.0/差分陣列.dll",
+      "cwd": "${workspaceFolder}/差分陣列",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "env": {
+        "DOTNET_ROLL_FORWARD": "Major"
+      }
+    }
+  ]
+}

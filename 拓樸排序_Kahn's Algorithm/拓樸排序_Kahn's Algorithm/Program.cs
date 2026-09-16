@@ -9,29 +9,133 @@ class Program
     /// <param name="args"></param>
     static void Main(string[] args)
     {
-        // 示範圖節點數為 6
-        int numVertices = 6;
+        int total = 0;
+        int passed = 0;
 
-        // 建立鄰接清單：每個節點的出邊（它指向誰）
-        List<int>[] adjList = new List<int>[numVertices];
-        for (int i = 0; i < numVertices; i++)
-        { 
-            adjList[i] = new List<int>();
+        RunCase(
+            "DAG",
+            "valid",
+            () =>
+            {
+                List<int>[] graph = CreateGraph(6, (5, 2), (5, 0), (4, 0), (4, 1), (2, 3), (3, 1));
+                List<int> order = KahnTopologicalSort(graph.Length, graph);
+                return IsValidTopologicalOrder(order, graph) ? "valid" : "invalid";
+            },
+            ref total,
+            ref passed);
+
+        RunCase(
+            "含環圖",
+            "cycle-detected",
+            () =>
+            {
+                List<int>[] graph = CreateGraph(2, (0, 1), (1, 0));
+                try
+                {
+                    _ = KahnTopologicalSort(graph.Length, graph);
+                    return "invalid";
+                }
+                catch (InvalidOperationException)
+                {
+                    return "cycle-detected";
+                }
+            },
+            ref total,
+            ref passed);
+
+        Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+        if (passed != total)
+        {
+            Environment.ExitCode = 1;
+        }
+    }
+
+    /// <summary>
+    /// 建立固定的有向圖，供每個測試案例獨立使用。
+    /// </summary>
+    /// <param name="vertexCount">節點數量。</param>
+    /// <param name="edges">由起點指向終點的邊。</param>
+    /// <returns>鄰接清單。</returns>
+    private static List<int>[] CreateGraph(int vertexCount, params (int From, int To)[] edges)
+    {
+        List<int>[] graph = new List<int>[vertexCount];
+        for (int i = 0; i < vertexCount; i++)
+        {
+            graph[i] = new List<int>();
         }
 
-        // 加入邊：例如 5 → 2, 5 → 0, 4 → 0, 4 → 1, 2 → 3, 3 → 1
-        adjList[5].Add(2);
-        adjList[5].Add(0);
-        adjList[4].Add(0);
-        adjList[4].Add(1);
-        adjList[2].Add(3);
-        adjList[3].Add(1);
+        foreach ((int from, int to) in edges)
+        {
+            graph[from].Add(to);
+        }
 
-        // 執行拓扑排序
-        var sorted = KahnTopologicalSort(numVertices, adjList);
+        return graph;
+    }
 
-        // 輸出結果
-        Console.WriteLine("拓扑排序結果: " + string.Join(", ", sorted));
+    /// <summary>
+    /// 驗證排序是否包含每個節點一次，且每條邊的起點都排在終點之前。
+    /// </summary>
+    /// <param name="order">待驗證的拓樸順序。</param>
+    /// <param name="graph">原始鄰接清單。</param>
+    /// <returns>若順序合法則回傳 true。</returns>
+    private static bool IsValidTopologicalOrder(List<int> order, List<int>[] graph)
+    {
+        if (order is null || order.Count != graph.Length || order.Distinct().Count() != graph.Length)
+        {
+            return false;
+        }
+
+        int[] positions = new int[graph.Length];
+        for (int i = 0; i < order.Count; i++)
+        {
+            positions[order[i]] = i;
+        }
+
+        for (int from = 0; from < graph.Length; from++)
+        {
+            foreach (int to in graph[from])
+            {
+                if (positions[from] >= positions[to])
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// 執行一個 Kahn 拓樸排序案例並輸出統一的驗證結果。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期狀態。</param>
+    /// <param name="actualFactory">產生實際狀態的函式。</param>
+    /// <param name="total">累積案例數。</param>
+    /// <param name="passed">累積通過數。</param>
+    private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+    {
+        total++;
+        string actual;
+        try
+        {
+            actual = actualFactory();
+        }
+        catch (Exception exception)
+        {
+            actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+        }
+
+        bool isPassed = actual == expected;
+        if (isPassed)
+        {
+            passed++;
+        }
+
+        Console.WriteLine($"[{name}]");
+        Console.WriteLine($"Expected: {expected}");
+        Console.WriteLine($"Actual: {actual}");
+        Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
     }
 
 
@@ -60,9 +164,9 @@ class Program
         for (int i = 0; i < numVertices; i++)
         {
             if (inDegree[i] == 0)
-            { 
+            {
                 // 如果入度為 0，就加入佇列
-                queue.Enqueue(i);  
+                queue.Enqueue(i);
             }
         }
 
@@ -75,13 +179,13 @@ class Program
             // 取出入度為 0 的節點
             int u = queue.Dequeue();
             // 加入排序結果中
-            topOrder.Add(u);  
+            topOrder.Add(u);
 
             // 遍歷這個節點的所有相鄰節點（也就是它指向誰）
             foreach (int neighbor in adjList[u])
             {
                 // 將相鄰節點的入度減 1
-                inDegree[neighbor]--;  
+                inDegree[neighbor]--;
 
                 // 如果這個相鄰節點入度變成 0，也加入佇列
                 if (inDegree[neighbor] == 0)

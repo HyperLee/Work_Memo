@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 呼叫其他class",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 呼叫其他class",
+      "program": "${workspaceFolder}/呼叫其他class/呼叫其他class/bin/Debug/net8.0/呼叫其他class.dll",
+      "cwd": "${workspaceFolder}/呼叫其他class/呼叫其他class",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

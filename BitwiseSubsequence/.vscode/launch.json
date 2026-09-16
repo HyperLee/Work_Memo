@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug BitwiseSubsequence",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build BitwiseSubsequence",
+      "program": "${workspaceFolder}/BitwiseSubsequence/BitwiseSubsequence/bin/Debug/net8.0/BitwiseSubsequence.dll",
+      "cwd": "${workspaceFolder}/BitwiseSubsequence/BitwiseSubsequence",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

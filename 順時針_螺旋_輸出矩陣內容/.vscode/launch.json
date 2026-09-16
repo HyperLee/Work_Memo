@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 順時針_螺旋_輸出矩陣內容",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 順時針_螺旋_輸出矩陣內容",
+      "program": "${workspaceFolder}/順時針_螺旋_輸出矩陣內容/順時針_螺旋_輸出矩陣內容/bin/Debug/net8.0/順時針_螺旋_輸出矩陣內容.dll",
+      "cwd": "${workspaceFolder}/順時針_螺旋_輸出矩陣內容/順時針_螺旋_輸出矩陣內容",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

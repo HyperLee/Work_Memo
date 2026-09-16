@@ -4,14 +4,36 @@
     {
         static void Main(string[] args)
         {
-            int[] array = { 4, 2, 2, 8, 3, 3, 1 };
-            Console.WriteLine("Original array: ");
-            PrintArray(array);
-            CountingSortAlgorithm(array);
-            Console.WriteLine("\nSorted array: ");
-            PrintArray(array);
+            int passed = 0;
+            passed += RunCase("題目範例", new int[] { 1, 2, 2, 3, 3, 4, 8 }, new int[] { 4, 2, 2, 8, 3, 3, 1 });
+            passed += RunCase("單一值", new int[] { 5, 5, 5 }, new int[] { 5, 5, 5 });
+            passed += RunCase("已排序資料", new int[] { 0, 1, 2, 3 }, new int[] { 0, 1, 2, 3 });
 
-            Console.ReadKey();
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行計數排序並比較就地排序後的陣列。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期排序結果。</param>
+        /// <param name="input">只含非負整數的本案例輸入。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, int[] expected, int[] input)
+        {
+            int[] actual = [.. input];
+            CountingSortAlgorithm(actual);
+            bool passed = expected.SequenceEqual(actual);
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: [{string.Join(", ", expected)}]");
+            Console.WriteLine($"Actual: [{string.Join(", ", actual)}]");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 二維陣列中的查找",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 二維陣列中的查找",
+      "program": "${workspaceFolder}/二維陣列中的查找/二維陣列中的查找/bin/Debug/net8.0/二維陣列中的查找.dll",
+      "cwd": "${workspaceFolder}/二維陣列中的查找/二維陣列中的查找",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

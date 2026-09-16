@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Dictionary存陣列資料輸出",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Dictionary存陣列資料輸出",
+      "program": "${workspaceFolder}/Dictionary存陣列資料輸出/Dictionary存陣列資料輸出/bin/Debug/net8.0/Dictionary存陣列資料輸出.dll",
+      "cwd": "${workspaceFolder}/Dictionary存陣列資料輸出/Dictionary存陣列資料輸出",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

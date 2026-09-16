@@ -14,43 +14,60 @@ namespace 替換空格
         /// <param name="args">命令列參數</param>
         static void Main(string[] args)
         {
-            // 範例輸入 1
-            string input1 = "We Are Happy";
-            string result1 = ReplaceSpace(input1);
-            string result1_2 = new Program().ReplaceSpace2(input1);
-            Console.WriteLine($"輸入：{input1}\nReplaceSpace輸出：{result1}\nReplaceSpace2輸出：{result1_2}\n");
+            int passed = 0;
+            passed += RunCase("題目範例", "We%20Are%20Happy");
+            passed += RunCase("單一空格", "%20");
+            passed += RunCase("前後空格", "%20%20Leading%20and%20trailing%20%20");
+            passed += RunCase("連續空格", "A%20B%20%20C%20%20%20D");
+            passed += RunCase("沒有空格", "NoSpace");
+            passed += RunCase("空字串", string.Empty);
 
-            // 範例輸入 2
-            string input2 = " ";
-            string result2 = ReplaceSpace(input2);
-            string result2_2 = new Program().ReplaceSpace2(input2);
-            Console.WriteLine($"輸入：{input2}\nReplaceSpace輸出：{result2}\nReplaceSpace2輸出：{result2_2}\n");
-
-            // 其他測試資料
-            string[] testCases = new string[]
+            Console.WriteLine($"Summary: {passed}/12 checks passed.");
+            if (passed != 12)
             {
-                "Hello World",
-                "NoSpace",
-                "  Leading and trailing  ",
-                "A B  C   D",
-                ""
-            };
-            foreach (var test in testCases)
-            {
-                string r1 = ReplaceSpace(test);
-                string r2 = new Program().ReplaceSpace2(test);
-                Console.WriteLine($"測試輸入：'{test}'\nReplaceSpace輸出：'{r1}'\nReplaceSpace2輸出：'{r2}'\n");
+                Environment.ExitCode = 1;
             }
+        }
 
-            // 可讓使用者自行輸入測試
-            /*
-            Console.WriteLine("請輸入要替換空格的字串：");
-            string userInput = Console.ReadLine() ?? string.Empty;
-            string userResult = ReplaceSpace(userInput);
-            string userResult2 = new Program().ReplaceSpace2(userInput);
-            Console.WriteLine($"ReplaceSpace替換後結果：{userResult}");
-            Console.WriteLine($"ReplaceSpace2替換後結果：{userResult2}");
-            */
+        /// <summary>
+        /// 使用兩種空格替換方法處理同一個固定字串。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期替換結果。</param>
+        /// <returns>兩種方法各自通過時各計 1 分。</returns>
+        private static int RunCase(string name, string expected)
+        {
+            string input = name switch
+            {
+                "題目範例" => "We Are Happy",
+                "單一空格" => " ",
+                "前後空格" => "  Leading and trailing  ",
+                "連續空格" => "A B  C   D",
+                "沒有空格" => "NoSpace",
+                _ => string.Empty
+            };
+            int passed = 0;
+            passed += PrintResult($"{name} / 手動走訪", expected, ReplaceSpace(input));
+            passed += PrintResult($"{name} / StringBuilder 逆向", expected, new Program().ReplaceSpace2(input));
+            return passed;
+        }
+
+        /// <summary>
+        /// 輸出字串替換結果的固定 smoke-test 欄位。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期字串。</param>
+        /// <param name="actual">實際字串。</param>
+        /// <returns>通過時回傳 1，否則回傳 0。</returns>
+        private static int PrintResult(string name, string expected, string actual)
+        {
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -126,7 +143,7 @@ namespace 替換空格
                 if (sb[i] == ' ')
                 {
                     // 每個空格需多兩個字元空間
-                    sb.Append("  "); 
+                    sb.Append("  ");
                 }
             }
 
@@ -157,6 +174,6 @@ namespace 替換空格
             // 回傳替換後的新字串
             return sb.ToString();
         }
-        
+
     }
 }

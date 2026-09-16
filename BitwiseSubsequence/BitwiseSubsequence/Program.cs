@@ -28,18 +28,64 @@
         /// </summary>
         static void Main()
         {
-            // Test Case 1: 基本案例
-            int[] arr1 = { 4, 2, 4, 1 };
-            Console.WriteLine("Test Case 1: " + string.Join(", ", GetDistinctGoodnessValues(arr1)));
-            
-            // Test Case 2: 空陣列
-            int[] arr2 = { };
-            Console.WriteLine("Test Case 2: " + string.Join(", ", GetDistinctGoodnessValues(arr2)));
-            
-            // Test Case 3: 單一元素
-            int[] arr3 = { 5 };
-            Console.WriteLine("Test Case 3: " + string.Join(", ", GetDistinctGoodnessValues(arr3)));
-            
+            (int[] Input, string Expected)[] cases =
+            {
+                (new[] { 4, 2, 4, 1 }, "0,1,2,4,6"),
+                (Array.Empty<int>(), "0"),
+                (new[] { 5 }, "0,5"),
+                (new[] { 1, 2, 3 }, "0,1,2,3")
+            };
+
+            int total = 0;
+            int passed = 0;
+            foreach (var testCase in cases)
+            {
+                RunCase(
+                    $"input=[{string.Join(",", testCase.Input)}]",
+                    testCase.Expected,
+                    () => string.Join(",", GetDistinctGoodnessValues(testCase.Input.ToArray())),
+                    ref total,
+                    ref passed);
+            }
+
+            Console.WriteLine($"Summary: {passed}/{total} checks passed.");
+            if (passed != total)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行一個按位 OR 子序列案例並輸出統一的驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期排序後的 goodness 集合。</param>
+        /// <param name="actualFactory">產生實際集合的函式。</param>
+        /// <param name="total">累積案例數。</param>
+        /// <param name="passed">累積通過數。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, ref int total, ref int passed)
+        {
+            total++;
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            if (isPassed)
+            {
+                passed++;
+            }
+
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
 
 
@@ -56,16 +102,16 @@
             {
                 return new List<int> { 0 };
             }
-            
+
             // 使用HashSet儲存所有不重複的良度值（按位OR的結果）
             HashSet<int> goodnessValues = new HashSet<int>();
             // 用於儲存當前正在處理的遞增子序列
             List<int> currentList = new List<int>();
-            
+
             // 開始遞迴搜索所有可能的子序列
             // 初始參數：數組、起始索引0、初始OR值0、當前序列、結果集合
             FindSubsequences(arr, 0, 0, currentList, goodnessValues);
-            
+
             // 將結果轉換為排序後的列表返回
             List<int> sortedResults = goodnessValues.ToList();
             sortedResults.Sort();
@@ -107,11 +153,11 @@
                 {
                     // 將當前元素加入序列
                     currentSequence.Add(arr[i]);
-                    
+
                     // 遞迴處理下一個位置
                     // 更新OR值：將當前元素與之前的OR值進行按位OR運算
                     FindSubsequences(arr, i + 1, currentOr | arr[i], currentSequence, goodnessValues);
-                    
+
                     // 回溯：移除最後加入的元素，以便嘗試其他可能的組合
                     currentSequence.RemoveAt(currentSequence.Count - 1);
                 }

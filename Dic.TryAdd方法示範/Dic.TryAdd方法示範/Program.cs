@@ -18,10 +18,36 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { 1, 5, 4, 2, 9, 9, 9 };
-            int k = 3;
-            Console.WriteLine(MaximumSubarraySum(input, k));
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("題目範例", 15, new int[] { 1, 5, 4, 2, 9, 9, 9 }, 3);
+            passed += RunCase("每個視窗都有重複", 0, new int[] { 4, 4, 4, 4 }, 2);
+            passed += RunCase("所有元素都不同", 7, new int[] { 1, 2, 3, 4 }, 2);
+
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 比較固定長度且元素互異的滑動視窗最大總和。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期最大總和。</param>
+        /// <param name="input">本案例獨立的輸入陣列。</param>
+        /// <param name="k">視窗長度。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, long expected, int[] input, int k)
+        {
+            long actual = MaximumSubarraySum([.. input], k);
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

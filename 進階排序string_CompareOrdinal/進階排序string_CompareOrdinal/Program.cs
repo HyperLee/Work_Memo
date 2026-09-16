@@ -11,21 +11,57 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            var accounts = new List<IList<string>>
+            int passed = 0;
+            passed += RunCase("共同信箱連接帳戶", "John:john00@mail.com,john_newyork@mail.com,johnsmith@mail.com|John:johnnybravo@mail.com|Mary:mary@mail.com", new List<IList<string>>
             {
                 new List<string> { "John", "johnsmith@mail.com", "john_newyork@mail.com" },
                 new List<string> { "John", "johnsmith@mail.com", "john00@mail.com" },
                 new List<string> { "Mary", "mary@mail.com" },
                 new List<string> { "John", "johnnybravo@mail.com" }
-            };
-
-            var result = AccountsMerge(accounts);
-
-            foreach (var item in result)
+            });
+            passed += RunCase("沒有共同信箱", "Alex:a@mail.com|Bob:b@mail.com", new List<IList<string>>
             {
-                Console.WriteLine(string.Join(",", item));
-            }
+                new List<string> { "Alex", "a@mail.com" },
+                new List<string> { "Bob", "b@mail.com" }
+            });
 
+            Console.WriteLine($"Summary: {passed}/2 checks passed.");
+            if (passed != 2)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 執行 DFS 帳戶合併並以排序後的穩定文字比較結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期的帳戶與信箱文字。</param>
+        /// <param name="accounts">本案例獨立的帳戶清單。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, IList<IList<string>> accounts)
+        {
+            IList<IList<string>> result = AccountsMerge(accounts);
+            string actual = Normalize(result);
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
+        }
+
+        /// <summary>
+        /// 將每個合併帳戶的信箱依 Ordinal 順序格式化，消除圖走訪順序差異。
+        /// </summary>
+        /// <param name="accounts">帳戶合併結果。</param>
+        /// <returns>以 | 分隔的穩定帳戶文字。</returns>
+        private static string Normalize(IList<IList<string>> accounts)
+        {
+            return string.Join("|", accounts
+                .Select(account => $"{account[0]}:{string.Join(",", account.Skip(1).OrderBy(email => email, StringComparer.Ordinal))}")
+                .OrderBy(account => account, StringComparer.Ordinal));
         }
 
 

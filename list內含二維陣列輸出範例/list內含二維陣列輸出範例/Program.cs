@@ -11,12 +11,37 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { 1, 2, 3, 5 };
-            int k = 3;
+            int passed = 0;
+            passed += RunCase("四個分母候選值", "2/5", new int[] { 1, 2, 3, 5 }, 3);
+            passed += RunCase("三個分母候選值", "1/3", new int[] { 1, 2, 3 }, 1);
+            passed += RunCase("第二小分數", "1/2", new int[] { 1, 2, 3, 5 }, 4);
 
-            KthSmallestPrimeFraction(input, k);
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
 
-            Console.ReadKey();
+        /// <summary>
+        /// 取得第 k 小質數分數並與穩定化文字預期值比較。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期的分數文字。</param>
+        /// <param name="input">嚴格遞增且以 1 開頭的候選陣列。</param>
+        /// <param name="k">分數排名，從 1 開始。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, int[] input, int k)
+        {
+            int[] fraction = KthSmallestPrimeFraction([.. input], k);
+            string actual = $"{fraction[0]}/{fraction[1]}";
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -55,26 +80,6 @@
 
             // 分數; 排序 遞增排序 小至大; a * d < b * c
             list.Sort((x, y) => x[0] * y[1] - y[0] * x[1]);
-
-            ////////////////////// console輸出//////////////////////////
-            int count = 0;
-            // 使用 foreach 迴圈來迭代 List 中的每個陣列
-            foreach (int[] array in list)
-            {
-                // 使用內嵌的 foreach 迴圈來迭代每個陣列中的元素
-                foreach (int element in array)
-                {
-                    // 輸出第 k - 1 筆資料
-                    if (count == k - 1)
-                    {
-                        Console.Write(element + ", ");
-                    }
-                }
-
-                count++;
-                //Console.WriteLine(); // 換行以分隔每個陣列
-            }
-            //////////////////////////////////////////////////////////////
 
             // 回傳第 k 個
             return list[k - 1];

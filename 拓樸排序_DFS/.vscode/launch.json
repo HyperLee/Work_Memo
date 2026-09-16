@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 拓樸排序_DFS",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 拓樸排序_DFS",
+      "program": "${workspaceFolder}/拓樸排序_DFS/拓樸排序_DFS/bin/Debug/net8.0/拓樸排序_DFS.dll",
+      "cwd": "${workspaceFolder}/拓樸排序_DFS/拓樸排序_DFS",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

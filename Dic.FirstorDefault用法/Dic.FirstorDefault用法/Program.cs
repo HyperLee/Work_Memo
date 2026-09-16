@@ -15,11 +15,45 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] array1 = new int[] { 1, 1, 5, 7, 7 };
-            Console.WriteLine("方法1: " + SingleNumber(array1));
-            Console.WriteLine("方法2: " + SingleNumber2(array1));
-            Console.WriteLine("方法3: " + SingleNumber3(array1));
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("中間出現的唯一值", 5, new int[] { 1, 1, 5, 7, 7 });
+            passed += RunCase("負數也可使用 XOR", -3, new int[] { -3, 4, 4, 8, 8 });
+            passed += RunCase("只有一個元素", 42, new int[] { 42 });
+
+            Console.WriteLine($"Summary: {passed}/9 checks passed.");
+            if (passed != 9)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 用同一組新陣列比較三種 Single Number 解法。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">唯一出現數字的預期值。</param>
+        /// <param name="input">符合每個其他數字出現兩次的輸入。</param>
+        /// <returns>三個方法通過數量。</returns>
+        private static int RunCase(string name, int expected, int[] input)
+        {
+            int[] first = [.. input];
+            int[] second = [.. input];
+            int[] third = [.. input];
+            int[] actuals = { SingleNumber(first), SingleNumber2(second), SingleNumber3(third) };
+            int passed = 0;
+
+            for (int i = 0; i < actuals.Length; i++)
+            {
+                bool isPassed = expected == actuals[i];
+                Console.WriteLine($"Case: {name} / 方法 {i + 1}");
+                Console.WriteLine($"Expected: {expected}");
+                Console.WriteLine($"Actual: {actuals[i]}");
+                Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
+                Console.WriteLine();
+                passed += isPassed ? 1 : 0;
+            }
+
+            return passed;
         }
 
 

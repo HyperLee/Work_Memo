@@ -19,30 +19,42 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            /* // 方法1: 官方範例
-            int[] xs = new int[] { 10, 20, 30, 40 };
-            ref int found = ref FindFirst(xs, s => s == 30);
-            // 30用0取代
+            int[] numbers = { 10, 20, 30, 40 };
+            ref int found = ref FindFirst(numbers, value => value == 30);
             found = 0;
+            int passed = RunCase("ref 回傳可修改原陣列", "10 20 0 40", string.Join(" ", numbers));
 
-            Console.WriteLine(string.Join(" ", xs));  // output: 10 20 0 40
-            */
-
-            // 方法2:
             int normal = 20;
-            int ref_int = 10;
-            int out_int;
+            int refValue = 10;
             Method_normal(normal);
-            Method_ref(ref ref_int);
-            Method_out(out out_int);
+            Method_ref(ref refValue);
+            Method_out(out int outValue);
+            string parameterResult = $"normal={normal}; return={Method_normal_return(normal)}; ref={refValue}; out={outValue}";
+            passed += RunCase("值傳遞、ref 與 out", "normal=20; return=1234; ref=777; out=888", parameterResult);
 
-            Console.WriteLine($"normal的值為 {normal}");
-            Console.WriteLine("Method_normal_return的值為 " + Method_normal_return(normal));
-            Console.WriteLine($"ref_int的值為 {ref_int}");
-            Console.WriteLine($"out_int的值為 {out_int}");
-            Console.WriteLine($"Press any key for continuing...{Environment.NewLine}");
+            Console.WriteLine($"Summary: {passed}/2 checks passed.");
+            if (passed != 2)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
 
-            Console.ReadKey();
+        /// <summary>
+        /// 比較參考傳回示範的預期與實際文字結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期結果。</param>
+        /// <param name="actual">實際結果。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, string actual)
+        {
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

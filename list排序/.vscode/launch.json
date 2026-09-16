@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug list排序",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build list排序",
+      "program": "${workspaceFolder}/list排序/list排序/bin/Debug/net8.0/list排序.dll",
+      "cwd": "${workspaceFolder}/list排序/list排序",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

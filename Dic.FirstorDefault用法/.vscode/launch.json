@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Dic.FirstorDefault用法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Dic.FirstorDefault用法",
+      "program": "${workspaceFolder}/Dic.FirstorDefault用法/Dic.FirstorDefault用法/bin/Debug/net8.0/Dic.FirstorDefault用法.dll",
+      "cwd": "${workspaceFolder}/Dic.FirstorDefault用法/Dic.FirstorDefault用法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug SlidingWindow",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build SlidingWindow",
+      "program": "${workspaceFolder}/SlidingWindow/bin/Debug/net9.0/SlidingWindow.dll",
+      "cwd": "${workspaceFolder}/SlidingWindow",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

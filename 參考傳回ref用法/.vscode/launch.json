@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 參考傳回ref用法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 參考傳回ref用法",
+      "program": "${workspaceFolder}/參考傳回ref用法/參考傳回ref用法/bin/Debug/net8.0/參考傳回ref用法.dll",
+      "cwd": "${workspaceFolder}/參考傳回ref用法/參考傳回ref用法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

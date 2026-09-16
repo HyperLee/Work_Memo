@@ -14,20 +14,36 @@
         {
             Trie obj = new Trie();
             obj.Insert("apple");
-
-            bool param_2 = obj.Search("apple");
-            Console.WriteLine("param_2: " + param_2);
-
-            bool param_3 = obj.StartsWith("app");
-            Console.WriteLine("param_3: " + param_3);
-
-            bool param_4 = obj.Search("app");
-            Console.WriteLine("param_4: " + param_4);
-
+            int passed = 0;
+            passed += RunCase("插入後搜尋完整單字", true, obj.Search("apple"));
+            passed += RunCase("搜尋既有前綴", true, obj.StartsWith("app"));
+            passed += RunCase("前綴尚未成為單字", false, obj.Search("app"));
             obj.Insert("app");
 
-            bool param_5 = obj.Search("app");
-            Console.WriteLine("param_5: " + param_5);
+            passed += RunCase("插入前綴後搜尋完整單字", true, obj.Search("app"));
+            Console.WriteLine($"Summary: {passed}/4 checks passed.");
+            if (passed != 4)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 比較 Trie 操作的預期結果與實際結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期布林值。</param>
+        /// <param name="actual">Trie 操作回傳的實際布林值。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, bool expected, bool actual)
+        {
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
     }
@@ -45,7 +61,7 @@
         // 表示当前节点是否是一个单词的结束节点
         private bool isEnd;
         // 子节点
-        private Trie[] children;
+        private readonly Trie[] children;
 
 
         /// <summary>
@@ -127,7 +143,7 @@
                 int index = c - 'a';
                 if (node.children[index] == null)
                 {
-                    return null;
+                    return null!;
                 }
                 node = node.children[index];
             }

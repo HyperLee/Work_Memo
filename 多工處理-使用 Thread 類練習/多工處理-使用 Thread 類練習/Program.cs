@@ -12,33 +12,70 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Thread thread1 = new Thread(new ThreadStart(DoWork));
-            Thread thread2 = new Thread(new ThreadStart(DoWork));
+            int[] results = new int[2];
+            Thread thread1 = new Thread(() => DoWork(1, results));
+            Thread thread2 = new Thread(() => DoWork(2, results));
 
-            // 啟動執行緒
             thread1.Start();
             thread2.Start();
-
-            // 等待執行緒完成
             thread1.Join();
             thread2.Join();
 
-            Console.WriteLine("所有執行緒完成");
-            Console.ReadKey();
+            RunCase(
+                "Thread.Join 完成",
+                "9,12",
+                () => string.Join(",", results),
+                out int passed);
+
+            Console.WriteLine($"Summary: {passed}/1 checks passed.");
+            if (passed != 1)
+            {
+                Environment.ExitCode = 1;
+            }
         }
 
 
         /// <summary>
-        /// 
+        /// 計算固定三次工作，並寫入該執行緒專屬的結果欄位。
         /// </summary>
-        static void DoWork()
+        /// <param name="taskId">工作識別碼。</param>
+        /// <param name="results">各工作寫入結果的陣列。</param>
+        private static void DoWork(int taskId, int[] results)
         {
-            for (int i = 0; i < 10; i++)
+            int total = 0;
+            for (int i = 1; i <= 3; i++)
             {
-                Console.WriteLine($"執行緒 {Thread.CurrentThread.ManagedThreadId} 執行中 - 第 {i} 次");
-                // 模擬工作
-                Thread.Sleep(1000);  
+                total += taskId + i;
             }
+
+            results[taskId - 1] = total;
+        }
+
+        /// <summary>
+        /// 輸出一個 Thread 案例的固定驗證結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期結果集合。</param>
+        /// <param name="actualFactory">產生實際結果的函式。</param>
+        /// <param name="passed">輸出通過數量。</param>
+        private static void RunCase(string name, string expected, Func<string> actualFactory, out int passed)
+        {
+            string actual;
+            try
+            {
+                actual = actualFactory();
+            }
+            catch (Exception exception)
+            {
+                actual = $"EXCEPTION: {exception.GetType().Name}: {exception.Message}";
+            }
+
+            bool isPassed = actual == expected;
+            passed = isPassed ? 1 : 0;
+            Console.WriteLine($"[{name}]");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(isPassed ? "PASS" : "FAIL")}");
         }
     }
 }

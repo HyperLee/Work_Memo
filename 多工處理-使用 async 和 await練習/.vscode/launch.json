@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 多工處理-使用 async 和 await練習",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 多工處理-使用 async 和 await練習",
+      "program": "${workspaceFolder}/多工處理-使用 async 和 await練習/bin/Debug/net8.0/多工處理-使用 async 和 await練習.dll",
+      "cwd": "${workspaceFolder}/多工處理-使用 async 和 await練習",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

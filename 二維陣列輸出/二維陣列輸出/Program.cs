@@ -12,33 +12,39 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int rows = 1, cols = 4, rstart = 0, cstart = 0;
+            int passed = 0;
+            passed += RunCase("單列矩陣", "[0,0]|[0,1]|[0,2]|[0,3]", 1, 4, 0, 0);
+            passed += RunCase("二乘二矩陣", "[0,0]|[0,1]|[1,1]|[1,0]", 2, 2, 0, 0);
+            passed += RunCase("從矩陣中心開始", "[1,1]|[1,2]|[2,2]|[2,1]|[2,0]|[1,0]|[0,0]|[0,1]|[0,2]", 3, 3, 1, 1);
 
-            var res = SpiralMatrixIII(rows, cols, rstart, cstart);
-
-            // 寫法1; 雙重迴圈
-            Console.WriteLine("=====================================寫法1");
-            for (int i = 0; i < res.Length; i++)
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
             {
-                System.Console.Write("Element({0}): ", i);
-
-                for (int j = 0; j < res[i].Length; j++)
-                {
-                    System.Console.Write("{0}{1}", res[i][j], j == (res[i].Length - 1) ? "" : " ");
-                }
-                System.Console.WriteLine();
+                Environment.ExitCode = 1;
             }
+        }
 
-            Console.WriteLine("=====================================寫法2");
-
-            // 寫法2; string.Join, 比較簡潔
-            foreach (var item in res)
-            {
-                Console.WriteLine(string.Join(",", item));
-            }
-            
-
-            Console.ReadKey();
+        /// <summary>
+        /// 將順時針走訪座標格式化後與預期序列比較。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">以 | 分隔的預期座標序列。</param>
+        /// <param name="rows">矩陣列數。</param>
+        /// <param name="cols">矩陣行數。</param>
+        /// <param name="rStart">起始列。</param>
+        /// <param name="cStart">起始行。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, int rows, int cols, int rStart, int cStart)
+        {
+            int[][] actualPositions = SpiralMatrixIII(rows, cols, rStart, cStart);
+            string actual = string.Join("|", actualPositions.Select(position => $"[{position[0]},{position[1]}]"));
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

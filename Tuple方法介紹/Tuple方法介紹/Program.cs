@@ -14,10 +14,36 @@ namespace Tuple方法介紹
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int input = 3749;
+            int passed = 0;
+            passed += RunCase("題目範例", "MMMDCCXLIX", 3749);
+            passed += RunCase("減法表示 4", "IV", 4);
+            passed += RunCase("減法表示 9 與 90", "MCMXCIV", 1994);
+            passed += RunCase("一般重複符號", "LVIII", 58);
 
-            Console.WriteLine("res: " + IntToRoman(input));
-            Console.ReadKey();
+            Console.WriteLine($"Summary: {passed}/4 checks passed.");
+            if (passed != 4)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 比較 Tuple 對照表轉換羅馬數字的結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期羅馬數字。</param>
+        /// <param name="input">1 到 3999 的整數。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, int input)
+        {
+            string actual = IntToRoman(input);
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -47,7 +73,7 @@ namespace Tuple方法介紹
         /// 10 => X
         ///  9 => IX
         /// </summary>
-        static Tuple<int, string>[] valueSymbols = {
+        static readonly Tuple<int, string>[] valueSymbols = {
             new Tuple<int, string>(1000, "M"),
             new Tuple<int, string>(900, "CM"),
             new Tuple<int, string>(500, "D"),

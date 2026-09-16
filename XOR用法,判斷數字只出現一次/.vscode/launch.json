@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug XOR用法,判斷數字只出現一次",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build XOR用法,判斷數字只出現一次",
+      "program": "${workspaceFolder}/XOR用法,判斷數字只出現一次/XOR用法,判斷數字只出現一次/bin/Debug/net8.0/XOR用法,判斷數字只出現一次.dll",
+      "cwd": "${workspaceFolder}/XOR用法,判斷數字只出現一次/XOR用法,判斷數字只出現一次",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -15,9 +15,35 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] array1 = new int[] { 1, 1, 5, 7, 7 };
-            Console.WriteLine("方法3: " + SingleNumber3(array1));
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("中間的唯一值", 5, new int[] { 1, 1, 5, 7, 7 });
+            passed += RunCase("負數唯一值", -3, new int[] { -3, 4, 4, 8, 8 });
+            passed += RunCase("只有一個元素", 42, new int[] { 42 });
+
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 以 XOR 的消去性質找出只出現一次的整數。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">唯一數字的預期值。</param>
+        /// <param name="input">除唯一值外其餘值均出現兩次的陣列。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, int expected, int[] input)
+        {
+            int actual = SingleNumber3([.. input]);
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 

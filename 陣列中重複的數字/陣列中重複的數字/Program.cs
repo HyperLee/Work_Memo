@@ -96,23 +96,53 @@ class Program
     /// <param name="args"></param>
     static void Main(string[] args)
     {
-        var testCases = new List<int[]>
+        int passed = 0;
+        passed += RunCase("題目範例", 2, new int[] { 2, 3, 1, 0, 2, 5 });
+        passed += RunCase("沒有重複", null, new int[] { 0, 1, 2, 3, 4, 5 });
+        passed += RunCase("重複在頭尾", 1, new int[] { 1, 2, 3, 4, 5, 1 });
+        passed += RunCase("重複在中間", 3, new int[] { 5, 4, 3, 2, 1, 0, 3 });
+        passed += RunCase("空陣列", null, Array.Empty<int>());
+        passed += RunCase("含不合法數字", null, new int[] { 0, 1, 2, 6 });
+
+        Console.WriteLine($"Summary: {passed}/12 checks passed.");
+        if (passed != 12)
         {
-            new int[] {2, 3, 1, 0, 2, 5}, // 範例資料
-            new int[] {0, 1, 2, 3, 4, 5}, // 無重複
-            new int[] {1, 2, 3, 4, 5, 1}, // 重複在頭尾
-            new int[] {5, 4, 3, 2, 1, 0, 3}, // 重複在中間
-            new int[] {}, // 空陣列
-            new int[] {0, 1, 2, 6} // 有不合法數字
-        };
-        foreach (var test in testCases)
-        {
-            // 測試 FindDuplicate
-            var result1 = FindDuplicate(test);
-            // 測試 FindDuplicateInPlace，需複製一份避免原地修改影響其他測資
-            var testCopy = (int[])test.Clone();
-            var result2 = FindDuplicateInPlace(testCopy);
-            Console.WriteLine($"輸入: {{{string.Join(", ", test)}}} => FindDuplicate 輸出: {(result1.HasValue ? result1.ToString() : "無重複或輸入不合法")}, FindDuplicateInPlace 輸出: {(result2.HasValue ? result2.ToString() : "無重複或輸入不合法")}");
+            Environment.ExitCode = 1;
         }
+    }
+
+    /// <summary>
+    /// 以 HashSet 與原地交換兩種方法檢查重複值結果。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期的重複值；沒有結果時為 null。</param>
+    /// <param name="input">本案例獨立的輸入陣列。</param>
+    /// <returns>兩種方法各自通過時各計 1 分。</returns>
+    static int RunCase(string name, int? expected, int[] input)
+    {
+        int? first = FindDuplicate([.. input]);
+        int? second = FindDuplicateInPlace([.. input]);
+        int passed = 0;
+        passed += PrintResult($"{name} / HashSet", expected, first);
+        passed += PrintResult($"{name} / 原地交換", expected, second);
+        return passed;
+    }
+
+    /// <summary>
+    /// 輸出 nullable 整數結果的固定 smoke-test 欄位。
+    /// </summary>
+    /// <param name="name">案例名稱。</param>
+    /// <param name="expected">預期值。</param>
+    /// <param name="actual">實際值。</param>
+    /// <returns>通過時回傳 1，否則回傳 0。</returns>
+    static int PrintResult(string name, int? expected, int? actual)
+    {
+        bool passed = expected == actual;
+        Console.WriteLine($"Case: {name}");
+        Console.WriteLine($"Expected: {expected?.ToString() ?? "null"}");
+        Console.WriteLine($"Actual: {actual?.ToString() ?? "null"}");
+        Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+        Console.WriteLine();
+        return passed ? 1 : 0;
     }
 }

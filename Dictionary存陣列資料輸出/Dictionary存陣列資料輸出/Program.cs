@@ -11,10 +11,47 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            string[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
-            //Console.WriteLine(GroupAnagrams(input));
-            GroupAnagrams(input);
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("題目範例", "[ate,eat,tea]|[bat]|[nat,tan]", new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+            passed += RunCase("空字串與相同字母", "[]|[ab,ba]", new string[] { "ab", "", "ba" });
+            passed += RunCase("單一群組", "[abc,bca,cab]", new string[] { "abc", "bca", "cab" });
+
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 以正規化後的群組文字比較字母異位詞分組結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">排序後群組的預期文字。</param>
+        /// <param name="input">本案例獨立的輸入字串。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, string expected, string[] input)
+        {
+            string actual = NormalizeGroups(GroupAnagrams([.. input]));
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
+        }
+
+        /// <summary>
+        /// 將群組內與群組間排序，消除 Dictionary 列舉順序對案例比對的影響。
+        /// </summary>
+        /// <param name="groups">字母異位詞群組。</param>
+        /// <returns>以 `|` 連接的穩定群組文字。</returns>
+        private static string NormalizeGroups(IList<IList<string>> groups)
+        {
+            return string.Join("|", groups
+                .Select(group => $"[{string.Join(",", group.OrderBy(word => word, StringComparer.Ordinal))}]")
+                .OrderBy(group => group, StringComparer.Ordinal));
         }
 
 
@@ -79,28 +116,6 @@
             {
                 res.Add(dic[item]);
             }
-
-            // Console 輸出
-            // 每個item裡面有好幾個value, 都需要輸出顯示
-            Console.Write("[ ");
-            foreach (var item in res)
-            {
-                Console.Write("[");
-                for (int i = 0; i < item.Count; i++)
-                {
-                    //Console.Write(item[i] + ", ");
-                    if (i == item.Count - 1)
-                    {
-                        Console.Write(item[i]);
-                    }
-                    else
-                    {
-                        Console.Write(item[i] + ", ");
-                    }
-                }
-                Console.Write("]");
-            }
-            Console.Write(" ]");
 
             return res;
 

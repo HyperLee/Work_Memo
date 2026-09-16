@@ -12,9 +12,35 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { 2, 1, 3, 4, 5, 2 };
-            Console.WriteLine("res: " + FindScore(input));
-            Console.ReadKey();
+            int passed = 0;
+            passed += RunCase("題目範例", 7, new int[] { 2, 1, 3, 4, 5, 2 });
+            passed += RunCase("最小值在左端", 4, new int[] { 1, 2, 3 });
+            passed += RunCase("相同最小值依索引處理", 3, new int[] { 2, 2, 1, 2 });
+
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 比較依數值與索引排序後標記元素所得的分數。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期分數。</param>
+        /// <param name="input">本案例獨立的輸入陣列。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, long expected, int[] input)
+        {
+            long actual = FindScore([.. input]);
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -82,7 +108,6 @@
                 // 選定未標記項目
                 if (!marked[index])
                 {
-                    Console.WriteLine("numIndices num: " + num);
                     // 加入 Score
                     Score += num;
                     // 加入後標記選定項目

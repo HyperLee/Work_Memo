@@ -11,17 +11,35 @@
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            int[] input = { 1, 5, 0, 5 };
+            int passed = 0;
+            passed += RunCase("頻率不同與相同", new int[] { 1, 0, 5, 5 }, new int[] { 1, 5, 0, 5 });
+            passed += RunCase("三種頻率", new int[] { 1, 2, 2, 3, 3, 3 }, new int[] { 2, 3, 1, 3, 2, 3 });
+            passed += RunCase("同頻率採數值遞減", new int[] { 3, 2, 2, 1, 1 }, new int[] { 1, 1, 2, 2, 3 });
 
-            var res = FrequencySort(input);
-
-            Console.WriteLine("ans: ");
-            foreach (int i in res)
+            Console.WriteLine($"Summary: {passed}/3 checks passed.");
+            if (passed != 3)
             {
-                Console.Write(i + ", ");
+                Environment.ExitCode = 1;
             }
+        }
 
-            Console.ReadKey();
+        /// <summary>
+        /// 比較依頻率遞增、同頻率數值遞減的排序結果。
+        /// </summary>
+        /// <param name="name">案例名稱。</param>
+        /// <param name="expected">預期排序陣列。</param>
+        /// <param name="input">本案例獨立的輸入陣列。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string name, int[] expected, int[] input)
+        {
+            int[] actual = FrequencySort([.. input]);
+            bool passed = expected.SequenceEqual(actual);
+            Console.WriteLine($"Case: {name}");
+            Console.WriteLine($"Expected: [{string.Join(", ", expected)}]");
+            Console.WriteLine($"Actual: [{string.Join(", ", actual)}]");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
 
 
@@ -81,7 +99,8 @@
             // *依照題目要求來排序
             // cnt1,2 是頻率
             // a, b   是比較數字
-            list.Sort((a, b) => {
+            list.Sort((a, b) =>
+            {
                 int cnt1 = dic[a], cnt2 = dic[b];
                 //return cnt1 != cnt2 ? cnt1 - cnt2 : b - a;
                 if (cnt1 != cnt2)

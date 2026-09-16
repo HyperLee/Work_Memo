@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Grid題目類型解法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Grid題目類型解法",
+      "program": "${workspaceFolder}/Grid題目類型解法/Grid題目類型解法/bin/Debug/net8.0/Grid題目類型解法.dll",
+      "cwd": "${workspaceFolder}/Grid題目類型解法/Grid題目類型解法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

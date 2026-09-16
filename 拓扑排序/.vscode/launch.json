@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 拓扑排序",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 拓扑排序",
+      "program": "${workspaceFolder}/拓扑排序/拓扑排序/bin/Debug/net8.0/拓扑排序.dll",
+      "cwd": "${workspaceFolder}/拓扑排序/拓扑排序",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

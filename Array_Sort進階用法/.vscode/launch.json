@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Array_Sort進階用法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Array_Sort進階用法",
+      "program": "${workspaceFolder}/Array_Sort進階用法/Array_Sort進階用法/bin/Debug/net8.0/Array_Sort進階用法.dll",
+      "cwd": "${workspaceFolder}/Array_Sort進階用法/Array_Sort進階用法",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

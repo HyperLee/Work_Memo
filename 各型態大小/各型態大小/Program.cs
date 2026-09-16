@@ -15,17 +15,40 @@ namespace 各型態大小
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Size of int: {0}", sizeof(int));
-            Console.WriteLine("Size of uint: {0}", sizeof(uint));
-            Console.WriteLine("Size of double: {0}", sizeof(double));
-            Console.WriteLine("Size of char: {0}", sizeof(char));
-            Console.WriteLine("Size of long: {0}", sizeof(long));
-            Console.WriteLine("Size of ulong: {0}", sizeof(ulong));
-            Console.WriteLine("Size of float: {0}", sizeof(float));
-            Console.WriteLine("Size of bool: {0}", sizeof(bool));
-            Console.WriteLine("Size of byte: {0}", sizeof(byte));
+            int passed = 0;
+            passed += RunCase("int", 4, sizeof(int));
+            passed += RunCase("uint", 4, sizeof(uint));
+            passed += RunCase("double", 8, sizeof(double));
+            passed += RunCase("char", 2, sizeof(char));
+            passed += RunCase("long", 8, sizeof(long));
+            passed += RunCase("ulong", 8, sizeof(ulong));
+            passed += RunCase("float", 4, sizeof(float));
+            passed += RunCase("bool", 1, sizeof(bool));
+            passed += RunCase("byte", 1, sizeof(byte));
 
-            Console.ReadKey();
+            Console.WriteLine($"Summary: {passed}/9 checks passed.");
+            if (passed != 9)
+            {
+                Environment.ExitCode = 1;
+            }
+        }
+
+        /// <summary>
+        /// 比較指定數值型別的預期與實際位元組大小。
+        /// </summary>
+        /// <param name="typeName">要顯示的型別名稱。</param>
+        /// <param name="expected">依 C# 型別契約推導的大小。</param>
+        /// <param name="actual">由 <c>sizeof</c> 運算子取得的大小。</param>
+        /// <returns>檢查通過時回傳 1，否則回傳 0。</returns>
+        private static int RunCase(string typeName, int expected, int actual)
+        {
+            bool passed = expected == actual;
+            Console.WriteLine($"Case: {typeName} 大小");
+            Console.WriteLine($"Expected: {expected}");
+            Console.WriteLine($"Actual: {actual}");
+            Console.WriteLine($"PASS-FAIL: {(passed ? "PASS" : "FAIL")}");
+            Console.WriteLine();
+            return passed ? 1 : 0;
         }
     }
 }

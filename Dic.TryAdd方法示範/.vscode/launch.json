@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Dic.TryAdd方法示範",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Dic.TryAdd方法示範",
+      "program": "${workspaceFolder}/Dic.TryAdd方法示範/Dic.TryAdd方法示範/bin/Debug/net8.0/Dic.TryAdd方法示範.dll",
+      "cwd": "${workspaceFolder}/Dic.TryAdd方法示範/Dic.TryAdd方法示範",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

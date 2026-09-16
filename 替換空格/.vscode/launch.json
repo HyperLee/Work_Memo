@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 替換空格",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 替換空格",
+      "program": "${workspaceFolder}/替換空格/替換空格/bin/Debug/net8.0/替換空格.dll",
+      "cwd": "${workspaceFolder}/替換空格/替換空格",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

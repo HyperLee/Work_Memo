@@ -88,6 +88,8 @@ StyleCopReport.xml
 *.pgc
 *.pgd
 *.rsp
+# but not Directory.Build.rsp, as it configures directory-level build defaults
+!Directory.Build.rsp
 *.sbr
 *.tlb
 *.tli
@@ -402,7 +404,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-.idea/
 
 ##
 ## Visual studio for Mac
@@ -421,10 +422,6 @@ autom4te.cache/
 *.tar.gz
 tarballs/
 test-results/
-
-# Mac bundle stuff
-*.dmg
-*.app
 
 # content below from: https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
 # General
@@ -482,3 +479,16 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Local-only files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.history/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+*.swp
+*.swo
