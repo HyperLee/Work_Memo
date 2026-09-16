@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 輸出符號",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 輸出符號",
+      "program": "${workspaceFolder}/輸出符號/輸出符號/bin/Debug/net10.0/輸出符號.dll",
+      "cwd": "${workspaceFolder}/輸出符號/輸出符號",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

@@ -59,7 +59,6 @@ namespace list_reverse
             */
             
 
-            Console.ReadKey();
 
         }
     }

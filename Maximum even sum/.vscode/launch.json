@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Maximum even sum",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Maximum even sum",
+      "program": "${workspaceFolder}/Maximum even sum/Maximum even sum/bin/Debug/net10.0/Maximum even sum.dll",
+      "cwd": "${workspaceFolder}/Maximum even sum/Maximum even sum",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

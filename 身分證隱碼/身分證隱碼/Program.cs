@@ -29,7 +29,6 @@ namespace 身分證隱碼
             }
 
             Console.WriteLine(ID);
-            Console.ReadKey();
 
         }
     }

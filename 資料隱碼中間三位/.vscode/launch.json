@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 資料隱碼中間三位",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 資料隱碼中間三位",
+      "program": "${workspaceFolder}/資料隱碼中間三位/資料隱碼中間三位/bin/Debug/net10.0/資料隱碼中間三位.dll",
+      "cwd": "${workspaceFolder}/資料隱碼中間三位/資料隱碼中間三位",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

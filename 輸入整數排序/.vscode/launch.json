@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 輸入整數排序",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 輸入整數排序",
+      "program": "${workspaceFolder}/輸入整數排序/輸入整數排序/bin/Debug/net10.0/輸入整數排序.dll",
+      "cwd": "${workspaceFolder}/輸入整數排序/輸入整數排序",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

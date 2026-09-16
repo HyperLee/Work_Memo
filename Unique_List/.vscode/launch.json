@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Unique_List",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Unique_List",
+      "program": "${workspaceFolder}/Unique_List/Unique_List/bin/Debug/net10.0/Unique_List.dll",
+      "cwd": "${workspaceFolder}/Unique_List/Unique_List",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

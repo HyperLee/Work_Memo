@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Json_reader",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Json_reader",
+      "program": "${workspaceFolder}/Json_reader/Json_reader/bin/Debug/net10.0/Json_reader.dll",
+      "cwd": "${workspaceFolder}/Json_reader/Json_reader",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

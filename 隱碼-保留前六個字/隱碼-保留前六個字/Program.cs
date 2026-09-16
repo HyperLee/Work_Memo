@@ -35,7 +35,6 @@ namespace 隱碼_保留前六個字
             }
 
             Console.WriteLine(address);
-            Console.ReadKey();
 
         }
     }

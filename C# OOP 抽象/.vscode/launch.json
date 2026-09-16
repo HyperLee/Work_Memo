@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C# OOP 抽象",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build C# OOP 抽象",
+      "program": "${workspaceFolder}/C# OOP 抽象/C# OOP 抽象/bin/Debug/net10.0/C# OOP 抽象.dll",
+      "cwd": "${workspaceFolder}/C# OOP 抽象/C# OOP 抽象",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

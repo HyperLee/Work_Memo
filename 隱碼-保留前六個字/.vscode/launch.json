@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 隱碼-保留前六個字",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 隱碼-保留前六個字",
+      "program": "${workspaceFolder}/隱碼-保留前六個字/隱碼-保留前六個字/bin/Debug/net10.0/隱碼-保留前六個字.dll",
+      "cwd": "${workspaceFolder}/隱碼-保留前六個字/隱碼-保留前六個字",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

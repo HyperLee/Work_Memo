@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 不規則陣列",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 不規則陣列",
+      "program": "${workspaceFolder}/不規則陣列/不規則陣列/bin/Debug/net10.0/不規則陣列.dll",
+      "cwd": "${workspaceFolder}/不規則陣列/不規則陣列",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

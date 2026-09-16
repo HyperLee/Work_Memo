@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 西元年轉民國年",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 西元年轉民國年",
+      "program": "${workspaceFolder}/西元年轉民國年/西元年轉民國年/bin/Debug/net10.0/西元年轉民國年.dll",
+      "cwd": "${workspaceFolder}/西元年轉民國年/西元年轉民國年",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

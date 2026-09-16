@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C# OOP 封裝",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build C# OOP 封裝",
+      "program": "${workspaceFolder}/C# OOP 封裝/C# OOP 封裝/bin/Debug/net10.0/C# OOP 封裝.dll",
+      "cwd": "${workspaceFolder}/C# OOP 封裝/C# OOP 封裝",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

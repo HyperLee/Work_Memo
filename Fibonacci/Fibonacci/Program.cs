@@ -16,7 +16,6 @@ namespace Fibonacci
         {
             int n = 100;
             Console.WriteLine(Fibo(n));
-            Console.ReadKey();
         }
 
 

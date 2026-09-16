@@ -14,7 +14,7 @@ namespace linklist_Palindrome_cycle
         class Node
         {
             public int data;
-            public Node next;
+            public Node next = null!;
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace linklist_Palindrome_cycle
         /// <returns></returns>
         static Node detectAndgetLoopstarting(Node head)
         {
-            Node slow_p = head, fast_p = head, loop_start = null;
+            Node slow_p = head, fast_p = head, loop_start = null!;
             //Start traversing list and detect loop
             while (slow_p != null && fast_p != null && fast_p.next != null)
             {
@@ -80,7 +80,7 @@ namespace linklist_Palindrome_cycle
                 }
             }
             // Return starting node of loop
-            return loop_start;
+            return loop_start!;
 
         }
 
@@ -160,7 +160,7 @@ namespace linklist_Palindrome_cycle
         {
             Node temp = new Node();
             temp.data = key;
-            temp.next = null;
+            temp.next = null!;
             return temp;
         }
 
@@ -201,7 +201,6 @@ namespace linklist_Palindrome_cycle
                 Console.WriteLine("Not Palindrome");
             }
 
-            Console.ReadKey();
                 
         }
 

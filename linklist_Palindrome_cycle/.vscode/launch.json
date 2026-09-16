@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug linklist_Palindrome_cycle",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build linklist_Palindrome_cycle",
+      "program": "${workspaceFolder}/linklist_Palindrome_cycle/linklist_Palindrome_cycle/bin/Debug/net10.0/linklist_Palindrome_cycle.dll",
+      "cwd": "${workspaceFolder}/linklist_Palindrome_cycle/linklist_Palindrome_cycle",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

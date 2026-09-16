@@ -8,8 +8,8 @@ namespace linklist_Palindrome_single
 {
     class LinkedList
     {
-        Node head; // head of list
-        Node slow_ptr, fast_ptr, second_half;
+        Node head = null!; // head of list
+        Node slow_ptr = null!, fast_ptr = null!, second_half = null!;
 
         /// <summary>
         /// Linked list Node
@@ -17,11 +17,11 @@ namespace linklist_Palindrome_single
         public class Node
         {
             public char data;
-            public Node next;
+            public Node next = null!;
             public Node(char d)
             {
                 data = d;
-                next = null;
+                next = null!;
             }
         }
 
@@ -37,7 +37,7 @@ namespace linklist_Palindrome_single
             slow_ptr = head;
             fast_ptr = head;
             Node prev_of_slow_ptr = head;
-            Node midnode = null; // To handle odd size list
+            Node midnode = null!; // To handle odd size list
             Boolean res = true; // initialize result
             if (head != null && head.next != null)
             {
@@ -77,7 +77,7 @@ namespace linklist_Palindrome_single
                 // Now reverse the second half and compare it with first half
 
                 second_half = slow_ptr;
-                prev_of_slow_ptr.next = null; // NULL terminate first half
+                prev_of_slow_ptr.next = null!; // NULL terminate first half
                 reverse(); // Reverse the second half
                 res = compareLists(head, second_half); // compare
 
@@ -106,7 +106,7 @@ namespace linklist_Palindrome_single
         /// </summary>
         void reverse()
         {
-            Node prev = null;
+            Node prev = null!;
             Node current = second_half;
             Node next;
 
@@ -226,7 +226,6 @@ namespace linklist_Palindrome_single
                     Console.WriteLine("");
                 }
             }
-            Console.ReadKey();
         }
     }
 }

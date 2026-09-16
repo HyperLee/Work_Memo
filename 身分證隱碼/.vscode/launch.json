@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 身分證隱碼",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 身分證隱碼",
+      "program": "${workspaceFolder}/身分證隱碼/身分證隱碼/bin/Debug/net10.0/身分證隱碼.dll",
+      "cwd": "${workspaceFolder}/身分證隱碼/身分證隱碼",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

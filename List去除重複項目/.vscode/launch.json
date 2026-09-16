@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug List去除重複項目",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build List去除重複項目",
+      "program": "${workspaceFolder}/List去除重複項目/List去除重複項目/bin/Debug/net10.0/List去除重複項目.dll",
+      "cwd": "${workspaceFolder}/List去除重複項目/List去除重複項目",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

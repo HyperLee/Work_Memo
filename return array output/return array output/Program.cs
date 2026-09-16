@@ -21,7 +21,6 @@ namespace return_array_output
             int[] nums = { 2, 7, 11, 15 };
             var res = TwoSum(nums, 9);
             Console.WriteLine($"[{res[0]},{res[1]}]");
-            Console.ReadKey();
         }
 
 
@@ -65,7 +64,7 @@ namespace return_array_output
                     temp.Add(nums[i], i);
                 }
             }
-            return null;
+            return null!;
         }
 
 

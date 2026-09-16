@@ -17,7 +17,6 @@ namespace 輸出符號
             Console.WriteLine("''");
 
 
-            Console.ReadKey();
         }
     }
 }

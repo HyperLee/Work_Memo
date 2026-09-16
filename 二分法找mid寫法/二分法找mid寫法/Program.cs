@@ -23,7 +23,6 @@ namespace 二分法找mid寫法
             Method1(left, right);
             Method2(left, right);
 
-            Console.ReadKey();
         }
 
 

@@ -34,7 +34,6 @@ namespace post_increment
             Console.WriteLine("a:" + a);   // output: 2.5
 
 
-            Console.ReadKey();
 
         }
     }

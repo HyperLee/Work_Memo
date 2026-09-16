@@ -54,7 +54,6 @@ namespace 資料隱碼中間三位
                     Console.WriteLine(ee.ToString());
                 }
             }
-            Console.ReadKey();
         }
 
 

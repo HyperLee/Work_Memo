@@ -23,7 +23,6 @@ namespace 亂數產生陣列做加總
 
             Console.WriteLine("亂數總和: " + cal(randomarray));
 
-            Console.ReadKey();
         }
 
 

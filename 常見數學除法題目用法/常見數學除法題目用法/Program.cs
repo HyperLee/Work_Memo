@@ -19,7 +19,6 @@ namespace 常見數學除法題目用法
         {
             int n = 1248;
             Console.WriteLine(CountDigits(n));
-            Console.ReadKey();
 
         }
 

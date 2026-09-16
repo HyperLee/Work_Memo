@@ -21,15 +21,14 @@ namespace C__OOP_抽象
             car.Speed = 60;
 
             Console.WriteLine($"建立一台汽車，廠牌：{car.Brand}，顏色：{car.Color}，目前速度：{car.Speed}。");
-            Console.ReadKey();
 
         }
     }
 
     public class Car
     {
-        public string Brand { get; set; }
-        public string Color { get; set; }
+        public string Brand { get; set; } = null!;
+        public string Color { get; set; } = null!;
         public int Speed { get; set; }
 
         public void Accelerate()

@@ -31,7 +31,6 @@ namespace C__OOP_封裝
             speed = Convert.ToInt32(Console.ReadLine());
             car.Brake(speed);
             Console.WriteLine($"汽車減速至{car.Speed}");
-            Console.ReadKey();
 
         }
     }
@@ -39,8 +38,8 @@ namespace C__OOP_封裝
 
     public class Car
     {
-        public string Brand { get; set; }
-        public string Color { get; set; }
+        public string Brand { get; set; } = null!;
+        public string Color { get; set; } = null!;
         public int Speed { get; set; }
 
         public void Accelerate(int speed)

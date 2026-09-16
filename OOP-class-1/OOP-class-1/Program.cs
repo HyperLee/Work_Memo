@@ -30,14 +30,14 @@ namespace OOP_class_1
 
             //填寫變數成員
             Console.WriteLine("請輸入姓名:");
-            cat.name = Console.ReadLine();
+            cat.name = Console.ReadLine()!;
 
             Console.WriteLine("請輸入年齡:");
             cat.age = Convert.ToInt32(Console.ReadLine());
 
             //填寫變數成員2
             Console.WriteLine("請輸入姓名2:");
-            cat2.name = Console.ReadLine();
+            cat2.name = Console.ReadLine()!;
 
             Console.WriteLine("請輸入年齡2:");
             cat2.age = Convert.ToInt32(Console.ReadLine());
@@ -58,9 +58,6 @@ namespace OOP_class_1
             cat2.CaseMice();
 
             Console.WriteLine("--END1--");
-            //Console.ReadKey();
-            
-
             //////////// duck  /////////////////////////
             Duck duck = new Duck();
             //設定為三歲
@@ -72,7 +69,6 @@ namespace OOP_class_1
             Console.WriteLine("duck.duckAge2: " + duck.duckAge);
 
             Console.WriteLine("--END2--");
-            Console.ReadKey();
 
         }
     }
@@ -80,7 +76,7 @@ namespace OOP_class_1
     class Cat
     {
         //名稱
-        public string name;
+        public string name = null!;
         //年齡
         public int age;
         //老鼠數量
@@ -103,7 +99,6 @@ namespace OOP_class_1
             miceCount++;
             Hello();
             Console.WriteLine("我已經抓了 {0} 隻老鼠", miceCount);
-            Console.ReadKey();
         }
     }
 
@@ -111,7 +106,7 @@ namespace OOP_class_1
     class Duck
     {
         //名稱
-        public string name;
+        public string name = null!;
         //年齡
         private int age;
         //屬性

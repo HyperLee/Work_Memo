@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Fibonacci",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build Fibonacci",
+      "program": "${workspaceFolder}/Fibonacci/Fibonacci/bin/Debug/net10.0/Fibonacci.dll",
+      "cwd": "${workspaceFolder}/Fibonacci/Fibonacci",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

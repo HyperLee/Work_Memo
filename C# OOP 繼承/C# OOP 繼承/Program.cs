@@ -52,7 +52,6 @@ namespace C__OOP_繼承
             speed = Convert.ToInt32(Console.ReadLine());
             nissan.Brake(speed);
             Console.WriteLine($"Nissan汽車減速至{nissan.Speed}");
-            Console.ReadKey();
         }
     }
 
@@ -62,7 +61,7 @@ namespace C__OOP_繼承
     /// </summary>
     public class Car
     {
-        public string Color { get; set; }
+        public string Color { get; set; } = null!;
         public int Speed { get; set; }
 
 

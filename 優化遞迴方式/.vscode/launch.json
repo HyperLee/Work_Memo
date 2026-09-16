@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 優化遞迴方式",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 優化遞迴方式",
+      "program": "${workspaceFolder}/優化遞迴方式/優化遞迴方式/bin/Debug/net10.0/優化遞迴方式.dll",
+      "cwd": "${workspaceFolder}/優化遞迴方式/優化遞迴方式",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

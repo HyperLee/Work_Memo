@@ -26,7 +26,6 @@ namespace IList宣告與初始化方法
             matrix.Add(new List<string> { "Lima", "Sao Paulo" });
 
             Console.WriteLine(DestCity(matrix));
-            Console.ReadKey();
         }
 
 

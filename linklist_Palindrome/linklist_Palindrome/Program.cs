@@ -14,8 +14,8 @@ namespace linklist_Palindrome
         public class Node
         {
             public char data;
-            public Node next;
-            public Node prev;
+            public Node next = null!;
+            public Node prev = null!;
         };
 
 
@@ -32,7 +32,7 @@ namespace linklist_Palindrome
             Node new_node = new Node();
             new_node.data = new_data;
             new_node.next = head_ref;
-            new_node.prev = null;
+            new_node.prev = null!;
             if (head_ref != null)
                 head_ref.prev = new_node;
 
@@ -99,7 +99,7 @@ namespace linklist_Palindrome
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Node head = null;
+            Node head = null!;
 
             head = push(head, '1');
             head = push(head, '3');
@@ -116,7 +116,6 @@ namespace linklist_Palindrome
                 Console.Write("Not Palindrome");
             }
 
-            Console.ReadKey();
         }
 
         

@@ -20,7 +20,6 @@ namespace 前綴和_Prefix_Sum
             int[] input = new int[] { 1, 12, -5, -6, 50, 3 };
             int k = 4;
             Console.WriteLine(FindMaxAverage(input, k));
-            Console.ReadKey();
 
         }
 

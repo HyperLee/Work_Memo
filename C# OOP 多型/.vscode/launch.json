@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C# OOP 多型",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build C# OOP 多型",
+      "program": "${workspaceFolder}/C# OOP 多型/C# OOP 多型/bin/Debug/net10.0/C# OOP 多型.dll",
+      "cwd": "${workspaceFolder}/C# OOP 多型/C# OOP 多型",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

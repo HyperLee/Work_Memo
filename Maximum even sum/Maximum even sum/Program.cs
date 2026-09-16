@@ -159,7 +159,6 @@ namespace Maximum_even_sum
             int N = arr.Length;
             int K = 3;
             Console.WriteLine(evenSumK(arr, N, K));
-            Console.ReadKey();
         }
     }
 }

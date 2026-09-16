@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug post-increment",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build post-increment",
+      "program": "${workspaceFolder}/post-increment/post-increment/bin/Debug/net10.0/post-increment.dll",
+      "cwd": "${workspaceFolder}/post-increment/post-increment",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

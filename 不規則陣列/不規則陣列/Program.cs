@@ -53,7 +53,6 @@ namespace 不規則陣列
             // 輸出總和
             Console.WriteLine("sum: " + sum);
 
-            Console.ReadKey();
         }
     }
 }

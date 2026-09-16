@@ -49,7 +49,6 @@ namespace List去除重複項目
                 Console.WriteLine(value);
             }
 
-            Console.ReadKey();
 
         }
     }

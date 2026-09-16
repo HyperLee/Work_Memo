@@ -12,7 +12,6 @@ namespace 西元年轉民國年
         {
             string input = "2020/1/1";
             Console.WriteLine(ADToROC(input));
-            Console.ReadKey();
         }
 
 

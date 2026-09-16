@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 前綴和 Prefix Sum",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 前綴和 Prefix Sum",
+      "program": "${workspaceFolder}/前綴和 Prefix Sum/前綴和 Prefix Sum/bin/Debug/net10.0/前綴和 Prefix Sum.dll",
+      "cwd": "${workspaceFolder}/前綴和 Prefix Sum/前綴和 Prefix Sum",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

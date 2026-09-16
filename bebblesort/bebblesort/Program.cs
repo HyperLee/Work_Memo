@@ -24,7 +24,6 @@ namespace bebblesort
             Console.WriteLine(" ");
             bubblesort(array);
 
-            Console.ReadKey();
         }
 
         /// <summary>

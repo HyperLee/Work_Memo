@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 常見數學除法題目用法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 常見數學除法題目用法",
+      "program": "${workspaceFolder}/常見數學除法題目用法/常見數學除法題目用法/bin/Debug/net10.0/常見數學除法題目用法.dll",
+      "cwd": "${workspaceFolder}/常見數學除法題目用法/常見數學除法題目用法",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

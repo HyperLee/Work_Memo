@@ -11,8 +11,8 @@ namespace ListNode輸出範例
         public class ListNode
         {
             public int val;
-            public ListNode next;
-            public ListNode(int val = 0, ListNode next = null)
+            public ListNode next = null!;
+            public ListNode(int val = 0, ListNode next = null!)
             {
                 this.val = val;
                 this.next = next;
@@ -43,7 +43,6 @@ namespace ListNode輸出範例
                 res = res.next;
             }
 
-            Console.ReadKey();
         }
 
 
@@ -60,7 +59,7 @@ namespace ListNode輸出範例
         {
             if (head == null)
             {
-                return head;
+            return head!;
             }
 
             head.next = RemoveElements(head.next, val);

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 動態決定迴圈次數以及要跑資料",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 動態決定迴圈次數以及要跑資料",
+      "program": "${workspaceFolder}/動態決定迴圈次數以及要跑資料/動態決定迴圈次數以及要跑資料/bin/Debug/net10.0/動態決定迴圈次數以及要跑資料.dll",
+      "cwd": "${workspaceFolder}/動態決定迴圈次數以及要跑資料/動態決定迴圈次數以及要跑資料",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

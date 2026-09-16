@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug return array output",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build return array output",
+      "program": "${workspaceFolder}/return array output/return array output/bin/Debug/net10.0/return array output.dll",
+      "cwd": "${workspaceFolder}/return array output/return array output",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

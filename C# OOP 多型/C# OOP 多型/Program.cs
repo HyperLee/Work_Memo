@@ -69,14 +69,13 @@ namespace C__OOP_多型
             Console.WriteLine($"Honda汽車開啟 Turbo，目前速度：{c.Speed}");
 
 
-            Console.ReadKey();
         }
     }
 
 
     public class Car
     {
-        public string Color { get; set; }
+        public string Color { get; set; } = null!;
         public int Speed { get; set; }
 
         /// <summary>
@@ -135,7 +134,7 @@ namespace C__OOP_多型
             }
         }
 
-        public void Turbo()
+        public new void Turbo()
         {
             Speed += 30;
         }

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 二分法找mid寫法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 二分法找mid寫法",
+      "program": "${workspaceFolder}/二分法找mid寫法/二分法找mid寫法/bin/Debug/net10.0/二分法找mid寫法.dll",
+      "cwd": "${workspaceFolder}/二分法找mid寫法/二分法找mid寫法",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

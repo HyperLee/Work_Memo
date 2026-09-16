@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 亂數產生陣列做加總",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build 亂數產生陣列做加總",
+      "program": "${workspaceFolder}/亂數產生陣列做加總/亂數產生陣列做加總/bin/Debug/net10.0/亂數產生陣列做加總.dll",
+      "cwd": "${workspaceFolder}/亂數產生陣列做加總/亂數產生陣列做加總",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

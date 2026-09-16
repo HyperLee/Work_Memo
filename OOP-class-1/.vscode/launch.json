@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug OOP-class-1",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build OOP-class-1",
+      "program": "${workspaceFolder}/OOP-class-1/OOP-class-1/bin/Debug/net10.0/OOP-class-1.dll",
+      "cwd": "${workspaceFolder}/OOP-class-1/OOP-class-1",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

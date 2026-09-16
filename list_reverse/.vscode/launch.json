@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug list_reverse",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build list_reverse",
+      "program": "${workspaceFolder}/list_reverse/list_reverse/bin/Debug/net10.0/list_reverse.dll",
+      "cwd": "${workspaceFolder}/list_reverse/list_reverse",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+

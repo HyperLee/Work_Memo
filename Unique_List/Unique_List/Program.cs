@@ -46,7 +46,6 @@ namespace Unique_List
             s1(l1);
 
 
-            Console.ReadKey();
         }
 
         public static void s1(List<int> l1)

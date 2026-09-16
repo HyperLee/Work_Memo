@@ -21,7 +21,6 @@ namespace 優化遞迴方式
             int n = 3;
             Console.WriteLine("total step:" + ClimbStairs2(n));
             Console.WriteLine("total step:" + ClimbStairs3(n));
-            Console.ReadKey();
         }
 
 

@@ -20,7 +20,7 @@ namespace 輸入整數排序
 
             for(int i = 0; i < 15; i++)
             {
-                num[i] = int.Parse(Console.ReadLine());
+                num[i] = int.Parse(Console.ReadLine()!);
             }
 
             Array.Sort(num);
@@ -30,7 +30,6 @@ namespace 輸入整數排序
                 Console.Write(i + ", ");
             }
 
-            Console.ReadKey();
         }
     }
 }

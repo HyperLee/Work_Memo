@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug IList宣告與初始化方法",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build IList宣告與初始化方法",
+      "program": "${workspaceFolder}/IList宣告與初始化方法/IList宣告與初始化方法/bin/Debug/net10.0/IList宣告與初始化方法.dll",
+      "cwd": "${workspaceFolder}/IList宣告與初始化方法/IList宣告與初始化方法",
+      "console": "integratedTerminal",
+      "args": [],
+      "stopAtEntry": false
+    }
+  ]
+}
+
