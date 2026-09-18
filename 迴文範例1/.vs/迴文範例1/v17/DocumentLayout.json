@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Work_Memo\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\",
+  "WorkspaceRootPath": "C:\\GitHubFolder\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{220BA601-0310-4F21-8717-E6885C0F2647}|\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1.csproj|d:\\work_memo\\work_memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{220BA601-0310-4F21-8717-E6885C0F2647}|\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1.csproj|c:\\githubfolder\\work_memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{220BA601-0310-4F21-8717-E6885C0F2647}|\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1.csproj|solutionrelative:\u8FF4\u6587\u7BC4\u4F8B1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Work_Memo\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
+              "DocumentMoniker": "C:\\GitHubFolder\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
               "RelativeDocumentMoniker": "\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
-              "ToolTip": "D:\\Work_Memo\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
+              "ToolTip": "C:\\GitHubFolder\\Work_Memo\\\u8FF4\u6587\u7BC4\u4F8B1\\\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
               "RelativeToolTip": "\u8FF4\u6587\u7BC4\u4F8B1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAcwJ4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T01:16:57.549Z",
               "EditorCaption": ""
